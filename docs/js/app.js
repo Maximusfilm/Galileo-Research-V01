@@ -805,3 +805,83 @@ function hideLoadingOverlay() {
         overlay.classList.add('hidden');
     }
 }
+
+// ==========================================
+// GEMINI WEB SEARCH FOR NEW TOPICS
+// ==========================================
+
+async function searchNewTopicsWithGemini(query) {
+    const apiKey = localStorage.getItem('gemini_api_key');
+    
+    if (!apiKey) {
+        showApiKeyError('Kein API-Key gespeichert. Bitte konfigurieren Sie Ihren Google Gemini API-Key in den Einstellungen.');
+        return [];
+    }
+
+    showLoadingOverlay();
+
+    try {
+        const prompt = `Du bist ein Recherche-Assistent für die TV-Sendung Galileo. 
+        
+Aufgabe: Finde 10 aktuelle, visually strong und noch nicht behandelte TV-Themen zum Suchbegriff: "${query}"
+        
+Kriterien:
+        - Aktuelle Ereignisse (2024-2025)
+        - Visuell stark und fernsehtauglich
+        - Noch nicht mainstream
+        - Für ein deutsches Publikum interessant
+        - Mischung aus Technologie, Gesellschaft, Natur & Umwelt
+        
+Format: JSON-Array mit genau diesem Schema:
+        [
+            {
+                "title": "Spannender Titel",
+                "description": "2-3 Sätze Beschreibung",
+                "tags": ["Bildstark", "Technologie", "Gerade aktuell"],
+                "visualRating": 5,
+                "isNew": true
+            }
+        ]
+        
+Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
+
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                contents: [{
+                    parts: [{
+                        text: prompt
+                    }]
+                }]
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error(`Gemini API Error: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const text = data.candidates[0].content.parts[0].text;
+        
+        // Extract JSON from response
+        const jsonMatch = text.match(/\[\s*{[\s\S]*}\s*\]/);
+        if (!jsonMatch) {
+            throw new Error('Keine gültigen Themen gefunden');
+        }
+
+        const topics = JSON.parse(jsonMatch[0]);
+        hideLoadingOverlay();
+        return topics;
+
+    } catch (error) {
+        console.error('Gemini search error:', error);
+        hideLoadingOverlay();
+        showApiKeyError(`Fehler bei der Themensuche: ${error.message}`);
+        return [];
+    }
+}
+
+window.searchNewTopicsWithGemini = searchNewTopicsWithGemini;
