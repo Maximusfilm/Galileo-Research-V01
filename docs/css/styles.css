@@ -1020,6 +1020,58 @@ body {
 }
 
 /* ========================================
+   SEARCH LOADING STATES
+   ======================================== */
+.search-loading {
+    text-align: center;
+    padding: 100px 20px;
+    color: var(--text-primary);
+    animation: fadeIn 0.4s ease;
+}
+
+.search-loading p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+.galileo-spinner {
+    border: 4px solid rgba(0, 128, 255, 0.2);
+    border-top: 4px solid var(--galileo-blue);
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 20px;
+    box-shadow: var(--glow-blue);
+}
+
+.clear-search-inline-btn {
+    background: var(--galileo-orange);
+    border: none;
+    color: white;
+    padding: 6px 14px;
+    border-radius: 12px;
+    margin-left: 12px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(255, 136, 0, 0.3);
+}
+
+.clear-search-inline-btn:hover {
+    background: #FF6600;
+    transform: scale(1.05);
+    box-shadow: var(--glow-orange), 0 4px 12px rgba(255, 136, 0, 0.4);
+}
+
+.clear-search-inline-btn:active {
+    transform: scale(0.98);
+}
+
+/* ========================================
    SCROLLBAR STYLING
    ======================================== */
 ::-webkit-scrollbar {

@@ -202,20 +202,20 @@ function generateMockData() {
 }
 
 // ========================================
-// SEARCH FUNCTIONALITY
+// SEARCH FUNCTIONALITY - GENERIERT NEUE THEMEN
 // ========================================
 function setupSearchListener() {
     const searchInput = document.getElementById('searchInput');
     const searchClear = document.getElementById('searchClear');
 
     if (searchInput) {
-        // Input event for real-time search
+        // Input event for search
         searchInput.addEventListener('input', (e) => {
-            searchQuery = e.target.value.toLowerCase().trim();
-            console.log('🔍 Suche:', searchQuery);
+            const value = e.target.value.trim();
+            console.log('🔍 Suche:', value);
 
             // Show/hide clear button
-            if (searchQuery) {
+            if (value) {
                 searchClear.classList.remove('hidden');
             } else {
                 searchClear.classList.add('hidden');
@@ -224,15 +224,16 @@ function setupSearchListener() {
             // Debounced search
             clearTimeout(searchDebounceTimer);
             searchDebounceTimer = setTimeout(() => {
-                performSearch();
-            }, 300);
+                handleSearch(value);
+            }, 500);
         });
 
         // Enter key support
         searchInput.addEventListener('keypress', (e) => {
             if (e.key === 'Enter') {
                 clearTimeout(searchDebounceTimer);
-                performSearch();
+                const value = searchInput.value.trim();
+                handleSearch(value);
             }
         });
     } else {
@@ -240,13 +241,62 @@ function setupSearchListener() {
     }
 }
 
-function performSearch() {
-    console.log('🔎 Führe Suche aus:', searchQuery);
-    console.log('📊 Alle Themen:', allTopics.length);
-    applyFilters();
-    console.log('✅ Gefilterte Themen:', filteredTopics.length);
+async function handleSearch(searchTerm) {
+    if (!searchTerm || searchTerm === '') {
+        // Zeige Standard Mock-Daten
+        console.log('📋 Lade Mock-Daten');
+        searchQuery = '';
+        await loadTopics();
+        filteredTopics = [...allTopics];
+        renderTopics();
+        updateSearchResults();
+        return;
+    }
+
+    searchQuery = searchTerm;
+    console.log('🎯 Generiere Themen für:', searchTerm);
+
+    // Zeige Loading
+    showLoadingState(`Suche nach Themen zu: "${searchTerm}"...`);
+
+    // Simuliere API-Delay (300ms für Realismus)
+    await new Promise(resolve => setTimeout(resolve, 300));
+
+    // Generiere Themen
+    const generatedTopics = generateTopicsForKeyword(searchTerm);
+
+    // Update State
+    allTopics = generatedTopics;
+    filteredTopics = generatedTopics;
+
+    // Zeige Ergebnisse
+    displaySearchResults(generatedTopics, searchTerm);
+}
+
+function showLoadingState(message) {
+    const container = document.getElementById('topicsList');
+    container.innerHTML = `
+        <div class="search-loading">
+            <div class="galileo-spinner"></div>
+            <p>${message}</p>
+        </div>
+    `;
+}
+
+function displaySearchResults(topics, searchTerm) {
+    console.log('✅ Zeige', topics.length, 'generierte Themen');
+
+    // Update Counter
+    const searchResults = document.getElementById('searchResults');
+    const searchResultsText = document.getElementById('searchResultsText');
+    searchResultsText.innerHTML = `
+        <strong>${topics.length} Themen</strong> generiert zu: "${searchTerm}"
+        <button onclick="clearSearch()" class="clear-search-inline-btn">Zurück zu allen Themen</button>
+    `;
+    searchResults.classList.remove('hidden');
+
+    // Zeige Topics
     renderTopics();
-    updateSearchResults();
 }
 
 function clearSearch() {
@@ -254,51 +304,297 @@ function clearSearch() {
     const searchClear = document.getElementById('searchClear');
     const searchResults = document.getElementById('searchResults');
 
+    console.log('🔄 Zurück zu Mock-Daten');
+
     searchInput.value = '';
     searchQuery = '';
     searchClear.classList.add('hidden');
     searchResults.classList.add('hidden');
 
-    performSearch();
+    // Lade Mock-Daten neu
+    loadTopics().then(() => {
+        filteredTopics = [...allTopics];
+        renderTopics();
+    });
 }
 
 function updateSearchResults() {
     const searchResults = document.getElementById('searchResults');
-    const searchResultsText = document.getElementById('searchResultsText');
-
-    if (searchQuery) {
-        const total = allTopics.length;
-        const found = filteredTopics.length;
-        searchResultsText.textContent = `${found} von ${total} Themen gefunden`;
-        searchResults.classList.remove('hidden');
-    } else {
+    if (!searchQuery) {
         searchResults.classList.add('hidden');
     }
 }
 
-function matchesSearch(topic) {
-    if (!searchQuery) return true;
+// ========================================
+// TOPIC GENERATION
+// ========================================
+function generateTopicsForKeyword(keyword) {
+    const lowerKeyword = keyword.toLowerCase();
+    console.log('🔧 Generiere Themen für Keyword:', keyword);
 
-    // Split search query into words (OR logic between words)
-    const searchTerms = searchQuery.split(' ').filter(term => term.length > 0);
+    // TEMPLATE-BASIERTE GENERIERUNG
+    const templates = getTopicTemplates();
 
-    // Search in multiple fields
-    const searchableText = [
-        topic.title,
-        topic.summary,
-        topic.visualReason,
-        ...topic.tags,
-        ...topic.sources.map(s => s.headline || s.name)
-    ].join(' ').toLowerCase();
-
-    // Return true if ANY search term is found (OR logic)
-    const matches = searchTerms.some(term => searchableText.includes(term));
-
-    if (matches) {
-        console.log('✓ Match:', topic.title);
+    // Suche passendes Template
+    for (const [key, topicsFn] of Object.entries(templates)) {
+        if (lowerKeyword.includes(key) || key.includes(lowerKeyword)) {
+            console.log('✓ Template gefunden:', key);
+            return topicsFn(keyword);
+        }
     }
 
-    return matches;
+    // Fallback: Generiere generische Themen
+    console.log('⚠️ Kein Template gefunden, generiere generische Themen');
+    return generateGenericTopics(keyword);
+}
+
+function getTopicTemplates() {
+    return {
+        'drohne': generateDrohnenTopics,
+        'ki': generateKITopics,
+        'künstliche intelligenz': generateKITopics,
+        'roboter': generateRoboterTopics,
+        'nachhaltig': generateNachhaltigkeitTopics,
+        'extrem': generateExtremsportTopics,
+        'weltraum': generateWeltraumTopics,
+        'rekord': generateRekordTopics,
+        'mystery': generateMysteryTopics,
+        'mysterium': generateMysteryTopics
+    };
+}
+
+function generateDrohnenTopics(keyword) {
+    return [
+        {
+            id: 1001,
+            title: "Paket-Drohnen starten Testflug über München - 1000 Lieferungen pro Tag geplant",
+            tags: ["Technologie", "Gerade aktuell", "Bildstark", "Gesellschaftlich Relevant"],
+            summary: "Deutsche Post testet autonome Lieferdrohnen über München. Spektakuläre Luftaufnahmen der Stadt, innovative Technologie und die Zukunft der Logistik.",
+            visualRating: 5,
+            visualReason: "Drohnen über Münchner Skyline, Paket-Abwürfe in Echtzeit, moderne Technologie in Action, Zeitraffer der Route, Empfänger-Reaktionen",
+            credibility: "green",
+            sources: [
+                {name: "Tagesschau", url: "https://www.tagesschau.de/", date: "2025-12-10", credibility: "green", headline: "Drohnen-Lieferungen: Testflug-Start in München"},
+                {name: "Süddeutsche Zeitung", url: "https://www.sueddeutsche.de/", date: "2025-12-11", credibility: "green", headline: "Zukunft der Logistik schwebt über der Stadt"},
+                {name: "BR24", url: "https://www.br.de/", date: "2025-12-09", credibility: "green", headline: "Testflug erfolgreich: Drohnen liefern Pakete"}
+            ],
+            isDuplicate: false,
+            duplicateInfo: "Neues Pilotprojekt 2025 - noch nicht bei Galileo behandelt",
+            storyline: {
+                duration: "13 Min",
+                intro: "Drohne startet vom Depot, fliegt über Münchner Skyline. Voice-Over: 'Die Zukunft der Logistik ist da - und sie fliegt.'",
+                segments: [
+                    {title: "Die Technologie", location: "Logistik-Zentrum München", person: "Tech-Lead Deutsche Post", duration: "4 Min"},
+                    {title: "Der erste Flug", location: "Münchner Innenstadt", person: "Drohnen-Pilot + Reporter", duration: "5 Min"},
+                    {title: "Die Zukunft", location: "Empfänger-Wohnung", person: "Erste Kunden", duration: "3 Min"}
+                ],
+                finale: "Zeitraffer: 100 Drohnen gleichzeitig am Himmel. Ausblick: Deutschlandweiter Rollout 2026."
+            },
+            date: "2025-12-11",
+            newTopic: true
+        },
+        {
+            id: 1002,
+            title: "Rettungsdrohnen mit Wärmebildkamera - Leben retten aus der Luft",
+            tags: ["Technologie", "Gesellschaftlich Relevant", "Bildstark", "Gerade aktuell"],
+            summary: "Feuerwehr und Bergwacht setzen Drohnen mit Wärmebildkamera ein. Vermisste Personen werden in Rekordzeit gefunden - spektakuläre Rettungseinsätze.",
+            visualRating: 5,
+            visualReason: "Wärmebildaufnahmen nachts, dramatische Rettungsaktionen, Bergpanoramen, Einsatzkräfte in Action",
+            credibility: "green",
+            sources: [
+                {name: "Spiegel", url: "https://www.spiegel.de/", date: "2025-12-10", credibility: "green", headline: "Rettungsdrohnen retten Leben"},
+                {name: "SWR", url: "https://www.swr.de/", date: "2025-12-09", credibility: "green", headline: "Hightech-Helfer in der Not"},
+                {name: "Zeit Online", url: "https://www.zeit.de/", date: "2025-12-11", credibility: "green", headline: "Drohnen als Lebensretter"}
+            ],
+            isDuplicate: false,
+            duplicateInfo: "Noch nicht bei Galileo behandelt",
+            storyline: {
+                duration: "14 Min",
+                intro: "Notruf: Person in den Alpen vermisst. Drohne startet.",
+                segments: [
+                    {title: "Der Einsatz", location: "Bayerische Alpen", person: "Bergwacht-Team", duration: "6 Min"},
+                    {title: "Die Technologie", location: "Einsatzzentrale", person: "Drohnen-Spezialist", duration: "4 Min"},
+                    {title: "Die Rettung", location: "Unfallort", person: "Gerettete Person", duration: "3 Min"}
+                ],
+                finale: "Erfolgreiche Rettung dank Drohne. Statistik: 50+ Personen gerettet in 2025."
+            },
+            date: "2025-12-10",
+            newTopic: true
+        },
+        {
+            id: 1003,
+            title: "Drohnen-Rennen-WM in Deutschland - 200 km/h durch Hindernisparcours",
+            tags: ["Entertainment", "Bildstark", "Technologie", "Gerade aktuell"],
+            summary: "FPV-Drohnen-Piloten kämpfen um den Weltmeistertitel. Atemberaubende Speeds, spektakuläre Manöver durch enge Kurse - Motorsport der Zukunft.",
+            visualRating: 5,
+            visualReason: "POV-Aufnahmen mit 200 km/h, Zeitlupen-Manöver, LED-Trails nachts, spektakuläre Crashes",
+            credibility: "green",
+            sources: [
+                {name: "Sport1", url: "https://www.sport1.de/", date: "2025-12-08", credibility: "green", headline: "Drohnen-Racing: Die neue Motorsport-Sensation"},
+                {name: "RTL News", url: "https://www.rtl.de/", date: "2025-12-09", credibility: "green", headline: "200 km/h durch die Luft: WM-Spektakel"},
+                {name: "FAZ", url: "https://www.faz.net/", date: "2025-12-10", credibility: "green", headline: "Highspeed-Drohnen begeistern Massen"}
+            ],
+            isDuplicate: false,
+            duplicateInfo: "Noch nicht bei Galileo behandelt",
+            storyline: {
+                duration: "12 Min",
+                intro: "FPV-Drohne rast durch Neon-Parcours. Voice-Over: 'Willkommen in der Zukunft des Motorsports.'",
+                segments: [
+                    {title: "Die Piloten", location: "WM-Arena Frankfurt", person: "Top-Pilot Jan Schneider", duration: "4 Min"},
+                    {title: "Das Rennen", location: "Parcours", person: "Live-Kommentar", duration: "6 Min"},
+                    {title: "Die Technik", location: "Werkstatt", person: "Drohnen-Techniker", duration: "2 Min"}
+                ],
+                finale: "Finalrunde in Zeitlupe. Sieger wird gekürt. Ausblick: Olympia 2028?"
+            },
+            date: "2025-12-09",
+            newTopic: true
+        },
+        {
+            id: 1004,
+            title: "Agrar-Drohnen revolutionieren Landwirtschaft - Präzises Sprühen spart 70% Pestizide",
+            tags: ["Wissenschaft", "Gesellschaftlich Relevant", "Bildstark", "Natur & Umwelt"],
+            summary: "Bauern setzen autonome Drohnen ein. Präzisionssaatgut, gezielte Düngung, Pflanzenschutz aus der Luft - Landwirtschaft 4.0.",
+            visualRating: 4,
+            visualReason: "Drohnen über Feldern, Zeitraffer Ernte, Vorher-Nachher-Vergleich, Bauern bei der Arbeit",
+            credibility: "green",
+            sources: [
+                {name: "Agrar Heute", url: "https://www.agrarheute.com/", date: "2025-12-10", credibility: "green", headline: "Drohnen revolutionieren Landwirtschaft"},
+                {name: "Süddeutsche Zeitung", url: "https://www.sueddeutsche.de/", date: "2025-12-09", credibility: "green", headline: "Hightech auf dem Acker"},
+                {name: "WDR", url: "https://www.wdr.de/", date: "2025-12-11", credibility: "green", headline: "70% weniger Pestizide dank Drohnen"}
+            ],
+            isDuplicate: false,
+            duplicateInfo: "Noch nicht bei Galileo behandelt",
+            storyline: {
+                duration: "15 Min",
+                intro: "Sonnenaufgang über Feldern. Drohne startet autonom.",
+                segments: [
+                    {title: "Der Bauer", location: "Bauernhof Niedersachsen", person: "Landwirt Thomas Meyer", duration: "5 Min"},
+                    {title: "Die Technologie", location: "Feld", person: "Agrar-Experte", duration: "5 Min"},
+                    {title: "Die Ergebnisse", location: "Labor + Ernte", person: "Wissenschaftler", duration: "4 Min"}
+                ],
+                finale: "Ernte-Vergleich: 30% mehr Ertrag. Umwelt geschont. Zukunft der Landwirtschaft."
+            },
+            date: "2025-12-10",
+            newTopic: true
+        },
+        {
+            id: 1005,
+            title: "Drohnen-Überwachung im Test - Datenschutz vs. Sicherheit",
+            tags: ["Gesellschaftlich Relevant", "Gerade aktuell", "Technologie"],
+            summary: "Polizei testet Überwachungs-Drohnen in Innenstädten. Kritik von Datenschützern. Wo ist die Grenze zwischen Sicherheit und Privatsphäre?",
+            visualRating: 3,
+            credibility: "yellow",
+            sources: [
+                {name: "Tagesschau", url: "https://www.tagesschau.de/", date: "2025-12-11", credibility: "green", headline: "Drohnen-Überwachung: Pilotprojekt startet"},
+                {name: "Netzpolitik.org", url: "https://netzpolitik.org/", date: "2025-12-10", credibility: "yellow", headline: "Datenschutz: Drohnen spähen aus"},
+                {name: "Heise Online", url: "https://www.heise.de/", date: "2025-12-09", credibility: "green", headline: "Polizei-Drohnen: Fluch oder Segen?"}
+            ],
+            isDuplicate: false,
+            duplicateInfo: "Noch nicht bei Galileo behandelt",
+            storyline: {
+                duration: "16 Min",
+                intro: "Drohne kreist über Hauptbahnhof. Kontroverse beginnt.",
+                segments: [
+                    {title: "Pro-Seite: Polizei", location: "Polizeipräsidium", person: "Polizeisprecher", duration: "5 Min"},
+                    {title: "Contra-Seite: Datenschutz", location: "Büro Datenschutzbeauftragter", person: "Datenschützer", duration: "5 Min"},
+                    {title: "Die Bürger", location: "Innenstadt", person: "Passanten-Interviews", duration: "4 Min"}
+                ],
+                finale: "Abstimmung im Stadtrat. Ergebnis offen. Diskussion geht weiter."
+            },
+            date: "2025-12-11",
+            newTopic: true
+        }
+    ];
+}
+
+// Platzhalter für weitere Templates (werden bei Bedarf ergänzt)
+function generateKITopics(keyword) {
+    return generateGenericTopics(keyword);
+}
+function generateRoboterTopics(keyword) {
+    return generateGenericTopics(keyword);
+}
+function generateNachhaltigkeitTopics(keyword) {
+    return generateGenericTopics(keyword);
+}
+function generateExtremsportTopics(keyword) {
+    return generateGenericTopics(keyword);
+}
+function generateWeltraumTopics(keyword) {
+    return generateGenericTopics(keyword);
+}
+function generateRekordTopics(keyword) {
+    return generateGenericTopics(keyword);
+}
+function generateMysteryTopics(keyword) {
+    return generateGenericTopics(keyword);
+}
+
+// Generische Fallback-Generierung
+function generateGenericTopics(keyword) {
+    console.log('🎲 Generiere generische Themen für:', keyword);
+
+    const templates = [
+        {
+            titlePattern: `Neuer Durchbruch bei ${keyword} in Deutschland`,
+            tags: ["Wissenschaft", "Gerade aktuell", "Bildstark"],
+            rating: 4,
+            credibility: "green"
+        },
+        {
+            titlePattern: `${keyword}: Die Revolution des Alltags`,
+            tags: ["Gesellschaftlich Relevant", "Gerade aktuell"],
+            rating: 3,
+            credibility: "green"
+        },
+        {
+            titlePattern: `Spektakuläre ${keyword}-Show begeistert Millionen`,
+            tags: ["Entertainment", "Bildstark", "Gerade aktuell"],
+            rating: 5,
+            credibility: "green"
+        },
+        {
+            titlePattern: `Wie ${keyword} unsere Zukunft verändert`,
+            tags: ["Wissenschaft", "Gesellschaftlich Relevant"],
+            rating: 3,
+            credibility: "green"
+        },
+        {
+            titlePattern: `Rekord: Größte ${keyword}-Anlage Europas eröffnet`,
+            tags: ["Bildstark", "Gerade aktuell", "Gesellschaftlich Relevant"],
+            rating: 4,
+            credibility: "green"
+        }
+    ];
+
+    return templates.map((template, index) => ({
+        id: 2000 + index,
+        title: template.titlePattern,
+        tags: template.tags,
+        summary: `Spannende Entwicklung rund um ${keyword}. Visuell stark umsetzbar mit interessanten Protagonisten und Locations. Wissenschaftlich fundiert und gesellschaftlich relevant.`,
+        visualRating: template.rating,
+        visualReason: `Spektakuläre Bilder zu ${keyword}, moderne Technologie in Action, emotionale Momente, Experten-Interviews`,
+        credibility: template.credibility,
+        sources: [
+            {name: "Tagesschau", url: "https://www.tagesschau.de/", date: "2025-12-11", credibility: "green", headline: `${keyword}: Neueste Entwicklungen`},
+            {name: "Spiegel", url: "https://www.spiegel.de/", date: "2025-12-10", credibility: "green", headline: `${keyword}-Trend erreicht Deutschland`},
+            {name: "Zeit Online", url: "https://www.zeit.de/", date: "2025-12-09", credibility: "green", headline: `Die Zukunft von ${keyword}`}
+        ],
+        isDuplicate: false,
+        duplicateInfo: "Noch nicht bei Galileo behandelt",
+        storyline: {
+            duration: "12-15 Min",
+            intro: `Einstieg in die Welt von ${keyword}. Was steckt dahinter?`,
+            segments: [
+                {title: "Die Basics", location: "Deutschland", person: "Experten", duration: "4 Min"},
+                {title: "Die Umsetzung", location: "Vor Ort", person: "Protagonisten", duration: "6 Min"},
+                {title: "Die Zukunft", location: "Studio", person: "Zukunftsforscher", duration: "3 Min"}
+            ],
+            finale: `Ausblick: Wie ${keyword} unseren Alltag verändern wird.`
+        },
+        date: "2025-12-11",
+        newTopic: true
+    }));
 }
 
 // ========================================
