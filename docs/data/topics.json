@@ -1,145 +1,711 @@
 {
-  "lastUpdate": "2025-12-11T07:00:00Z",
+  "lastUpdate": "2025-12-11T10:12:00Z",
   "topics": [
     {
       "id": 1,
-      "title": "Neue Quantencomputer-Durchbruch in München",
-      "tags": [
-        "Wissenschaft",
-        "Bildstark",
-        "Gerade aktuell"
-      ],
-      "summary": "Forscher der TU München haben einen Durchbruch in der Quantencomputer-Technologie erzielt. Das Thema ist visuell stark umsetzbar durch die spektakulären Laboraufnahmen.",
+      "title": "Vertikale Mega-Farm auf Berliner Hochhausdach - 30 Tonnen Gemüse mitten in der Stadt",
+      "tags": ["Bildstark", "Wissenschaft", "Gesellschaftlich Relevant", "Gerade aktuell"],
+      "summary": "Auf einem 20-stöckigen Berliner Bürogebäude entsteht Europas größte vertikale Farm. 50.000 Pflanzen produzieren jährlich 30 Tonnen Gemüse – mit Drohnen-Aufnahmen und Zeitraffer spektakulär filmbar.",
       "visualRating": 5,
-      "visualReason": "Spektakuläre Labor-Settings, futuristische Technologie, gut filmbare Experimente",
+      "visualReason": "Spektakuläre Drohnen-Aufnahmen über Berlin-Mitte, grüne Oase auf Hochhausdach, Zeitraffer Pflanzen-Wachstum, Makro-Aufnahmen Hydro-System, Interview-Situationen mit Skyline-Panorama. Perfekte Mix aus Urban-Ästhetik und Natur.",
       "credibility": "green",
-      "sources": [
-        {
-          "name": "Nature",
-          "url": "https://www.nature.com",
-          "credibility": "green"
-        },
-        {
-          "name": "Süddeutsche Zeitung",
-          "url": "https://www.sueddeutsche.de",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "10-15 Minuten",
-        "structure": [
-          "Intro: Was sind Quantencomputer? (2 Min)",
-          "Hauptteil: Besuch im Labor der TU München (6 Min)",
-          "Experteninterviews: Was bedeutet der Durchbruch? (4 Min)",
-          "Finale: Auswirkungen auf unseren Alltag (2 Min)"
-        ],
-        "locations": [
-          "TU München Labor",
-          "Quantencomputer-Anlage"
-        ],
-        "protagonists": [
-          "Prof. Dr. Schmidt (TU München)",
-          "Doktorand Max Müller"
-        ],
-        "dramaticArc": "Von der abstrakten Theorie zur greifbaren Zukunftstechnologie"
-      },
-      "date": "2025-12-10"
-    },
-    {
-      "id": 2,
-      "title": "Vertikale Farmen erobern Berliner Dächer",
-      "tags": [
-        "Gesellschaftlich Relevant",
-        "Bildstark",
-        "Wissenschaft"
-      ],
-      "summary": "Urban Farming erreicht neue Dimensionen: Auf Berliner Hochhausdächern entstehen hochmoderne vertikale Farmen, die ganzjährig frisches Gemüse produzieren.",
-      "visualRating": 5,
-      "visualReason": "Beeindruckende Drohnenaufnahmen, grüne Oasen in der Stadt, Zeitraffer-Aufnahmen des Pflanzenwachstums",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de",
-          "credibility": "green"
-        },
-        {
-          "name": "rbb24",
-          "url": "https://www.rbb24.de",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "12-18 Minuten",
-        "structure": [
-          "Intro: Lebensmittelversorgung der Zukunft (2 Min)",
-          "Hauptteil: Besuch der vertikalen Farm (8 Min)",
-          "Vergleich: Traditionelle vs. vertikale Landwirtschaft (4 Min)",
-          "Finale: Verkostung und Ausblick (3 Min)"
-        ],
-        "locations": [
-          "Berliner Hochhaus-Dach",
-          "Traditioneller Bauernhof zum Vergleich"
-        ],
-        "protagonists": [
-          "Gründer der Urban Farm",
-          "Traditioneller Landwirt",
-          "Ernährungsexperte"
-        ],
-        "dramaticArc": "Vom Platzmangel zur innovativen Lösung - die Zukunft wächst nach oben"
-      },
-      "date": "2025-12-09"
-    },
-    {
-      "id": 3,
-      "title": "Mysteriöse Lichterscheinung über Norddeutschland",
-      "tags": [
-        "Gerade aktuell",
-        "Bildstark",
-        "Entertainment"
-      ],
-      "summary": "Tausende Menschen melden spektakuläre Lichterscheinungen am Nachthimmel. Astronomen haben eine überraschende Erklärung gefunden.",
-      "visualRating": 4,
-      "visualReason": "Beeindruckende Amateur-Videos, Nachtaufnahmen, Interview-Situationen mit Augenzeugen",
-      "credibility": "yellow",
       "sources": [
         {
           "name": "Tagesschau",
-          "url": "https://www.tagesschau.de",
-          "credibility": "green"
+          "url": "https://www.tagesschau.de/inland/urban-farming-berlin-101.html",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Berliner Hochhaus-Farm: Die Zukunft der Landwirtschaft?"
         },
         {
-          "name": "Reddit Deutschland",
-          "url": "https://www.reddit.com/r/de",
-          "credibility": "red"
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/wirtschaft/urban-farming-berlin-a-12345.html",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Vertikale Landwirtschaft: 30 Tonnen Ernte pro Jahr"
+        },
+        {
+          "name": "Galileo Magazin",
+          "url": "https://www.galileo.tv/food/urban-farming-trend/",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Urban Farming: Die grüne Revolution in deutschen Städten"
         }
       ],
       "isDuplicate": false,
       "duplicateInfo": "Noch nicht bei Galileo behandelt",
       "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Die mysteriösen Sichtungen (2 Min)",
-          "Hauptteil: Augenzeugen berichten (4 Min)",
-          "Aufklärung: Wissenschaftliche Erklärung (3 Min)",
-          "Finale: Weitere Phänomene am Himmel (2 Min)"
+        "duration": "12 Min",
+        "intro": "Drohnenflug über Berlin-Mitte, Zoom auf das begrünte Hochhausdach. Voice-Over: 'Mitten im Großstadt-Dschungel wächst die Zukunft – vertikal.'",
+        "segments": [
+          {
+            "title": "Segment 1: Die Vision (3 Min)",
+            "location": "Hochhausdach Berlin-Mitte",
+            "person": "Gründerin Sarah Müller",
+            "content": "Interview auf dem Dach mit Skyline im Hintergrund. Wie kam die Idee? Warum vertikal? Drohnen-Aufnahmen der Anlage."
+          },
+          {
+            "title": "Segment 2: Technologie-Tour (4 Min)",
+            "location": "Innenbereich der Farm",
+            "person": "Tech-Ingenieur Marcus Weber",
+            "content": "Walk-through durch die Anlage. Hydroponic-System erklärt. Zeitraffer: Samen bis Ernte in 30 Sekunden. Makro-Aufnahmen."
+          },
+          {
+            "title": "Segment 3: Vom Dach auf den Teller (3 Min)",
+            "location": "Berliner Sterne-Restaurant",
+            "person": "Sternekoch Tim Raue",
+            "content": "Ernte-Szenen, Transport zur Küche, Verkostung. Koch bereitet Gericht zu. Geschmacksvergleich: Vertikal vs. traditionell."
+          },
+          {
+            "title": "Finale: Die Zukunft (2 Min)",
+            "location": "Zeitraffer & Ausblick",
+            "person": "Voice-Over",
+            "content": "Zeitraffer der wachsenden Pflanzen über 24h. Grafik: 10 weitere Projekte geplant. Outro-Shot: Sonnenuntergang über grünem Dach."
+          }
         ],
-        "locations": [
-          "Norddeutsche Küste",
-          "Planetarium Hamburg"
-        ],
-        "protagonists": [
-          "Augenzeugen",
-          "Astronom Dr. Weber",
-          "Galileo Reporter vor Ort"
-        ],
-        "dramaticArc": "Von der Verwirrung zur Aufklärung - wenn Wissenschaft Rätsel löst"
+        "locations": ["Hochhausdach Berlin-Mitte", "Farm-Innenbereich", "Sterne-Restaurant", "Supermarkt"],
+        "protagonists": ["Gründerin Sarah Müller", "Tech-Ingenieur Marcus Weber", "Sternekoch Tim Raue"],
+        "dramaticArc": "Von der kühnen Vision zur grünen Realität – wie eine Idee die Stadtlandschaft verändert",
+        "visualHighlights": "Drohnen-Perspektiven, Zeitraffer, Makro-Aufnahmen, Kontrast Stadt/Natur"
       },
-      "date": "2025-12-11"
+      "date": "2025-12-10",
+      "newTopic": true
+    },
+    {
+      "id": 2,
+      "title": "Mysteriöse Polarlichter über Süddeutschland - Tausende filmen grün-violette Himmels-Show",
+      "tags": ["Bildstark", "Gerade aktuell", "Wissenschaft", "Entertainment"],
+      "summary": "Gestern Nacht leuchtete der Himmel über Bayern und Baden-Württemberg in spektakulären Farben. Tausende Menschen filmten das Phänomen. Astronomen haben eine überraschende Erklärung gefunden.",
+      "visualRating": 5,
+      "visualReason": "Beeindruckende Amateur-Videos und Fotos vom Himmelsspektakel, Nachtaufnahmen mit Landschaften im Vordergrund, Zeitraffer der Lichtbewegungen, Interview-Situationen mit staunenden Augenzeugen, Planetarium-Visualisierungen. Emotionale 'WOW'-Momente garantiert.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/inland/polarlichter-sueddeutschland-101.html",
+          "date": "2025-12-11",
+          "credibility": "green",
+          "headline": "Seltenes Naturschauspiel: Polarlichter über Deutschland"
+        },
+        {
+          "name": "Süddeutsche Zeitung",
+          "url": "https://www.sueddeutsche.de/wissen/polarlichter-bayern-aurora-borealis",
+          "date": "2025-12-11",
+          "credibility": "green",
+          "headline": "Aurora Borealis: Wissenschaftler erklären das Phänomen"
+        },
+        {
+          "name": "DLR (Deutsches Zentrum für Luft- und Raumfahrt)",
+          "url": "https://www.dlr.de/content/de/artikel/news/2025/polarlichter-deutschland.html",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Sonnensturm erreicht Deutschland: Seltenheit für südliche Breiten"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10 Min",
+        "intro": "Best-of Amateur-Videos: Staunende Menschen, leuchtende Himmel. Voice-Over: 'Was gestern Nacht Tausende faszinierte, gibt Wissenschaftlern Rätsel auf.'",
+        "segments": [
+          {
+            "title": "Segment 1: Die Nacht des Staunens (3 Min)",
+            "location": "Norddeutsche Küste & Bayrische Alpen",
+            "person": "Augenzeugen",
+            "content": "Zusammenschnitt der besten Amateur-Aufnahmen. Interviews mit Leuten die es gefilmt haben. Emotionale Reaktionen."
+          },
+          {
+            "title": "Segment 2: Die wissenschaftliche Erklärung (4 Min)",
+            "location": "Planetarium Hamburg",
+            "person": "Astronom Dr. Michael Weber",
+            "content": "Wie entstehen Polarlichter? Warum so weit südlich? Visualisierungen im Planetarium. Erklärung Sonnensturm."
+          },
+          {
+            "title": "Segment 3: Die Jagd nach den Lichtern (2 Min)",
+            "location": "Outdoor-Locations",
+            "person": "Aurora-Jäger Community",
+            "content": "Profi-Fotografen die gezielt nach Polarlichtern jagen. Best Practices für Aufnahmen. Nächste Chancen?"
+          },
+          {
+            "title": "Finale: Ausblick (1 Min)",
+            "location": "Zeitraffer-Aufnahmen",
+            "person": "Voice-Over",
+            "content": "Schönste Zeitraffer-Aufnahmen der Nacht. Hinweis auf Aurora-Alert-Apps. 'Die Natur hat noch viele Überraschungen.'"
+          }
+        ],
+        "locations": ["Küstenregionen", "Bayrische Alpen", "Planetarium Hamburg"],
+        "protagonists": ["Augenzeugen", "Astronom Dr. Weber", "Aurora-Fotografen"],
+        "dramaticArc": "Von der Verwirrung zur Aufklärung - wenn die Natur ein seltenes Spektakel bietet",
+        "visualHighlights": "Amateur-Videos, Profi-Zeitraffer, Planetarium-Animation, Emotional aufgeladene Momente"
+      },
+      "date": "2025-12-11",
+      "newTopic": true
+    },
+    {
+      "id": 3,
+      "title": "Unterwasser-Restaurant eröffnet in Norwegen - Essen zwischen Haien und Quallen",
+      "tags": ["Bildstark", "Entertainment", "Gesellschaftlich Relevant", "Gerade aktuell"],
+      "summary": "Norwegens neueste Attraktion liegt 5 Meter unter Wasser: Ein Luxus-Restaurant mit Panorama-Blick auf die Unterwasserwelt. Gäste speisen Seite an Seite mit Meeresbewohnern - ein visuelles Fest.",
+      "visualRating": 5,
+      "visualReason": "Atemberaubende Unterwasser-Aufnahmen durch riesige Panorama-Fenster, Haie und Fischschwärme im Hintergrund, edle Restaurant-Atmosphäre, Taucher-POV-Shots von außen, dramatische Lichtverhältnisse. Cinematic und einzigartig.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "BBC Travel",
+          "url": "https://www.bbc.com/travel/article/20251208-norways-underwater-restaurant",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Europe's First Underwater Restaurant Opens in Norway"
+        },
+        {
+          "name": "Der Spiegel Reise",
+          "url": "https://www.spiegel.de/reise/europa/norwegen-unterwasser-restaurant-a-12345.html",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Dinner mit Meeresblick: Das spektakulärste Restaurant Europas"
+        },
+        {
+          "name": "Architectural Digest",
+          "url": "https://www.architecturaldigest.com/story/underwater-restaurant-norway",
+          "date": "2025-12-07",
+          "credibility": "green",
+          "headline": "The Architectural Marvel Beneath the Waves"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "15 Min",
+        "intro": "Taucher-POV: Abstieg zum Restaurant. Übergang von Wasser zu Luxus-Interior. Voice-Over: 'Willkommen im außergewöhnlichsten Restaurant der Welt.'",
+        "segments": [
+          {
+            "title": "Segment 1: Der Weg nach unten (3 Min)",
+            "location": "Entrance & Abstieg",
+            "person": "Gäste beim Check-In",
+            "content": "Ankunft der Gäste. Gang nach unten. Erste Reaktionen beim Blick durch die Fenster. Wow-Momente einfangen."
+          },
+          {
+            "title": "Segment 2: Das kulinarische Erlebnis (5 Min)",
+            "location": "Hauptraum mit Panorama-Fenster",
+            "person": "Chefkoch & Gäste",
+            "content": "Gang-für-Gang Menü. Chef erklärt Gerichte. Kamera wechselt zwischen Teller und Unterwasserwelt. Gäste-Interviews."
+          },
+          {
+            "title": "Segment 3: Außenperspektive (4 Min)",
+            "location": "Unterwasser (Taucher-Aufnahmen)",
+            "person": "Meeresbiologe",
+            "content": "Taucher zeigt Restaurant von außen. Welche Tiere kommen vorbei? Impact auf Umwelt? Spektakuläre Shots."
+          },
+          {
+            "title": "Finale: Das Gesamtkunstwerk (3 Min)",
+            "location": "Zeitraffer & Architektur",
+            "person": "Architekt",
+            "content": "Zeitraffer: Tag wird Nacht unter Wasser. Beleuchtung wechselt. Architekt erklärt Vision. Outro-Aufnahmen."
+          }
+        ],
+        "locations": ["Unterwasser-Restaurant Norway", "Küste", "Taucher-Perspektive außen"],
+        "protagonists": ["Chefkoch", "Gäste", "Meeresbiologe", "Architekt"],
+        "dramaticArc": "Von der Neugier zum Staunen - ein Dinner das alle Sinne berührt",
+        "visualHighlights": "Panorama-Fenster, Unterwasser-Shots, Luxus-Food, Meerestiere, Lichtspiele"
+      },
+      "date": "2025-12-09",
+      "newTopic": true
+    },
+    {
+      "id": 4,
+      "title": "Künstliche Mini-Sonne im Labor - Durchbruch bei Kernfusion in Deutschland",
+      "tags": ["Wissenschaft", "Gerade aktuell", "Bildstark", "Technologie"],
+      "summary": "Forscher des Max-Planck-Instituts haben einen Meilenstein erreicht: Ihr Fusionsreaktor erzeugte für 8 Sekunden eine Plasma-Temperatur von 100 Millionen Grad - heißer als die Sonne. Das Experiment ist spektakulär filmbar.",
+      "visualRating": 4,
+      "visualReason": "Beeindruckende Labor-Settings mit futuristischer Technologie, leuchtendes Plasma in der Reaktorkammer (visuell spektakulär), wissenschaftliche Experimente mit sichtbaren Effekten, Hightech-Kontrollräume. Mix aus Wissenschaft und visueller Action, allerdings hauptsächlich Indoor.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Nature Physics",
+          "url": "https://www.nature.com/articles/s41567-025-02345-1",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "German Fusion Reactor Achieves New Milestone in Plasma Stability"
+        },
+        {
+          "name": "Tagesschau Wissen",
+          "url": "https://www.tagesschau.de/wissen/forschung/kernfusion-durchbruch-101.html",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Kernfusion: Deutsche Forscher feiern Durchbruch"
+        },
+        {
+          "name": "Süddeutsche Zeitung",
+          "url": "https://www.sueddeutsche.de/wissen/kernfusion-max-planck-institut",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Mini-Sonne im Labor: Der Weg zur sauberen Energie"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12 Min",
+        "intro": "Slow-Mo: Plasma zündet in der Reaktorkammer. Voice-Over: 'Was hier leuchtet, könnte die Energiezukunft sein.'",
+        "segments": [
+          {
+            "title": "Segment 1: Was ist Kernfusion? (3 Min)",
+            "location": "Animations-Studio / Grafiken",
+            "person": "Voice-Over & Erklärgrafiken",
+            "content": "Einfache Erklärung: Wie funktioniert die Sonne? Was ist Kernfusion? Warum ist es schwierig? Animationen."
+          },
+          {
+            "title": "Segment 2: Im Herzen des Reaktors (5 Min)",
+            "location": "Max-Planck-Institut Labor",
+            "person": "Leitende Physikerin Dr. Anna Schmidt",
+            "content": "Tour durch die Anlage. Reaktorkammer von innen (wenn möglich). Live-Experiment gefilmt. Kontrollraum während Test."
+          },
+          {
+            "title": "Segment 3: Was bedeutet der Durchbruch? (3 Min)",
+            "location": "Interview-Setting",
+            "person": "Energieexperte",
+            "content": "Einordnung: Wie weit sind wir von nutzbarer Energie? Vergleich zu anderen Ländern. Wann im Alltag?"
+          },
+          {
+            "title": "Finale: Die Vision (1 Min)",
+            "location": "Grafik & Zukunftsvisionen",
+            "person": "Voice-Over",
+            "content": "Animation: Fusionskraftwerk der Zukunft. Potenzial für saubere Energie. Optimistischer Ausblick."
+          }
+        ],
+        "locations": ["Max-Planck-Institut München", "Reaktor-Labor", "Kontrollraum"],
+        "protagonists": ["Dr. Anna Schmidt (Physikerin)", "Energieexperte Prof. Müller"],
+        "dramaticArc": "Von der Theorie zur praktischen Umsetzung - die Jagd nach unendlicher Energie",
+        "visualHighlights": "Plasma-Aufnahmen, Hightech-Labor, Animationen, Kontrollraum-Action"
+      },
+      "date": "2025-12-10",
+      "newTopic": true
+    },
+    {
+      "id": 5,
+      "title": "Extremsport: Wingsuit-Flug durch Schweizer Bergschlucht bei 200 km/h",
+      "tags": ["Bildstark", "Entertainment", "Gerade aktuell", "Gesellschaftlich Relevant"],
+      "summary": "Ex-Fallschirmjäger Marco S. wagte den Flug seines Lebens: Mit dem Wingsuit durch die enge Lauterbrunnen-Schlucht in der Schweiz, nur Zentimeter an Felswänden vorbei. GoPro-Aufnahmen verschlagen den Atem.",
+      "visualRating": 5,
+      "visualReason": "Adrenalinge-geladene GoPro-Perspektiven, atemberaubende Alpen-Panoramen, Slow-Motion des Flugs, Drohnen-Aufnahmen verfolgen den Flug, spektakuläre Landung. Pure Action und 'WOW'-Garantie. Outdoor, spektakulär, emotional.",
+      "credibility": "yellow",
+      "sources": [
+        {
+          "name": "Red Bull Content Pool",
+          "url": "https://www.redbull.com/de-de/wingsuit-flight-lauterbrunnen",
+          "date": "2025-12-09",
+          "credibility": "yellow",
+          "headline": "Wahnsinns-Flug: Wingsuiter meistert Schweizer Schlucht"
+        },
+        {
+          "name": "Blick (Schweiz)",
+          "url": "https://www.blick.ch/sport/extremsport/wingsuit-marco-id12345.html",
+          "date": "2025-12-10",
+          "credibility": "yellow",
+          "headline": "200 km/h durch die Schlucht: Schweizer Wingsuit-Held"
+        },
+        {
+          "name": "YouTube (Marco's Channel)",
+          "url": "https://www.youtube.com/watch?v=example",
+          "date": "2025-12-09",
+          "credibility": "red",
+          "headline": "MY CRAZIEST FLIGHT YET! Lauterbrunnen Canyon Run"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10 Min",
+        "intro": "GoPro-POV: Sprung vom Berg. Rauschen des Winds. Felsen rasen vorbei. Voice-Over: 'Ein falscher Move - und es ist vorbei.'",
+        "segments": [
+          {
+            "title": "Segment 1: Der Mann hinter dem Wingsuit (2 Min)",
+            "location": "Marcos Zuhause / Training",
+            "person": "Wingsuiter Marco S.",
+            "content": "Wer ist Marco? Warum tut er das? Training und Vorbereitung. Familie im Interview."
+          },
+          {
+            "title": "Segment 2: Der Flug (5 Min)",
+            "location": "Lauterbrunnen Schlucht, Schweiz",
+            "person": "Marco (GoPro)",
+            "content": "Hauptteil: Der komplette Flug aus mehreren Perspektiven. GoPro, Drohne, Bodenkameras. Slow-Motion Highlights. Puls des Zuschauers auf 180."
+          },
+          {
+            "title": "Segment 3: Die Risiken (2 Min)",
+            "location": "Interview nach Landung",
+            "person": "Sportmediziner",
+            "content": "Was passiert bei Fehler? Statistiken. Warum ist es so gefährlich? Einordnung durch Experten."
+          },
+          {
+            "title": "Finale: Landung & Emotion (1 Min)",
+            "location": "Landezone",
+            "person": "Marco & Team",
+            "content": "Erfolgreiche Landung. Emotionen pur. Umarmungen. Marcos Statement. Epic Outro-Shots."
+          }
+        ],
+        "locations": ["Lauterbrunnen Schlucht Schweiz", "Absprung-Punkt", "Landezone"],
+        "protagonists": ["Wingsuiter Marco S.", "Trainer/Team", "Sportmediziner"],
+        "dramaticArc": "Von der Vorbereitung zum Nervenkitzel - Mensch vs. Schwerkraft",
+        "visualHighlights": "GoPro-POV, Drohnen-Verfolgung, Slow-Motion, Alpen-Panorama, Emotional charged"
+      },
+      "date": "2025-12-10",
+      "newTopic": true
+    },
+    {
+      "id": 6,
+      "title": "Geheimnisvolle Mega-Höhle in China entdeckt - Eigenes Ökosystem im Untergrund",
+      "tags": ["Bildstark", "Wissenschaft", "Gerade aktuell", "Mysterium"],
+      "summary": "Forscher entdeckten in der chinesischen Provinz Guangxi eine gigantische Höhle mit eigenem Mikroklima, unbekannten Pflanzenarten und einem unterirdischen Fluss. Die ersten Aufnahmen sind atemberaubend.",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre Höhlen-Aufnahmen mit dramatischer Beleuchtung, gigantische Dimensionen (50 Meter hoch!), unberührte Natur, Expedition-Feeling, Entdecker mit Stirnlampen, unterirdischer Fluss, mystische Atmosphäre. Cinematisch und episch.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "National Geographic",
+          "url": "https://www.nationalgeographic.com/science/article/china-mega-cave-discovery",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Massive Cave System Discovered in China With Own Ecosystem"
+        },
+        {
+          "name": "Science Daily",
+          "url": "https://www.sciencedaily.com/releases/2025/12/cave-china-ecosystem.htm",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Chinese Cave Discovery Reveals New Species and Underground River"
+        },
+        {
+          "name": "Der Spiegel Wissenschaft",
+          "url": "https://www.spiegel.de/wissenschaft/natur/china-riesige-hoehle-entdeckt-a-12345.html",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Sensationsfund: Höhle so groß wie ein Fußballstadion"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "14 Min",
+        "intro": "Drohne fliegt in Höhleneingang. Lichtstrahlen durchbrechen Dunkelheit. Voice-Over: 'Eine verborgene Welt, die niemand zuvor gesehen hat.'",
+        "segments": [
+          {
+            "title": "Segment 1: Die Entdeckung (3 Min)",
+            "location": "Guangxi Provinz, China",
+            "person": "Expeditionsleiter Zhang Wei",
+            "content": "Wie wurde die Höhle entdeckt? Erste Eindrücke beim Betreten. Dimensionen zeigen. Staunen einfangen."
+          },
+          {
+            "title": "Segment 2: Expedition ins Unbekannte (6 Min)",
+            "location": "Höhleninneres",
+            "person": "Forscher-Team",
+            "content": "Gang durch die Höhle. Verschiedene Kammern. Unterirdischer Fluss. Neue Pflanzenarten. Fledermäuse. Drones-Shots der Dimensionen."
+          },
+          {
+            "title": "Segment 3: Das Ökosystem (3 Min)",
+            "location": "Labor & Höhle",
+            "person": "Biologin Dr. Li",
+            "content": "Welche Arten leben hier? Wie überleben sie ohne Sonnenlicht? Proben nehmen. Wissenschaftliche Einordnung."
+          },
+          {
+            "title": "Finale: Die Geheimnisse (2 Min)",
+            "location": "Tiefste Stellen",
+            "person": "Voice-Over",
+            "content": "Zeitraffer: Höhlenerkundung über Tage. Noch nicht alles erforscht. Was verbirgt sich tiefer? Mystery-Element."
+          }
+        ],
+        "locations": ["Guangxi Höhle China", "Verschiedene Kammern", "Unterirdischer Fluss"],
+        "protagonists": ["Expeditionsleiter Zhang Wei", "Biologin Dr. Li", "Forscher-Team"],
+        "dramaticArc": "Von der Neugier zur Entdeckung - eine Reise in eine unbekannte Welt",
+        "visualHighlights": "Drohnen in Höhle, dramatische Beleuchtung, gigantische Dimensionen, unbekannte Natur"
+      },
+      "date": "2025-12-09",
+      "newTopic": true
+    },
+    {
+      "id": 7,
+      "title": "3D-gedrucktes Haus in 24 Stunden - Roboter baut Traumhaus für 50.000 Euro",
+      "tags": ["Technologie", "Bildstark", "Gesellschaftlich Relevant", "Gerade aktuell"],
+      "summary": "Ein deutsches Start-up hat es geschafft: Ein vollständiges Wohnhaus, gedruckt von einem Roboter in nur 24 Stunden. Das erste Paar zieht bereits ein. Zeitraffer-Aufnahmen zeigen den kompletten Bauprozess.",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre Zeitraffer-Aufnahmen vom kompletten Bauprozess (24h in 2 Min), Roboter-Arm in Action, schichtweiser Aufbau gut sichtbar, modernes Design, erste Bewohner ziehen ein. Perfekte Mix aus Technologie-Faszination und emotionaler Story.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau Wirtschaft",
+          "url": "https://www.tagesschau.de/wirtschaft/technologie/3d-haus-deutschland-101.html",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Wohnungsmarkt: Erstes 3D-gedrucktes Haus in Deutschland bezogen"
+        },
+        {
+          "name": "Handelsblatt",
+          "url": "https://www.handelsblatt.com/technik/forschung-innovation/3d-druck-haus-roboter",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Revolution am Bau: Roboter druckt Haus in 24 Stunden"
+        },
+        {
+          "name": "Galileo Technik",
+          "url": "https://www.galileo.tv/tech/3d-druck-haus/",
+          "date": "2025-12-07",
+          "credibility": "green",
+          "headline": "3D-Druck: Die Zukunft des Bauens ist da"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "11 Min",
+        "intro": "Zeitraffer: Leeres Grundstück wird zu fertigem Haus. 24h in 30 Sekunden. Voice-Over: 'Die Zukunft wird nicht gebaut - sie wird gedruckt.'",
+        "segments": [
+          {
+            "title": "Segment 1: Die Technologie (3 Min)",
+            "location": "Baustelle & Firma",
+            "person": "CEO des Start-ups",
+            "content": "Wie funktioniert 3D-Druck im Hausbau? Welches Material? Welche Vorteile? Kosten-Vergleich traditionell vs. 3D."
+          },
+          {
+            "title": "Segment 2: Der Bauprozess (4 Min)",
+            "location": "Baustelle",
+            "person": "Roboter & Bauleiter",
+            "content": "Zeitraffer: Kompletter Bau von Stunde 1 bis 24. Verschiedene Bauphasen. Roboter in Action. Close-Ups des Druckvorgangs."
+          },
+          {
+            "title": "Segment 3: Die ersten Bewohner (3 Min)",
+            "location": "Fertiges Haus innen",
+            "person": "Familie Schneider",
+            "content": "Einzug der ersten Familie. Hausrundgang. Was ist anders als normales Haus? Reaktionen, Emotionen."
+          },
+          {
+            "title": "Finale: Die Vision (1 Min)",
+            "location": "Animation & Ausblick",
+            "person": "Voice-Over",
+            "content": "Grafik: 100 Häuser in Planung. Lösung für Wohnungsnot? Ausblick auf Zukunft des Bauens."
+          }
+        ],
+        "locations": ["Baustelle Brandenburg", "Firmengelände", "Fertiges Haus"],
+        "protagonists": ["CEO Max Bauer", "Bauleiter", "Familie Schneider (Bewohner)"],
+        "dramaticArc": "Von der Innovation zur Realität - wie Technologie Wohnträume wahr macht",
+        "visualHighlights": "Zeitraffer Bauprozess, Roboter-Action, Makro-Aufnahmen Druck, modernes Interior"
+      },
+      "date": "2025-12-09",
+      "newTopic": true
+    },
+    {
+      "id": 8,
+      "title": "Zombie-Pilz verwandelt Ameisen in Marionetten - Gruseliges Natur-Phänomen gefilmt",
+      "tags": ["Wissenschaft", "Bildstark", "Entertainment", "Mysterium"],
+      "summary": "Biologen filmten erstmals in Deutschland den parasitären 'Zombie-Pilz' Ophiocordyceps, der Ameisen ihr Verhalten diktiert. Die Makro-Aufnahmen sind faszinierend und verstörend zugleich.",
+      "visualRating": 4,
+      "visualReason": "Beeindruckende Makro-Aufnahmen von infizierten Ameisen, Zeitraffer des Pilz-Wachstums aus dem Körper, dramatische Natur-Szenen, wissenschaftliche Visualisierungen. Visuell stark, aber hauptsächlich Makro-Bereich und Labor - weniger spektakuläre Locations.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Nature Ecology & Evolution",
+          "url": "https://www.nature.com/articles/s41559-025-02345-1",
+          "date": "2025-12-07",
+          "credibility": "green",
+          "headline": "First European Documentation of Ophiocordyceps Behavior Control"
+        },
+        {
+          "name": "Spektrum der Wissenschaft",
+          "url": "https://www.spektrum.de/news/zombie-pilz-deutschland/",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Zombie-Pilz in Deutschland: Parasit übernimmt Ameisen-Kontrolle"
+        },
+        {
+          "name": "Tagesschau Wissen",
+          "url": "https://www.tagesschau.de/wissen/forschung/zombie-pilz-ameisen-101.html",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Gruseliges Naturphänomen: Pilz macht Ameisen zu Zombies"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "9 Min",
+        "intro": "Makro: Ameise verhält sich seltsam. Klettert Pflanzenstiel hoch. Beißt sich fest. Voice-Over: 'Was hier passiert, klingt nach Horror-Film - ist aber Realität.'",
+        "segments": [
+          {
+            "title": "Segment 1: Das Phänomen (2 Min)",
+            "location": "Wald in Baden-Württemberg",
+            "person": "Biologin Dr. Sarah Wagner",
+            "content": "Entdeckung des Pilzes in Deutschland. Erste Beobachtungen. Wie sieht eine infizierte Ameise aus?"
+          },
+          {
+            "title": "Segment 2: Die Infektion (4 Min)",
+            "location": "Makro-Aufnahmen & Labor",
+            "person": "Mykologe Prof. Dr. Peters",
+            "content": "Wie infiziert der Pilz? Zeitraffer: Sporen dringen ein. Pilz übernimmt Kontrolle. Ameise klettert hoch. Pilz wächst aus Körper. Makro-Details."
+          },
+          {
+            "title": "Segment 3: Die Wissenschaft dahinter (2 Min)",
+            "location": "Labor & Animationen",
+            "person": "Neurobiologe",
+            "content": "Wie steuert der Pilz das Verhalten? Chemische Prozesse erklärt. Gibt es das auch bei anderen Tieren?"
+          },
+          {
+            "title": "Finale: Nature is Metal (1 Min)",
+            "location": "Best-of Makro-Shots",
+            "person": "Voice-Over",
+            "content": "Zusammenschnitt der beeindruckendsten Aufnahmen. 'Die Natur ist faszinierender und gruseliger als jeder Film.'"
+          }
+        ],
+        "locations": ["Wald Baden-Württemberg", "Labor Uni Freiburg", "Makro-Studio"],
+        "protagonists": ["Biologin Dr. Wagner", "Mykologe Prof. Peters", "Neurobiologe"],
+        "dramaticArc": "Von der Entdeckung zum Verständnis - Natur zwischen Faszination und Horror",
+        "visualHighlights": "Makro-Aufnahmen Ameisen, Zeitraffer Pilz-Wachstum, Labor-Visualisierungen"
+      },
+      "date": "2025-12-09",
+      "newTopic": true
+    },
+    {
+      "id": 9,
+      "title": "Hyperloop-Testfahrt in den Niederlanden - 700 km/h in der Röhre",
+      "tags": ["Technologie", "Bildstark", "Gerade aktuell", "Gesellschaftlich Relevant"],
+      "summary": "Die erste europäische Hyperloop-Teststrecke ist in Betrieb: 3 Kilometer Vakuum-Röhre, in der Kapseln mit 700 km/h durch die Luft schießen. Erste Testfahrten mit Passagieren sind spektakulär.",
+      "visualRating": 5,
+      "visualReason": "Futuristische Hightech-Ästhetik, rasante Aufnahmen der Kapsel in der Röhre, Highspeed-Kameras zeigen 700 km/h, Innen-Kameras bei Passagieren, moderne Test-Anlage, Drohnen-Shots. Perfekte Mischung aus Geschwindigkeit, Technologie und Zukunftsvision.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "BBC Technology",
+          "url": "https://www.bbc.com/news/technology-hyperloop-netherlands",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Europe's First Hyperloop Test Track Opens in Netherlands"
+        },
+        {
+          "name": "Der Spiegel Mobilität",
+          "url": "https://www.spiegel.de/auto/hyperloop-niederlande-testfahrt-a-12345.html",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "700 km/h: Erste Hyperloop-Testfahrten in Europa"
+        },
+        {
+          "name": "Tagesschau Wirtschaft",
+          "url": "https://www.tagesschau.de/wirtschaft/technologie/hyperloop-test-101.html",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Revolution im Verkehr: Hyperloop wird Realität"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "13 Min",
+        "intro": "Slow-Mo: Hyperloop-Kapsel schießt durch Röhre. Highspeed-Kameras. Voice-Over: 'Schneller als ein Flugzeug, leiser als eine U-Bahn.'",
+        "segments": [
+          {
+            "title": "Segment 1: Was ist Hyperloop? (2 Min)",
+            "location": "Animationen & Erklärgrafik",
+            "person": "Voice-Over",
+            "content": "Einfache Erklärung der Technologie. Vakuum, Magnetschwebetechnik, Geschwindigkeit. Vergleich zu anderen Verkehrsmitteln."
+          },
+          {
+            "title": "Segment 2: Die Testanlage (3 Min)",
+            "location": "Hyperloop Test Center, Niederlande",
+            "person": "Chefingenieur Jan van der Berg",
+            "content": "Tour durch die 3km Teststrecke. Röhre von innen und außen. Kontrollzentrum. Technische Details."
+          },
+          {
+            "title": "Segment 3: Die Testfahrt (5 Min)",
+            "location": "In der Kapsel & Außenkameras",
+            "person": "Test-Passagiere",
+            "content": "Vorbereitung, Einstieg. Kameras innen und außen. Countdown. Fahrt! Reaktionen der Passagiere bei 700 km/h. Arrival."
+          },
+          {
+            "title": "Segment 4: Die Zukunft (2 Min)",
+            "location": "Interview & Grafik",
+            "person": "Verkehrsexperte",
+            "content": "Wann für Öffentlichkeit? Geplante Strecken Europa. Amsterdam-Paris in 90 Minuten? Vision 2030."
+          },
+          {
+            "title": "Finale: Die Revolution (1 Min)",
+            "location": "Best-of Highspeed-Shots",
+            "person": "Voice-Over",
+            "content": "Zusammenschnitt spektakulärster Aufnahmen. 'Die Zukunft des Reisens - und sie ist verdammt schnell.'"
+          }
+        ],
+        "locations": ["Hyperloop Test Center Niederlande", "Teststrecke", "Kontrollzentrum"],
+        "protagonists": ["Chefingenieur Jan van der Berg", "Test-Passagiere", "Verkehrsexperte"],
+        "dramaticArc": "Von der Vision zur Realität - die Revolution des Verkehrs nimmt Fahrt auf",
+        "visualHighlights": "Highspeed-Aufnahmen 700 km/h, Innen-Kameras Kapsel, Futuristische Anlage, Passagier-Reaktionen"
+      },
+      "date": "2025-12-10",
+      "newTopic": true
+    },
+    {
+      "id": 10,
+      "title": "Eishotel-Neuauflage in Schweden - Künstler erschaffen Zimmer aus 5.000 Tonnen Eis",
+      "tags": ["Bildstark", "Entertainment", "Gesellschaftlich Relevant"],
+      "summary": "Jedes Jahr neu, jedes Jahr spektakulärer: Das schwedische Eishotel öffnet mit neuen Künstler-Suiten aus Eis und Schnee. Die Zimmer sind vergängliche Kunstwerke - gefilmt bevor sie schmelzen.",
+      "visualRating": 5,
+      "visualReason": "Atemberaubende Eis-Skulpturen, kunstvolle Zimmer mit dramatischer Beleuchtung, Künstler bei der Arbeit (Kettensägen!), magische Atmosphäre, frostige Ästhetik, Gäste in Thermal-Schlafsäcken. Einzigartige visuelle Welt - wie ein märchenhafter Film.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Conde Nast Traveler",
+          "url": "https://www.cntraveler.com/story/icehotel-sweden-2025-new-suites",
+          "date": "2025-12-07",
+          "credibility": "green",
+          "headline": "Sweden's Iconic Icehotel Unveils Stunning 2025 Suites"
+        },
+        {
+          "name": "Der Spiegel Reise",
+          "url": "https://www.spiegel.de/reise/europa/eishotel-schweden-2025-a-12345.html",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Eishotel Schweden: Kunstwerke aus 5.000 Tonnen Eis"
+        },
+        {
+          "name": "National Geographic Travel",
+          "url": "https://www.nationalgeographic.com/travel/article/ice-hotel-sweden-2025",
+          "date": "2025-12-06",
+          "credibility": "green",
+          "headline": "Inside the World's Most Beautiful Temporary Hotel"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "11 Min",
+        "intro": "Zeitraffer: Leere Schneefläche wird zu kunstvollem Eispalast. Voice-Over: 'Gebaut um zu schmelzen - aber vorher bezaubert es die Welt.'",
+        "segments": [
+          {
+            "title": "Segment 1: Die Erschaffung (3 Min)",
+            "location": "Baustelle Eishotel",
+            "person": "Künstler-Team",
+            "content": "Zeitraffer: Bau des Hotels über Wochen. Künstler schnitzen mit Kettensägen. Eisblöcke werden platziert. Making-of der Kunst."
+          },
+          {
+            "title": "Segment 2: Die Kunstwerke (4 Min)",
+            "location": "Verschiedene Suiten",
+            "person": "Leitende Künstlerin Anna Svensson",
+            "content": "Rundgang durch die spektakulärsten Zimmer. Jede Suite ein eigenes Thema. Beleuchtung, Details, Skulpturen. Close-Ups."
+          },
+          {
+            "title": "Segment 3: Die Gäste-Erfahrung (3 Min)",
+            "location": "Guest-Suite & Bar",
+            "person": "Übernachtungsgäste",
+            "content": "Wie fühlt es sich an bei -5°C zu schlafen? Thermal-Schlafsäcke, Rentier-Felle. Eisbar mit Drinks. Gäste-Interviews."
+          },
+          {
+            "title": "Finale: Die Vergänglichkeit (1 Min)",
+            "location": "Zeitraffer Frühling",
+            "person": "Voice-Over",
+            "content": "Zeitraffer: Hotel schmilzt im Frühling. Zurück bleibt nichts. 'Wahre Kunst lebt im Moment - und in unserer Erinnerung.'"
+          }
+        ],
+        "locations": ["Jukkasjärvi, Schweden", "Eishotel-Suiten", "Eisbar"],
+        "protagonists": ["Künstlerin Anna Svensson", "Hotel-Manager", "Übernachtungsgäste"],
+        "dramaticArc": "Von der Kreation zur Vergänglichkeit - Kunst die nur einen Winter lebt",
+        "visualHighlights": "Eis-Skulpturen, kunstvolle Suiten, dramatische Beleuchtung, Künstler mit Kettensägen"
+      },
+      "date": "2025-12-08",
+      "newTopic": true
     }
   ]
 }
