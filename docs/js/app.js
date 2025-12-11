@@ -717,11 +717,7 @@ function saveApiKey() {
         return;
     }
 
-    if (!apiKey.startsWith('pplx-')) {
-        showApiKeyStatus('Ungültiges API-Key Format. Der Key sollte mit "pplx-" beginnen.', 'error');
-        return;
-    }
-
+    
     // Save via perplexity-service
     const saved = setApiKey(apiKey);
 
