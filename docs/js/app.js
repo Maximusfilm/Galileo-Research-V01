@@ -708,27 +708,15 @@ function renderTopics() {
 
     topicsListContainer.innerHTML = filteredTopics.map(topic => `
         <div class="topic-card" data-credibility="${topic.credibility}" onclick="showTopicDetail(${topic.id})">
+            <div class="topic-thumbnail">
+                <div class="topic-age-badge">12</div>
+            </div>
             <div class="topic-content">
-                <div class="topic-header">
-                    <h3 class="topic-title">${topic.title}</h3>
-                    <div class="topic-badges">
-                        <span class="badge badge-${topic.credibility}">
-                            ${topic.credibility === 'green' ? '🟢' : topic.credibility === 'yellow' ? '🟡' : '🔴'}
-                        </span>
-                    </div>
-                </div>
-                <div class="topic-tags">
-                    ${topic.tags.map(tag => `<span class="topic-tag">${tag}</span>`).join('')}
-                </div>
-                <p class="topic-summary">${topic.summary}</p>
+                <h3 class="topic-title">${topic.title}</h3>
                 <div class="topic-meta">
-                    <div class="visual-rating">
-                        <span class="visual-stars">${'⭐'.repeat(topic.visualRating)}</span>
-                        <span>${topic.visualRating}/5 Visuell</span>
-                    </div>
-                    <div class="duplicate-status ${topic.isDuplicate ? 'duplicate' : 'new'}">
-                        ${topic.isDuplicate ? '⚠️ Bereits behandelt' : '✅ Neues Thema'}
-                    </div>
+                    <span>${topic.storyline?.duration || '12-15 Min'}</span>
+                    <span>•</span>
+                    <span>Folge vom ${topic.date || new Date().toLocaleDateString('de-DE')}</span>
                 </div>
             </div>
         </div>
