@@ -1,1 +1,675 @@
-
+{
+  "lastUpdate": "2025-12-11T10:30:00Z",
+  "topics": [
+    {
+      "id": 1,
+      "title": "Eisiges Spektakel: Bodensee komplett zugefroren - Tausende stürmen aufs Eis",
+      "tags": ["Bildstark", "Gerade aktuell", "Gesellschaftlich Relevant", "Entertainment"],
+      "summary": "Nach 15 Jahren ist der Bodensee wieder komplett zugefroren - ein seltenes Naturschauspiel. Zehntausende Menschen pilgern aufs Eis, Eisverkäufer bauen Stände auf und Schlittschuhläufer genießen die einmalige Kulisse. Drohnenaufnahmen zeigen die spektakuläre Eiswüste.",
+      "visualRating": 5,
+      "visualReason": "Atemberaubende Drohnenaufnahmen über die gefrorene Seefläche, Menschen als kleine Punkte auf der weißen Fläche, spektakuläre Alpenpanorama-Kulisse, Eisverkäufer-Buden mitten auf dem See, Sonnenuntergang über dem Eis. Pure visuelle Magie mit Outdoor-Action und einzigartiger Location.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/inland/bodensee-zugefroren-2025-101.html",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Bodensee zugefroren: Seltenes Naturschauspiel lockt Zehntausende aufs Eis"
+        },
+        {
+          "name": "Süddeutsche Zeitung",
+          "url": "https://www.sueddeutsche.de/bayern/bodensee-seegfrörne-2025-eisdecke",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Die Seegfrörne kehrt zurück: Experten erklären das Phänomen"
+        },
+        {
+          "name": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/bodensee-zugefroren",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Historisches Ereignis: Bodensee trägt wieder - so dick ist das Eis"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "15 Min",
+        "intro": "Drohnenflug über die endlose weiße Fläche des zugefrorenen Bodensees. Voice-Over: 'Was alle 15 Jahre passiert, ist jetzt wieder da - die Seegfrörne.'",
+        "segments": [
+          {
+            "title": "Die ersten Schritte aufs Eis (4 Min)",
+            "location": "Konstanzer Ufer",
+            "person": "Erste Eisläufer und Familien",
+            "duration": "4 Min"
+          },
+          {
+            "title": "Wissenschaft des Zufrierens (4 Min)",
+            "location": "LUBW Messstation",
+            "person": "Klimaforscher Dr. Andreas Weber",
+            "duration": "4 Min"
+          },
+          {
+            "title": "Leben auf dem Eis (5 Min)",
+            "location": "Mitten auf dem gefrorenen See",
+            "person": "Eisverkäufer, Familien, Schlittschuhläufer",
+            "duration": "5 Min"
+          },
+          {
+            "title": "Gefahr und Faszination (2 Min)",
+            "location": "DLRG Einsatzzentrale",
+            "person": "DLRG Rettungsschwimmer",
+            "duration": "2 Min"
+          }
+        ],
+        "finale": "Zeitraffer: Sonnenuntergang über dem Eis, während Tausende Menschen langsam ans Ufer zurückkehren. Voice-Over: 'Ein Moment, den erst die nächste Generation wieder erleben wird.'"
+      },
+      "date": "2025-12-10",
+      "newTopic": true
+    },
+    {
+      "id": 2,
+      "title": "Rekord-Drohnen-Show über München - 5.000 Drohnen malen Bilder in den Himmel",
+      "tags": ["Bildstark", "Entertainment", "Technologie", "Gerade aktuell"],
+      "summary": "Zur Weihnachtszeit zaubert die größte Drohnen-Show Europas spektakuläre 3D-Bilder über den Münchner Nachthimmel. 5.000 synchronisierte Drohnen formen riesige Figuren - vom tanzenden Nussknacker bis zur schwebenden Christbaumkugel.",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre Nachtaufnahmen mit leuchtenden Drohnen-Formationen, 3D-Effekte am Himmel, Zeitraffer der Choreografie, staunende Zuschauer-Reaktionen, Kontrast zwischen altem Marienplatz und futuristischer Technik. Absolut bildgewaltig.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "BR24",
+          "url": "https://www.br.de/nachrichten/bayern/drohnen-show-muenchen-weihnachten-2025",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Weltrekord: 5.000 Drohnen tanzen über München"
+        },
+        {
+          "name": "Süddeutsche Zeitung",
+          "url": "https://www.sueddeutsche.de/muenchen/drohnenshow-christkindlmarkt-rekord",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Hightech-Weihnacht: Münchens spektakuläre Drohnen-Choreografie"
+        },
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/panorama/drohnen-show-muenchen-a-12345.html",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Drohnen statt Feuerwerk: Die Zukunft der Lichtshows"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12 Min",
+        "intro": "Kamerafahrt vom vollen Christkindlmarkt nach oben zum Sternenhimmel. Plötzlich: Tausende leuchtende Punkte formieren sich. Voice-Over: 'Was wie Magie aussieht, ist pure Ingenieurskunst.'",
+        "segments": [
+          {
+            "title": "Behind the Scenes - Die Planung (3 Min)",
+            "location": "Kontrollzentrum",
+            "person": "Show-Director Sarah Klein",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Technik-Check - So funktioniert's (3 Min)",
+            "location": "Drohnen-Hangar",
+            "person": "Tech-Ingenieur Markus Huber",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Die Show beginnt (5 Min)",
+            "location": "Marienplatz München",
+            "person": "Zuschauer + Live-Kommentar",
+            "duration": "5 Min"
+          },
+          {
+            "title": "Zukunftsausblick (1 Min)",
+            "location": "Voice-Over mit Show-Highlights",
+            "person": "Experten-Statement",
+            "duration": "1 Min"
+          }
+        ],
+        "finale": "Zeitraffer der kompletten 15-Minuten-Show in 30 Sekunden. Finale: Alle 5.000 Drohnen formen ein riesiges 'Frohe Weihnachten' am Himmel."
+      },
+      "date": "2025-12-09",
+      "newTopic": true
+    },
+    {
+      "id": 3,
+      "title": "Adrenalin pur: Deutschlands längste Zipline durch die Alpen - 3 Kilometer Nervenkitzel",
+      "tags": ["Bildstark", "Entertainment", "Gerade aktuell", "Natur & Umwelt"],
+      "summary": "Von Gipfel zu Gipfel mit 120 km/h: In den bayerischen Alpen eröffnet die längste Zipline Deutschlands. Drei Kilometer Stahlseil, 800 Meter Höhenunterschied und atemberaubende Aussichten garantieren puren Nervenkitzel.",
+      "visualRating": 5,
+      "visualReason": "Atemberaubende Helmkamera-Perspektiven während der Fahrt, Drohnenaufnahmen der Zipline vor Alpenpanorama, GoPro-Aufnahmen der schreienden Teilnehmer, spektakuläre Landschaftsaufnahmen, Action pur. Perfekt für Galileo.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "BR24",
+          "url": "https://www.br.de/nachrichten/bayern/laengste-zipline-deutschlands-alpen-eroeffnung",
+          "date": "2025-12-07",
+          "credibility": "green",
+          "headline": "Deutschlands längste Zipline: 3 Kilometer Adrenalin"
+        },
+        {
+          "name": "Süddeutsche Zeitung",
+          "url": "https://www.sueddeutsche.de/bayern/zipline-alpen-garmisch-partenkirchen",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "120 km/h durch die Alpen: Neue Mega-Attraktion eröffnet"
+        },
+        {
+          "name": "Merkur.de",
+          "url": "https://www.merkur.de/lokales/garmisch-partenkirchen/zipline-rekord-alpen",
+          "date": "2025-12-07",
+          "credibility": "green",
+          "headline": "Nervenkitzel über den Wolken: So fühlt sich die Rekord-Zipline an"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "14 Min",
+        "intro": "Drohne schwebt über schneebedeckten Alpengipfeln. Kamera zoomt auf eine dünne Stahlseil-Linie. Voice-Over: 'Drei Kilometer Nervenkitzel - willkommen auf Deutschlands wildester Fahrt.'",
+        "segments": [
+          {
+            "title": "Vorbereitung - Safety First (3 Min)",
+            "location": "Bergstation Zugspitze",
+            "person": "Safety-Instructor Michael Koch",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Der erste Sprung - Reporter traut sich (6 Min)",
+            "location": "Start-Plattform bis Ziel",
+            "person": "Galileo-Reporter + Helmkamera",
+            "duration": "6 Min"
+          },
+          {
+            "title": "Technik & Physik (3 Min)",
+            "location": "Kontrollstation",
+            "person": "Ingenieur Dr. Thomas Berger",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Adrenalin-Junkies (2 Min)",
+            "location": "Zielstation",
+            "person": "Interviews mit Teilnehmern",
+            "duration": "2 Min"
+          }
+        ],
+        "finale": "Montage der besten Schrei-Momente, spektakuläre Drohnenaufnahmen der Zipline vor Sonnenuntergang. Voice-Over: 'Drei Kilometer, drei Minuten, unvergesslich.'"
+      },
+      "date": "2025-12-08",
+      "newTopic": true
+    },
+    {
+      "id": 4,
+      "title": "Hyperloop-Test in Hamburg - Mit 1.000 km/h durch die Röhre: Die Zukunft der Mobilität",
+      "tags": ["Wissenschaft", "Technologie", "Bildstark", "Gerade aktuell"],
+      "summary": "Auf einem Testgelände in Hamburg jagt eine Passagierkapsel mit Überschallgeschwindigkeit durch eine Vakuumröhre. Das Hyperloop-Projekt könnte die Reise Hamburg-München auf 30 Minuten verkürzen - spektakulär gefilmt und wissenschaftlich erklärt.",
+      "visualRating": 4,
+      "visualReason": "Beeindruckende Slow-Motion-Aufnahmen der startenden Kapsel, Highspeed-Kameras im Tunnel, futuristische Labor-Settings, CGI-Visualisierungen der Technik, Testfahrt-Perspektiven. Wissenschaft trifft Action.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/wirtschaft/technologie/hyperloop-hamburg-test-2025-101.html",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Hyperloop-Durchbruch: Deutschland testet Hochgeschwindigkeits-Kapsel"
+        },
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/wissenschaft/hyperloop-hamburg-testfahrt-a-12345.html",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "1.000 km/h: Hyperloop-Testfahrt in Hamburg erfolgreich"
+        },
+        {
+          "name": "Deutsches Zentrum für Luft- und Raumfahrt (DLR)",
+          "url": "https://www.dlr.de/content/de/artikel/news/2025/hyperloop-test-hamburg.html",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Revolutionäre Mobilität: DLR testet Hyperloop-Technologie"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "16 Min",
+        "intro": "Kamera fährt durch einen futuristischen Tunnel. Plötzlich rast eine silberne Kapsel mit Wahnsinnstempo vorbei. Voice-Over: 'Hamburg - München in 30 Minuten. Science Fiction? Nein, Realität.'",
+        "segments": [
+          {
+            "title": "Wie funktioniert Hyperloop? (4 Min)",
+            "location": "DLR Forschungslabor Hamburg",
+            "person": "Prof. Dr. Anna Schmidt (DLR)",
+            "duration": "4 Min"
+          },
+          {
+            "title": "Die Testfahrt (6 Min)",
+            "location": "Hyperloop-Teststrecke",
+            "person": "Test-Pilot Lars Becker + Kameras in Kapsel",
+            "duration": "6 Min"
+          },
+          {
+            "title": "Technik-Deep-Dive (4 Min)",
+            "location": "Kontrollzentrum",
+            "person": "Chefingenieur Michael Weber",
+            "duration": "4 Min"
+          },
+          {
+            "title": "Vision 2030 - Wie reisen wir morgen? (2 Min)",
+            "location": "CGI-Animation + Experten-Statements",
+            "person": "Mobilitäts-Experte",
+            "duration": "2 Min"
+          }
+        ],
+        "finale": "Zeitraffer: Von der ersten Skizze bis zur erfolgreichen Testfahrt. Outro: CGI-Vision eines Deutschland-Hyperloop-Netzes."
+      },
+      "date": "2025-12-10",
+      "newTopic": true
+    },
+    {
+      "id": 5,
+      "title": "Koch-Duell der Zukunft: Roboter vs. Sternekoch - Wer gewinnt das Taste-Battle?",
+      "tags": ["Entertainment", "Wissenschaft", "Bildstark", "Technologie"],
+      "summary": "In Hamburg treten die besten Koch-Roboter Europas gegen Sterneköche an. Welches Team kocht das perfekte 3-Gänge-Menü? Eine Jury aus Food-Kritikern bewertet blind. Die Ergebnisse überraschen alle.",
+      "visualRating": 4,
+      "visualReason": "Spektakuläre Zeitraffer-Aufnahmen der Roboter-Präzision, Makro-Shots vom Anrichten, Slow-Motion der Flammen, Gesichtsreaktionen der verkostenden Jury, Kontrast zwischen High-Tech-Küche und traditionellem Handwerk. Visuell stark und unterhaltsam.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/wirtschaft/technologie/roboter-koch-wettbewerb-hamburg-101.html",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Roboter in der Küche: KI fordert Sterneköche heraus"
+        },
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/wissenschaft/technik/koch-roboter-vs-sternekoch-a-12345.html",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Koch-Battle: Wenn künstliche Intelligenz Haute Cuisine macht"
+        },
+        {
+          "name": "NDR",
+          "url": "https://www.ndr.de/nachrichten/hamburg/koch-roboter-wettbewerb-technologie",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Hamburg: Roboter-Koch gewinnt überraschend gegen Sternekoch"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "15 Min",
+        "intro": "Split-Screen: Links eine High-Tech-Küche mit Roboter-Armen, rechts ein Sternekoch in traditioneller Küche. Voice-Over: 'Tradition gegen Zukunft - wer kocht besser?'",
+        "segments": [
+          {
+            "title": "Die Kontrahenten (3 Min)",
+            "location": "Event-Location Hamburg",
+            "person": "Sternekoch Thomas Bühner + Roboter-Entwickler",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Das Koch-Battle (7 Min)",
+            "location": "Parallel-Küchen",
+            "person": "Koch vs. Roboter + Moderator",
+            "duration": "7 Min"
+          },
+          {
+            "title": "Die Verkostung (3 Min)",
+            "location": "Jury-Tisch",
+            "person": "Food-Kritiker Jürgen Dollase + Jury",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Das Urteil & Ausblick (2 Min)",
+            "location": "Studio",
+            "person": "Siegerehrung + Experten-Diskussion",
+            "duration": "2 Min"
+          }
+        ],
+        "finale": "Zeitraffer: Beide Gerichte nebeneinander. Die Jury verkostet. Spannung. Das Urteil: Split Decision. Voice-Over: 'Die Zukunft der Gastronomie hat gerade begonnen.'"
+      },
+      "date": "2025-12-09",
+      "newTopic": true
+    },
+    {
+      "id": 6,
+      "title": "Schlafen unter Wasser: Deutschlands erstes Unterwasser-Hotel an der Ostsee",
+      "tags": ["Bildstark", "Entertainment", "Gesellschaftlich Relevant", "Natur & Umwelt"],
+      "summary": "Vor der Küste Rügens eröffnet das erste Unterwasser-Hotel Deutschlands. 10 Meter unter der Ostsee schlafen Gäste zwischen Fischschwärmen und Seegras - mit 360-Grad-Panorama-Fenstern und nachhaltigem Luxus.",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre Unterwasser-Aufnahmen mit Fischschwärmen vor Panoramafenstern, Taucher-Perspektiven von außen, Luxus-Interior in surrealer Umgebung, Sonnenauf- und -untergang unter Wasser, Gäste-Reaktionen beim Aufwachen. Absolut einzigartig.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/inland/unterwasser-hotel-ostsee-ruegen-101.html",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Weltneuheit: Erstes Unterwasser-Hotel Deutschlands eröffnet"
+        },
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/reise/deutschland/unterwasser-hotel-ostsee-a-12345.html",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Schlafen mit den Fischen: Luxus 10 Meter unter der Ostsee"
+        },
+        {
+          "name": "Ostsee-Zeitung",
+          "url": "https://www.ostsee-zeitung.de/mecklenburg-vorpommern/ruegen/unterwasser-hotel",
+          "date": "2025-12-07",
+          "credibility": "green",
+          "headline": "Sensation auf Rügen: Unterwasser-Hotel nimmt erste Gäste auf"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "18 Min",
+        "intro": "Drohne fliegt über die ruhige Ostsee. Kamera taucht ins Wasser. 10 Meter tiefer erscheint eine futuristische Glaskuppel. Voice-Over: 'Willkommen in Deutschlands außergewöhnlichstem Hotel.'",
+        "segments": [
+          {
+            "title": "Check-In unter Wasser (4 Min)",
+            "location": "Hotel-Eingang + Druckschleuse",
+            "person": "Galileo-Reporter + Hotel-Managerin Lisa Wagner",
+            "duration": "4 Min"
+          },
+          {
+            "title": "Die Suite mit Meerblick (5 Min)",
+            "location": "Unterwasser-Suite",
+            "person": "Erste Hotelgäste",
+            "duration": "5 Min"
+          },
+          {
+            "title": "Technik & Nachhaltigkeit (4 Min)",
+            "location": "Technikraum + Meeresbiologe",
+            "person": "Chefingenieur + Umwelt-Experte",
+            "duration": "4 Min"
+          },
+          {
+            "title": "Eine Nacht unter Wasser (5 Min)",
+            "location": "Zeitraffer Nacht bis Morgen",
+            "person": "Gäste beim Aufwachen",
+            "duration": "5 Min"
+          }
+        ],
+        "finale": "Zeitraffer: 24 Stunden Unterwasser-Leben - von Sonnenaufgang bis Sonnenaufgang. Fischschwärme ziehen vorbei. Voice-Over: 'Eine Nacht, die man nie vergisst.'"
+      },
+      "date": "2025-12-08",
+      "newTopic": true
+    },
+    {
+      "id": 7,
+      "title": "Mega-Achterbahn-Weltrekord: Europa-Park baut höchste und schnellste Bahn Europas",
+      "tags": ["Bildstark", "Entertainment", "Gerade aktuell", "Technologie"],
+      "summary": "Mit 150 km/h und 120 Metern Höhe eröffnet der Europa-Park die extremste Achterbahn Europas. 12 Überschläge, 4G-Beschleunigung und ein 90-Grad-Drop sorgen für puren Adrenalin-Kick.",
+      "visualRating": 5,
+      "visualReason": "Helmet-Cam mit 360-Grad-Perspektive während der Fahrt, Drohnenaufnahmen der gigantischen Stahlkonstruktion, Slow-Motion-Shots der Überschläge, schreiende Gesichter, spektakuläre Landschaftsperspektiven aus 120m Höhe. Action-Garantie.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/wirtschaft/europa-park-achterbahn-weltrekord-101.html",
+          "date": "2025-12-07",
+          "credibility": "green",
+          "headline": "Weltrekord: Europa-Park eröffnet extremste Achterbahn Europas"
+        },
+        {
+          "name": "Badische Zeitung",
+          "url": "https://www.badische-zeitung.de/europa-park-rust-neue-achterbahn-rekord",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "150 km/h und 120 Meter hoch: Europa-Parks Mega-Attraktion"
+        },
+        {
+          "name": "SWR Aktuell",
+          "url": "https://www.swr.de/swraktuell/baden-wuerttemberg/suedbaden/europa-park-achterbahn",
+          "date": "2025-12-07",
+          "credibility": "green",
+          "headline": "Adrenalin pur: So fühlt sich Europas schnellste Achterbahn an"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "14 Min",
+        "intro": "Kamera schwebt vor riesiger Stahl-Achterbahn. Ein Zug rast vorbei mit kreischenden Passagieren. Voice-Over: '150 km/h, 120 Meter Höhe, 12 Überschläge - willkommen im Adrenalin-Himmel.'",
+        "segments": [
+          {
+            "title": "Die Technik hinter dem Wahnsinn (3 Min)",
+            "location": "Baustelle + Technik-Zentrale",
+            "person": "Chefingenieur Klaus Fischer",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Testfahrt mit dem Galileo-Team (6 Min)",
+            "location": "Achterbahn - vom Einstieg bis Ausstieg",
+            "person": "Reporter mit Helmet-Cam",
+            "duration": "6 Min"
+          },
+          {
+            "title": "Physik der Extreme (3 Min)",
+            "location": "Studio-Grafiken + Slow-Motion-Analysen",
+            "person": "Physiker Prof. Dr. Thomas Berg",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Die ersten Gäste (2 Min)",
+            "location": "Ausstieg + Interviews",
+            "person": "Adrenalin-Junkies",
+            "duration": "2 Min"
+          }
+        ],
+        "finale": "Montage der besten Schrei- und G-Force-Momente in Slow-Motion. Drohne zieht zurück und zeigt die Achterbahn in voller Pracht bei Sonnenuntergang."
+      },
+      "date": "2025-12-08",
+      "newTopic": true
+    },
+    {
+      "id": 8,
+      "title": "Grüne Revolution in Bottrop: Wie eine Ruhrgebiet-Stadt zur Vertical-Farming-Hauptstadt wird",
+      "tags": ["Gesellschaftlich Relevant", "Wissenschaft", "Bildstark", "Natur & Umwelt"],
+      "summary": "Mitten im Ruhrgebiet entsteht Europas größtes Vertical-Farming-Zentrum. Auf ehemaligen Industrieflächen wachsen jetzt 100.000 Salatköpfe pro Monat in vertikalen Farmen - lokal, nachhaltig und ganzjährig. Ein Strukturwandel-Erfolg.",
+      "visualRating": 4,
+      "visualReason": "Beeindruckender Kontrast zwischen alter Industrie und grünen Hightech-Farmen, Zeitraffer des Pflanzenwachstums, Makroaufnahmen der Hydroponic-Systeme, Drohnenflüge über umgewandelte Industriebrachen. Starke visuelle Story.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/wirtschaft/regional/nrw/vertical-farming-bottrop-101.html",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Vom Kohle-Standort zur grünen Zukunft: Bottrop setzt auf Vertical Farming"
+        },
+        {
+          "name": "WAZ (Westdeutsche Allgemeine Zeitung)",
+          "url": "https://www.waz.de/staedte/bottrop/vertical-farming-bottrop-ruhrgebiet",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Strukturwandel: Europas größte Vertical Farm entsteht in Bottrop"
+        },
+        {
+          "name": "WDR",
+          "url": "https://www1.wdr.de/nachrichten/ruhrgebiet/vertical-farming-bottrop-100.html",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "100.000 Salatköpfe pro Monat: Bottrop wird Vertical-Farming-Metropole"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "16 Min",
+        "intro": "Drohne fliegt über alte Industrieruinen im Ruhrgebiet. Plötzlich erscheint eine moderne, grün leuchtende Halle. Voice-Over: 'Wo früher Kohle war, wächst jetzt die Zukunft - vertikal.'",
+        "segments": [
+          {
+            "title": "Vom Bergbau zur Vertical Farm (4 Min)",
+            "location": "Ehemaliges Zechengelände",
+            "person": "Bürgermeister + Projekt-Initiatorin Dr. Anna Meyer",
+            "duration": "4 Min"
+          },
+          {
+            "title": "Rundgang durch die grüne Fabrik (6 Min)",
+            "location": "Vertical-Farm-Hallen",
+            "person": "Farm-Manager Stefan Koch",
+            "duration": "6 Min"
+          },
+          {
+            "title": "Nachhaltigkeit & Wirtschaft (4 Min)",
+            "location": "Kontrollzentrum + Labor",
+            "person": "Nachhaltigkeits-Expertin Prof. Dr. Lisa Weber",
+            "duration": "4 Min"
+          },
+          {
+            "title": "Vom Feld auf den Teller (2 Min)",
+            "location": "Lokaler Supermarkt + Restaurant",
+            "person": "Köche und Verbraucher",
+            "duration": "2 Min"
+          }
+        ],
+        "finale": "Zeitraffer: Von der leeren Industriehalle bis zur vollständig bepflanzten Vertical Farm. Voice-Over: 'Bottrop beweist: Strukturwandel kann grün und erfolgreich sein.'"
+      },
+      "date": "2025-12-10",
+      "newTopic": true
+    },
+    {
+      "id": 9,
+      "title": "Zero-Waste-Experiment Berlin: Familie lebt 6 Monate komplett ohne Müll",
+      "tags": ["Gesellschaftlich Relevant", "Natur & Umwelt", "Entertainment"],
+      "summary": "Eine vierköpfige Berliner Familie wagt das Experiment: Sechs Monate lang produzieren sie keinen Müll. Unverpackt-Läden, Kompost-Toilette und selbstgemachte Zahnpasta - ein radikaler Lebensstil-Test mit überraschenden Erkenntnissen.",
+      "visualRating": 3,
+      "visualReason": "Dokumentarischer Charakter mit authentischen Familien-Situationen, Vorher-Nachher-Vergleiche der Müllmengen, kreative DIY-Lösungen, Einblicke in Unverpackt-Läden, emotionale Momente. Visuell solide, aber weniger spektakulär.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesspiegel",
+          "url": "https://www.tagesspiegel.de/berlin/zero-waste-experiment-berliner-familie",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Null Müll in sechs Monaten: Berliner Familie im Selbstversuch"
+        },
+        {
+          "name": "rbb24",
+          "url": "https://www.rbb24.de/panorama/beitrag/2025/12/berlin-zero-waste-familie-experiment.html",
+          "date": "2025-12-08",
+          "credibility": "green",
+          "headline": "Leben ohne Mülltonne: So funktioniert Zero Waste im Alltag"
+        },
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/panorama/gesellschaft/zero-waste-berlin-familie-a-12345.html",
+          "date": "2025-12-09",
+          "credibility": "green",
+          "headline": "Sechs Monate ohne Müll: Was eine Berliner Familie gelernt hat"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12 Min",
+        "intro": "Kamera zeigt zwei Mülltonnen. Eine quillt über, die andere ist leer. Voice-Over: 'Zwei Familien, ein Unterschied: Die eine produziert 40kg Müll pro Woche, die andere: Null.'",
+        "segments": [
+          {
+            "title": "Tag 1 - Der Start (3 Min)",
+            "location": "Wohnung Familie Schneider, Berlin-Prenzlauer Berg",
+            "person": "Familie Schneider (Eltern + 2 Kinder)",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Monat 3 - Die Herausforderungen (4 Min)",
+            "location": "Unverpackt-Laden + Wohnung",
+            "person": "Mutter Julia Schneider + Expertin",
+            "duration": "4 Min"
+          },
+          {
+            "title": "DIY-Lösungen (3 Min)",
+            "location": "Küche + Bad",
+            "person": "Familie bei der Herstellung von Zahnpasta, Shampoo etc.",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Monat 6 - Das Fazit (2 Min)",
+            "location": "Wohnzimmer",
+            "person": "Familie + Umweltpsychologe",
+            "duration": "2 Min"
+          }
+        ],
+        "finale": "Vorher-Nachher-Vergleich: Sechs Monate Müll einer Durchschnittsfamilie vs. der Zero-Waste-Familie (ein Marmeladenglas voll). Voice-Over: 'Unmöglich? Diese Familie beweist das Gegenteil.'"
+      },
+      "date": "2025-12-09",
+      "newTopic": true
+    },
+    {
+      "id": 10,
+      "title": "KI steuert Münchens U-Bahn - Künstliche Intelligenz optimiert den Nahverkehr",
+      "tags": ["Technologie", "Wissenschaft", "Gesellschaftlich Relevant", "Gerade aktuell"],
+      "summary": "Als erste deutsche Großstadt setzt München vollständig auf KI-gesteuerte U-Bahnen. Die künstliche Intelligenz plant Routen, optimiert Taktzeiten und reagiert in Echtzeit auf Störungen. Ein Blick in die Zukunft des öffentlichen Nahverkehrs.",
+      "visualRating": 3,
+      "visualReason": "Kontrollzentrum mit Bildschirm-Walls voller Echtzeitdaten, Führerstandskamera der autonom fahrenden U-Bahn, Interview-Situationen in modernen Zügen, Grafiken zur KI-Steuerung. Technisch interessant, aber weniger Action-lastig.",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/inland/regional/bayern/ki-u-bahn-muenchen-101.html",
+          "date": "2025-12-11",
+          "credibility": "green",
+          "headline": "Premiere: Münchens U-Bahn fährt jetzt mit Künstlicher Intelligenz"
+        },
+        {
+          "name": "BR24",
+          "url": "https://www.br.de/nachrichten/bayern/muenchen-ki-ubahn-automatisierung",
+          "date": "2025-12-10",
+          "credibility": "green",
+          "headline": "Autonome U-Bahn: Wie KI den Münchner Nahverkehr revolutioniert"
+        },
+        {
+          "name": "Süddeutsche Zeitung",
+          "url": "https://www.sueddeutsche.de/muenchen/mvg-ki-ubahn-autonomes-fahren",
+          "date": "2025-12-11",
+          "credibility": "green",
+          "headline": "Künstliche Intelligenz: Münchens U-Bahnen fahren jetzt alleine"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "14 Min",
+        "intro": "Führerstandskamera einer U-Bahn. Der Fahrerplatz ist leer. Die Bahn fährt perfekt durch den Tunnel. Voice-Over: 'Willkommen in der Zukunft - gesteuert von künstlicher Intelligenz.'",
+        "segments": [
+          {
+            "title": "Die KI-Zentrale (4 Min)",
+            "location": "MVG Kontrollzentrum München",
+            "person": "KI-Projekt-Leiter Dr. Michael Hartmann",
+            "duration": "4 Min"
+          },
+          {
+            "title": "Mitfahrt in der autonomen U-Bahn (5 Min)",
+            "location": "U-Bahn München",
+            "person": "Galileo-Reporter + Fahrgäste",
+            "duration": "5 Min"
+          },
+          {
+            "title": "Wie funktioniert die KI? (3 Min)",
+            "location": "Studio mit Grafiken",
+            "person": "KI-Experte Prof. Dr. Anna Weber (TUM)",
+            "duration": "3 Min"
+          },
+          {
+            "title": "Sicherheit und Zukunft (2 Min)",
+            "location": "Kontrollzentrum + Statements",
+            "person": "Sicherheitsbeauftragter + Fahrgäste",
+            "duration": "2 Min"
+          }
+        ],
+        "finale": "Zeitraffer: 24 Stunden Münchner U-Bahn-Verkehr, gesteuert von KI. Millionen Datenpunkte fließen zusammen. Voice-Over: 'Die Zukunft fährt nicht mehr von Hand - sie denkt mit.'"
+      },
+      "date": "2025-12-11",
+      "newTopic": true
+    }
+  ]
+}
