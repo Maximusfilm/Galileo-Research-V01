@@ -15,6 +15,8 @@ let allTopics = [];
 let filteredTopics = [];
 let activeFilters = new Set();
 let currentSort = 'relevance';
+let searchQuery = '';
+let searchDebounceTimer = null;
 
 // ========================================
 // AUTHENTICATION
@@ -82,6 +84,7 @@ async function initApp() {
         renderFilters();
         renderTopics();
         updateLastUpdate();
+        setupSearchListener();
     } catch (error) {
         console.error('Fehler beim Laden der Daten:', error);
         showError('Daten konnten nicht geladen werden. Bitte später erneut versuchen.');
@@ -199,6 +202,85 @@ function generateMockData() {
 }
 
 // ========================================
+// SEARCH FUNCTIONALITY
+// ========================================
+function setupSearchListener() {
+    const searchInput = document.getElementById('searchInput');
+    const searchClear = document.getElementById('searchClear');
+
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            searchQuery = e.target.value.toLowerCase().trim();
+
+            // Show/hide clear button
+            if (searchQuery) {
+                searchClear.classList.remove('hidden');
+            } else {
+                searchClear.classList.add('hidden');
+            }
+
+            // Debounced search
+            clearTimeout(searchDebounceTimer);
+            searchDebounceTimer = setTimeout(() => {
+                performSearch();
+            }, 300);
+        });
+    }
+}
+
+function performSearch() {
+    applyFilters();
+    renderTopics();
+    updateSearchResults();
+}
+
+function clearSearch() {
+    const searchInput = document.getElementById('searchInput');
+    const searchClear = document.getElementById('searchClear');
+    const searchResults = document.getElementById('searchResults');
+
+    searchInput.value = '';
+    searchQuery = '';
+    searchClear.classList.add('hidden');
+    searchResults.classList.add('hidden');
+
+    performSearch();
+}
+
+function updateSearchResults() {
+    const searchResults = document.getElementById('searchResults');
+    const searchResultsText = document.getElementById('searchResultsText');
+
+    if (searchQuery) {
+        const total = allTopics.length;
+        const found = filteredTopics.length;
+        searchResultsText.textContent = `${found} von ${total} Themen gefunden`;
+        searchResults.classList.remove('hidden');
+    } else {
+        searchResults.classList.add('hidden');
+    }
+}
+
+function matchesSearch(topic) {
+    if (!searchQuery) return true;
+
+    // Split search query into words (OR logic between words)
+    const searchTerms = searchQuery.split(' ').filter(term => term.length > 0);
+
+    // Search in multiple fields
+    const searchableText = [
+        topic.title,
+        topic.summary,
+        topic.visualReason,
+        ...topic.tags,
+        ...topic.sources.map(s => s.headline || s.name)
+    ].join(' ').toLowerCase();
+
+    // Return true if ANY search term is found (OR logic)
+    return searchTerms.some(term => searchableText.includes(term));
+}
+
+// ========================================
 // FILTERING & SORTING
 // ========================================
 function getAllTags() {
@@ -221,15 +303,23 @@ function toggleFilter(tag) {
 }
 
 function applyFilters() {
-    if (activeFilters.size === 0) {
-        filteredTopics = [...allTopics];
-    } else {
-        filteredTopics = allTopics.filter(topic => {
+    // First filter by tags
+    let topics = allTopics;
+
+    if (activeFilters.size > 0) {
+        topics = topics.filter(topic => {
             return Array.from(activeFilters).every(filter =>
                 topic.tags.includes(filter)
             );
         });
     }
+
+    // Then filter by search query
+    if (searchQuery) {
+        topics = topics.filter(topic => matchesSearch(topic));
+    }
+
+    filteredTopics = topics;
 }
 
 function clearFilters() {
@@ -293,33 +383,35 @@ function renderTopics() {
     if (filteredTopics.length === 0) {
         topicsListContainer.innerHTML = `
             <div class="loading">
-                <p>Keine Themen gefunden. Versuchen Sie andere Filter.</p>
+                <p>Keine Themen gefunden. Versuchen Sie andere Filter oder Suchbegriffe.</p>
             </div>
         `;
         return;
     }
 
     topicsListContainer.innerHTML = filteredTopics.map(topic => `
-        <div class="topic-card" onclick="showTopicDetail(${topic.id})">
-            <div class="topic-header">
-                <h3 class="topic-title">${topic.title}</h3>
-                <div class="topic-badges">
-                    <span class="badge badge-${topic.credibility}">
-                        ${topic.credibility === 'green' ? '🟢' : topic.credibility === 'yellow' ? '🟡' : '🔴'}
-                    </span>
+        <div class="topic-card" data-credibility="${topic.credibility}" onclick="showTopicDetail(${topic.id})">
+            <div class="topic-content">
+                <div class="topic-header">
+                    <h3 class="topic-title">${topic.title}</h3>
+                    <div class="topic-badges">
+                        <span class="badge badge-${topic.credibility}">
+                            ${topic.credibility === 'green' ? '🟢' : topic.credibility === 'yellow' ? '🟡' : '🔴'}
+                        </span>
+                    </div>
                 </div>
-            </div>
-            <div class="topic-tags">
-                ${topic.tags.map(tag => `<span class="topic-tag">${tag}</span>`).join('')}
-            </div>
-            <p class="topic-summary">${topic.summary}</p>
-            <div class="topic-meta">
-                <div class="visual-rating">
-                    <span class="visual-stars">${'⭐'.repeat(topic.visualRating)}</span>
-                    <span>${topic.visualRating}/5 Visuell</span>
+                <div class="topic-tags">
+                    ${topic.tags.map(tag => `<span class="topic-tag">${tag}</span>`).join('')}
                 </div>
-                <div class="duplicate-status ${topic.isDuplicate ? 'duplicate' : 'new'}">
-                    ${topic.isDuplicate ? '⚠️ Bereits behandelt' : '✅ Neues Thema'}
+                <p class="topic-summary">${topic.summary}</p>
+                <div class="topic-meta">
+                    <div class="visual-rating">
+                        <span class="visual-stars">${'⭐'.repeat(topic.visualRating)}</span>
+                        <span>${topic.visualRating}/5 Visuell</span>
+                    </div>
+                    <div class="duplicate-status ${topic.isDuplicate ? 'duplicate' : 'new'}">
+                        ${topic.isDuplicate ? '⚠️ Bereits behandelt' : '✅ Neues Thema'}
+                    </div>
                 </div>
             </div>
         </div>
