@@ -89,6 +89,7 @@ async function initApp() {
     } catch (error) {
         console.error('Fehler beim Laden der Daten:', error);
         showError('Daten konnten nicht geladen werden. Bitte später erneut versuchen.');
+            setupAiSearchButton();
     }
 }
 
@@ -885,3 +886,43 @@ Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
 }
 
 window.searchNewTopicsWithGemini = searchNewTopicsWithGemini;
+
+// ==========================================
+// AI WEB SEARCH BUTTON SETUP
+// ==========================================
+
+function setupAiSearchButton() {
+    const button = document.getElementById('aiWebSearchBtn');
+    
+    if (!button) {
+        console.warn('AI Web Search button not found');
+        return;
+    }
+
+    button.addEventListener('click', async () => {
+        const query = prompt('🌐 Geben Sie ein Thema für die KI-Web-Suche ein:\n\n(z.B. "Innovative Nachhaltigkeit", "Neue Rekorde", "Futuristische Technologie")');
+        
+        if (!query || query.trim() === '') {
+            return;
+        }
+
+        console.log('Starting AI web search for:', query);
+        
+        const newTopics = await searchNewTopicsWithGemini(query.trim());
+        
+        if (newTopics && newTopics.length > 0) {
+            // Replace mock data with AI-generated topics
+            allTopics = newTopics;
+            filteredTopics = [...allTopics];
+            
+            // Re-render topics
+            renderTopics();
+            updateLastUpdate();
+            
+            // Show success message
+            alert(`✅ Erfolgreich! ${newTopics.length} neue Themen zu "${query}" gefunden!`);
+        } else {
+            alert('❌ Keine Themen gefunden. Bitte versuchen Sie es erneut oder prüfen Sie Ihren API-Key.');
+        }
+    });
+}
