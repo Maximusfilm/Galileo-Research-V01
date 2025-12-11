@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galileo Research Tool | Maximus Film</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Login Overlay -->
+    <div id="loginOverlay" class="login-overlay">
+        <div class="login-container">
+            <div class="login-header">
+                <h1>🔒 Galileo Research Tool</h1>
+                <p class="login-subtitle">Maximus Film GmbH</p>
+            </div>
+            <form id="loginForm" class="login-form">
+                <div class="form-group">
+                    <label for="password">Passwort</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Passwort eingeben"
+                        autocomplete="current-password"
+                        required
+                    >
+                </div>
+                <button type="submit" class="btn-primary">Anmelden</button>
+                <p id="loginError" class="error-message"></p>
+            </form>
+        </div>
+    </div>
+
+    <!-- Main Application -->
+    <div id="mainApp" class="main-app hidden">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <div class="logo-container">
+                    <div class="logo-placeholder">
+                        <svg width="50" height="50" viewBox="0 0 50 50">
+                            <circle cx="25" cy="25" r="20" fill="#0066CC"/>
+                            <text x="25" y="32" font-size="20" fill="white" text-anchor="middle" font-weight="bold">G</text>
+                        </svg>
+                    </div>
+                    <div class="header-text">
+                        <h1>Galileo Research Tool</h1>
+                        <p class="subtitle">Maximus Film GmbH</p>
+                    </div>
+                </div>
+                <div class="header-actions">
+                    <span class="last-update" id="lastUpdate">Letztes Update: --</span>
+                    <button class="btn-secondary" onclick="refreshData()">🔄 Aktualisieren</button>
+                    <button class="btn-secondary" onclick="logout()">Abmelden</button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Filters Section -->
+        <section class="filters-section">
+            <div class="container">
+                <h2>🏷️ Filter nach Schlagwörtern</h2>
+                <div class="filter-info">
+                    <p>Ziehe Schlagwörter per Drag & Drop oder klicke zum Filtern</p>
+                </div>
+                <div id="filterTags" class="filter-tags">
+                    <!-- Tags werden dynamisch geladen -->
+                </div>
+                <div class="active-filters">
+                    <strong>Aktive Filter:</strong>
+                    <div id="activeFilters" class="active-filter-list">
+                        <span class="no-filters">Keine Filter aktiv</span>
+                    </div>
+                    <button class="btn-text" onclick="clearFilters()">Alle zurücksetzen</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Topics Section -->
+        <section class="topics-section">
+            <div class="container">
+                <div class="topics-header">
+                    <h2>📰 Aktuelle Themenvorschläge</h2>
+                    <div class="sort-controls">
+                        <label>Sortierung:</label>
+                        <select id="sortSelect" onchange="sortTopics()">
+                            <option value="relevance">Relevanz (Schlagwörter)</option>
+                            <option value="date">Datum (Neueste zuerst)</option>
+                            <option value="visual">Visuelles Potenzial</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="topics-count">
+                    <span id="topicsCount">0 Themen gefunden</span>
+                </div>
+                <div id="topicsList" class="topics-list">
+                    <!-- Themen werden dynamisch geladen -->
+                    <div class="loading">
+                        <div class="spinner"></div>
+                        <p>Lade Themen...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Topic Detail Modal -->
+    <div id="topicModal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle"></h2>
+                <button class="modal-close" onclick="closeModal()">&times;</button>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <!-- Detail-Inhalt wird dynamisch geladen -->
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" onclick="closeModal()">Schließen</button>
+                <button class="btn-primary" onclick="exportTopicPDF()">📄 PDF Export</button>
+                <button class="btn-primary" onclick="shareToTeams()">📧 Teams teilen</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

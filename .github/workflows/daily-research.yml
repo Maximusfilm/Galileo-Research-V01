@@ -1,0 +1,84 @@
+name: Daily Research Update
+
+on:
+  # Täglich um 7:00 Uhr MEZ (6:00 UTC im Winter, 5:00 UTC im Sommer)
+  schedule:
+    - cron: '0 6 * * *'  # 6:00 UTC = 7:00 MEZ (Winterzeit)
+
+  # Manueller Trigger für Tests
+  workflow_dispatch:
+
+jobs:
+  research:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write  # Benötigt um Änderungen zu committen
+
+    steps:
+      - name: 📥 Checkout Repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: 📦 Install Dependencies
+        run: |
+          pip install --upgrade pip
+          pip install -r scripts/requirements.txt
+
+      - name: 🔍 Run Research Script
+        env:
+          # Optional: API-Keys als GitHub Secrets hinterlegen
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+        run: |
+          echo "Starting Galileo Research Tool..."
+          python scripts/main_research.py
+
+      - name: 📊 Check for Changes
+        id: check_changes
+        run: |
+          if git diff --quiet docs/data/topics.json; then
+            echo "changed=false" >> $GITHUB_OUTPUT
+            echo "No changes detected"
+          else
+            echo "changed=true" >> $GITHUB_OUTPUT
+            echo "Changes detected in topics.json"
+          fi
+
+      - name: 💾 Commit and Push Changes
+        if: steps.check_changes.outputs.changed == 'true'
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "GitHub Actions Bot"
+
+          git add docs/data/topics.json
+
+          git commit -m "$(cat <<'EOF'
+          🤖 Automatisches Recherche-Update
+
+          Tägliche automatische Aktualisierung der Themenvorschläge
+          Durchgeführt am $(date +'%d.%m.%Y um %H:%M Uhr')
+          EOF
+          )"
+
+          git push
+
+      - name: ✅ Success Notification
+        if: success()
+        run: |
+          echo "✅ Research update completed successfully!"
+          echo "📅 Date: $(date +'%d.%m.%Y %H:%M:%S')"
+
+      - name: ❌ Failure Notification
+        if: failure()
+        run: |
+          echo "❌ Research update failed!"
+          echo "Please check the logs for details."

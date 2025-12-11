@@ -1,0 +1,145 @@
+{
+  "lastUpdate": "2025-12-11T07:00:00Z",
+  "topics": [
+    {
+      "id": 1,
+      "title": "Neue Quantencomputer-Durchbruch in München",
+      "tags": [
+        "Wissenschaft",
+        "Bildstark",
+        "Gerade aktuell"
+      ],
+      "summary": "Forscher der TU München haben einen Durchbruch in der Quantencomputer-Technologie erzielt. Das Thema ist visuell stark umsetzbar durch die spektakulären Laboraufnahmen.",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre Labor-Settings, futuristische Technologie, gut filmbare Experimente",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Nature",
+          "url": "https://www.nature.com",
+          "credibility": "green"
+        },
+        {
+          "name": "Süddeutsche Zeitung",
+          "url": "https://www.sueddeutsche.de",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Was sind Quantencomputer? (2 Min)",
+          "Hauptteil: Besuch im Labor der TU München (6 Min)",
+          "Experteninterviews: Was bedeutet der Durchbruch? (4 Min)",
+          "Finale: Auswirkungen auf unseren Alltag (2 Min)"
+        ],
+        "locations": [
+          "TU München Labor",
+          "Quantencomputer-Anlage"
+        ],
+        "protagonists": [
+          "Prof. Dr. Schmidt (TU München)",
+          "Doktorand Max Müller"
+        ],
+        "dramaticArc": "Von der abstrakten Theorie zur greifbaren Zukunftstechnologie"
+      },
+      "date": "2025-12-10"
+    },
+    {
+      "id": 2,
+      "title": "Vertikale Farmen erobern Berliner Dächer",
+      "tags": [
+        "Gesellschaftlich Relevant",
+        "Bildstark",
+        "Wissenschaft"
+      ],
+      "summary": "Urban Farming erreicht neue Dimensionen: Auf Berliner Hochhausdächern entstehen hochmoderne vertikale Farmen, die ganzjährig frisches Gemüse produzieren.",
+      "visualRating": 5,
+      "visualReason": "Beeindruckende Drohnenaufnahmen, grüne Oasen in der Stadt, Zeitraffer-Aufnahmen des Pflanzenwachstums",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de",
+          "credibility": "green"
+        },
+        {
+          "name": "rbb24",
+          "url": "https://www.rbb24.de",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Lebensmittelversorgung der Zukunft (2 Min)",
+          "Hauptteil: Besuch der vertikalen Farm (8 Min)",
+          "Vergleich: Traditionelle vs. vertikale Landwirtschaft (4 Min)",
+          "Finale: Verkostung und Ausblick (3 Min)"
+        ],
+        "locations": [
+          "Berliner Hochhaus-Dach",
+          "Traditioneller Bauernhof zum Vergleich"
+        ],
+        "protagonists": [
+          "Gründer der Urban Farm",
+          "Traditioneller Landwirt",
+          "Ernährungsexperte"
+        ],
+        "dramaticArc": "Vom Platzmangel zur innovativen Lösung - die Zukunft wächst nach oben"
+      },
+      "date": "2025-12-09"
+    },
+    {
+      "id": 3,
+      "title": "Mysteriöse Lichterscheinung über Norddeutschland",
+      "tags": [
+        "Gerade aktuell",
+        "Bildstark",
+        "Entertainment"
+      ],
+      "summary": "Tausende Menschen melden spektakuläre Lichterscheinungen am Nachthimmel. Astronomen haben eine überraschende Erklärung gefunden.",
+      "visualRating": 4,
+      "visualReason": "Beeindruckende Amateur-Videos, Nachtaufnahmen, Interview-Situationen mit Augenzeugen",
+      "credibility": "yellow",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de",
+          "credibility": "green"
+        },
+        {
+          "name": "Reddit Deutschland",
+          "url": "https://www.reddit.com/r/de",
+          "credibility": "red"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "8-12 Minuten",
+        "structure": [
+          "Intro: Die mysteriösen Sichtungen (2 Min)",
+          "Hauptteil: Augenzeugen berichten (4 Min)",
+          "Aufklärung: Wissenschaftliche Erklärung (3 Min)",
+          "Finale: Weitere Phänomene am Himmel (2 Min)"
+        ],
+        "locations": [
+          "Norddeutsche Küste",
+          "Planetarium Hamburg"
+        ],
+        "protagonists": [
+          "Augenzeugen",
+          "Astronom Dr. Weber",
+          "Galileo Reporter vor Ort"
+        ],
+        "dramaticArc": "Von der Verwirrung zur Aufklärung - wenn Wissenschaft Rätsel löst"
+      },
+      "date": "2025-12-11"
+    }
+  ]
+}
