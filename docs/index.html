@@ -60,6 +60,44 @@
             </div>
         </header>
 
+        <!-- API Key Configuration Section -->
+        <section class="api-config-section">
+            <div class="container">
+                <div class="api-config-container">
+                    <div class="api-config-header">
+                        <h3>🔑 Perplexity API Konfiguration</h3>
+                        <button class="btn-text" onclick="toggleApiConfig()">
+                            <span id="apiConfigToggle">Einstellungen</span>
+                        </button>
+                    </div>
+                    <div id="apiConfigPanel" class="api-config-panel hidden">
+                        <div class="api-config-info">
+                            <p>Geben Sie Ihren Perplexity API-Key ein, um KI-gestützte Themensuche zu aktivieren.</p>
+                            <p class="api-config-link">
+                                <a href="https://www.perplexity.ai/settings/api" target="_blank">
+                                    🔗 API-Key erhalten bei Perplexity.ai
+                                </a>
+                            </p>
+                        </div>
+                        <div class="api-config-input-group">
+                            <input
+                                type="password"
+                                id="apiKeyInput"
+                                class="api-key-input"
+                                placeholder="pplx-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                                autocomplete="off"
+                            >
+                            <button class="btn-primary" onclick="saveApiKey()">💾 Speichern</button>
+                            <button class="btn-secondary" onclick="removeApiKey()">🗑️ Löschen</button>
+                        </div>
+                        <div id="apiKeyStatus" class="api-key-status">
+                            <span id="apiKeyStatusText"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Search Bar Section -->
         <section class="search-section">
             <div class="container">
@@ -141,6 +179,15 @@
         </section>
     </div>
 
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Suche nach Themen...</div>
+            <div class="loading-subtext">Die Perplexity KI analysiert Ihre Anfrage</div>
+        </div>
+    </div>
+
     <!-- Topic Detail Modal -->
     <div id="topicModal" class="modal hidden">
         <div class="modal-content">
@@ -159,6 +206,7 @@
         </div>
     </div>
 
+    <script src="js/perplexity-service.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
