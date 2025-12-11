@@ -60,6 +60,36 @@
             </div>
         </header>
 
+        <!-- Search Bar Section -->
+        <section class="search-section">
+            <div class="container">
+                <div class="search-container">
+                    <div class="search-wrapper">
+                        <svg class="search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="11" cy="11" r="8"></circle>
+                            <path d="M21 21l-4.35-4.35"></path>
+                        </svg>
+                        <input
+                            type="text"
+                            id="searchInput"
+                            class="search-input"
+                            placeholder="Thema suchen... (z.B. Drohnen, Nachhaltigkeit, Rekorde)"
+                            autocomplete="off"
+                        >
+                        <button id="searchClear" class="search-clear hidden" onclick="clearSearch()">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <line x1="18" y1="6" x2="6" y2="18"></line>
+                                <line x1="6" y1="6" x2="18" y2="18"></line>
+                            </svg>
+                        </button>
+                    </div>
+                    <div id="searchResults" class="search-results-count hidden">
+                        <span id="searchResultsText"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Filters Section -->
         <section class="filters-section">
             <div class="container">
