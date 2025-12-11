@@ -85,6 +85,7 @@ async function initApp() {
         renderTopics();
         updateLastUpdate();
         setupSearchListener();
+        updateApiKeyStatus();
     } catch (error) {
         console.error('Fehler beim Laden der Daten:', error);
         showError('Daten konnten nicht geladen werden. Bitte später erneut versuchen.');
@@ -242,8 +243,71 @@ function setupSearchListener() {
     }
 }
 
-function performSearch() {
+async function performSearch() {
     console.log('🔎 Führe Suche aus:', searchQuery);
+
+    // Wenn Suchquery vorhanden ist und API Key gesetzt, nutze Perplexity API
+    if (searchQuery && searchQuery.length >= 3) {
+        const apiKey = getApiKey();
+
+        if (apiKey) {
+            console.log('🤖 Nutze Perplexity API für Suche...');
+
+            // Show loading overlay
+            showLoadingOverlay();
+
+            try {
+                const result = await searchGalileoTopics(searchQuery);
+
+                if (result.success && result.topics && result.topics.length > 0) {
+                    console.log('✅ Perplexity Themen erhalten:', result.topics.length);
+
+                    // Replace filtered topics with API results
+                    filteredTopics = result.topics;
+
+                    // Hide loading overlay
+                    hideLoadingOverlay();
+
+                    // Render the new topics
+                    renderTopics();
+                    updateSearchResults();
+
+                    return;
+                } else {
+                    console.warn('⚠️ Perplexity API lieferte keine Ergebnisse, nutze Fallback');
+                    hideLoadingOverlay();
+
+                    // Show error message if API failed
+                    if (result.error === 'NO_API_KEY') {
+                        showApiKeyError('Kein API-Key gefunden. Bitte konfigurieren Sie Ihren Perplexity API-Key.');
+                    } else if (result.error === 'INVALID_API_KEY') {
+                        showApiKeyError('Ungültiger API-Key. Bitte überprüfen Sie Ihren Perplexity API-Key.');
+                    } else if (result.error) {
+                        showApiKeyError(`API-Fehler: ${result.error}`);
+                    }
+
+                    // Fall back to local search
+                    performLocalSearch();
+                }
+            } catch (error) {
+                console.error('❌ Fehler bei Perplexity API:', error);
+                hideLoadingOverlay();
+                showApiKeyError('Fehler bei der API-Anfrage. Nutze lokale Suche.');
+
+                // Fall back to local search
+                performLocalSearch();
+            }
+        } else {
+            console.log('ℹ️ Kein API-Key, nutze lokale Suche');
+            performLocalSearch();
+        }
+    } else {
+        // No search query or too short, use local search
+        performLocalSearch();
+    }
+}
+
+function performLocalSearch() {
     console.log('📊 Alle Themen:', allTopics.length);
     applyFilters();
     console.log('✅ Gefilterte Themen:', filteredTopics.length);
@@ -626,4 +690,122 @@ function showError(message) {
             <p style="color: var(--danger-red);">❌ ${message}</p>
         </div>
     `;
+}
+
+// ========================================
+// API CONFIGURATION FUNCTIONS
+// ========================================
+function toggleApiConfig() {
+    const panel = document.getElementById('apiConfigPanel');
+    const toggle = document.getElementById('apiConfigToggle');
+
+    if (panel.classList.contains('hidden')) {
+        panel.classList.remove('hidden');
+        toggle.textContent = 'Ausblenden';
+    } else {
+        panel.classList.add('hidden');
+        toggle.textContent = 'Einstellungen';
+    }
+}
+
+function saveApiKey() {
+    const input = document.getElementById('apiKeyInput');
+    const apiKey = input.value.trim();
+
+    if (!apiKey) {
+        showApiKeyStatus('Bitte geben Sie einen API-Key ein.', 'error');
+        return;
+    }
+
+    if (!apiKey.startsWith('pplx-')) {
+        showApiKeyStatus('Ungültiges API-Key Format. Der Key sollte mit "pplx-" beginnen.', 'error');
+        return;
+    }
+
+    // Save via perplexity-service
+    const saved = setApiKey(apiKey);
+
+    if (saved) {
+        showApiKeyStatus('✅ API-Key erfolgreich gespeichert!', 'success');
+        updateApiKeyStatus();
+
+        // Clear input for security
+        setTimeout(() => {
+            input.value = '';
+        }, 1000);
+    } else {
+        showApiKeyStatus('Fehler beim Speichern des API-Keys.', 'error');
+    }
+}
+
+function removeApiKey() {
+    const confirmed = confirm('Möchten Sie den gespeicherten API-Key wirklich löschen?');
+
+    if (confirmed) {
+        clearApiKey();
+        showApiKeyStatus('🗑️ API-Key wurde gelöscht.', 'info');
+        updateApiKeyStatus();
+
+        // Clear input
+        document.getElementById('apiKeyInput').value = '';
+    }
+}
+
+function updateApiKeyStatus() {
+    const apiKey = getApiKey();
+    const statusElement = document.getElementById('apiKeyStatus');
+    const statusText = document.getElementById('apiKeyStatusText');
+
+    if (apiKey) {
+        const maskedKey = 'pplx-' + '•'.repeat(20) + apiKey.slice(-4);
+        statusText.textContent = `✅ API-Key gespeichert: ${maskedKey}`;
+        statusElement.className = 'api-key-status success';
+    } else {
+        statusText.textContent = 'ℹ️ Kein API-Key gespeichert. KI-Suche nicht verfügbar.';
+        statusElement.className = 'api-key-status info';
+    }
+}
+
+function showApiKeyStatus(message, type) {
+    const statusElement = document.getElementById('apiKeyStatus');
+    const statusText = document.getElementById('apiKeyStatusText');
+
+    statusText.textContent = message;
+    statusElement.className = `api-key-status ${type}`;
+
+    // Auto-hide after 5 seconds for success/error messages
+    if (type === 'success' || type === 'error') {
+        setTimeout(() => {
+            updateApiKeyStatus();
+        }, 5000);
+    }
+}
+
+function showApiKeyError(message) {
+    const topicsListContainer = document.getElementById('topicsList');
+    topicsListContainer.innerHTML = `
+        <div class="loading">
+            <p style="color: var(--source-yellow);">⚠️ ${message}</p>
+            <button class="btn-primary" onclick="toggleApiConfig()" style="margin-top: 1rem; max-width: 300px;">
+                API-Key konfigurieren
+            </button>
+        </div>
+    `;
+}
+
+// ========================================
+// LOADING OVERLAY FUNCTIONS
+// ========================================
+function showLoadingOverlay() {
+    const overlay = document.getElementById('loadingOverlay');
+    if (overlay) {
+        overlay.classList.remove('hidden');
+    }
+}
+
+function hideLoadingOverlay() {
+    const overlay = document.getElementById('loadingOverlay');
+    if (overlay) {
+        overlay.classList.add('hidden');
+    }
 }
