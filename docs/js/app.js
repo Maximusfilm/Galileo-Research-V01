@@ -245,10 +245,12 @@ function setupSearchListener() {
 
 async function performSearch() {
     console.log('🔎 Führe Suche aus:', searchQuery);
+    console.log('🔎 Suchlänge:', searchQuery ? searchQuery.length : 0);
 
     // Wenn Suchquery vorhanden ist und API Key gesetzt, nutze Perplexity API
     if (searchQuery && searchQuery.length >= 3) {
         const apiKey = getApiKey();
+        console.log('🔑 API-Key gefunden:', apiKey ? `${apiKey.substring(0, 8)}...${apiKey.slice(-4)}` : 'KEIN KEY');
 
         if (apiKey) {
             console.log('🤖 Nutze Perplexity API für Suche...');
@@ -303,6 +305,7 @@ async function performSearch() {
         }
     } else {
         // No search query or too short, use local search
+        console.log('⚠️ Suchquery zu kurz oder leer, nutze lokale Suche');
         performLocalSearch();
     }
 }
