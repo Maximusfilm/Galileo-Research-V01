@@ -225,6 +225,7 @@ function setupSearchListener() {
             clearTimeout(searchDebounceTimer);
             searchDebounceTimer = setTimeout(() => {
                 performSearch();
+                updateResetButton();
             }, 300);
         });
 
@@ -233,6 +234,7 @@ function setupSearchListener() {
             if (e.key === 'Enter') {
                 clearTimeout(searchDebounceTimer);
                 performSearch();
+                updateResetButton();
             }
         });
     } else {
@@ -260,6 +262,22 @@ function clearSearch() {
     searchResults.classList.add('hidden');
 
     performSearch();
+    updateResetButton();
+}
+
+function updateResetButton() {
+    const resetButton = document.getElementById('resetSearchButton');
+    if (resetButton) {
+        if (searchQuery) {
+            resetButton.classList.remove('hidden');
+        } else {
+            resetButton.classList.add('hidden');
+        }
+    }
+}
+
+function resetToAllTopics() {
+    clearSearch();
 }
 
 function updateSearchResults() {

@@ -402,6 +402,39 @@ body {
 }
 
 /* ========================================
+   RESET SEARCH BUTTON
+   ======================================== */
+.btn-reset-search {
+    width: 100%;
+    padding: 1rem 2rem;
+    background: linear-gradient(135deg, var(--galileo-orange), #FF6600);
+    color: white;
+    border: none;
+    border-radius: 12px;
+    font-size: 1.1rem;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-family: inherit;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 12px rgba(255, 136, 0, 0.3);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.btn-reset-search:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(255, 136, 0, 0.5), var(--glow-orange);
+    background: linear-gradient(135deg, #FF9900, var(--galileo-orange));
+}
+
+.btn-reset-search:active {
+    transform: translateY(0);
+}
+
+/* ========================================
    TOPICS SECTION
    ======================================== */
 .topics-section {
