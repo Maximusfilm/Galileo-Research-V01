@@ -5,7 +5,7 @@ const CONFIG = {
     PASSWORD: 'Sig1MpxP226KIT',
     SESSION_KEY: 'galileo_auth',
     SESSION_DURATION: 24 * 60 * 60 * 1000, // 24 hours
-    DATA_URL: './data/topics.json'
+    DATA_URL: './data/topics-mock.json'
 };
 
 // ========================================
@@ -209,8 +209,10 @@ function setupSearchListener() {
     const searchClear = document.getElementById('searchClear');
 
     if (searchInput) {
+        // Input event for real-time search
         searchInput.addEventListener('input', (e) => {
             searchQuery = e.target.value.toLowerCase().trim();
+            console.log('🔍 Suche:', searchQuery);
 
             // Show/hide clear button
             if (searchQuery) {
@@ -225,11 +227,24 @@ function setupSearchListener() {
                 performSearch();
             }, 300);
         });
+
+        // Enter key support
+        searchInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                clearTimeout(searchDebounceTimer);
+                performSearch();
+            }
+        });
+    } else {
+        console.error('❌ Suchfeld #searchInput nicht gefunden!');
     }
 }
 
 function performSearch() {
+    console.log('🔎 Führe Suche aus:', searchQuery);
+    console.log('📊 Alle Themen:', allTopics.length);
     applyFilters();
+    console.log('✅ Gefilterte Themen:', filteredTopics.length);
     renderTopics();
     updateSearchResults();
 }
@@ -277,7 +292,13 @@ function matchesSearch(topic) {
     ].join(' ').toLowerCase();
 
     // Return true if ANY search term is found (OR logic)
-    return searchTerms.some(term => searchableText.includes(term));
+    const matches = searchTerms.some(term => searchableText.includes(term));
+
+    if (matches) {
+        console.log('✓ Match:', topic.title);
+    }
+
+    return matches;
 }
 
 // ========================================
