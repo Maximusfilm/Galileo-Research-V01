@@ -60,6 +60,44 @@
             </div>
         </header>
 
+        <!-- API Key Configuration Section -->
+        <section class="api-config-section">
+            <div class="container">
+                <div class="api-config-container">
+                    <div class="api-config-header">
+                        <h3>🔑 Google Gemini Konfiguration</h3>
+                        <button class="btn-text" onclick="toggleApiConfig()">
+                            <span id="apiConfigToggle">Einstellungen</span>
+                        </button>
+                    </div>
+                    <div id="apiConfigPanel" class="api-config-panel hidden">
+                        <div class="api-config-info">
+                            <p>Geben Sie Ihren Google Gemini-Key ein, um KI-gestützte Themensuche zu aktivieren.</p>
+                            <p class="api-config-link">
+                                <a href="https://www.aistudio.google.com/app/apikey" target="_blank">
+                                    🔗 API-Key erhalten bei aistudio.google.com/app/apikey
+                                </a>
+                            </p>
+                        </div>
+                        <div class="api-config-input-group">
+                            <input
+                                type="password"
+                                id="apiKeyInput"
+                                class="api-key-input"
+                                placeholder="AIza...xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+                                autocomplete="off"
+                            >
+                            <button class="btn-primary" onclick="saveApiKey()">💾 Speichern</button>
+                            <button class="btn-secondary" onclick="removeApiKey()">🗑️ Löschen</button>
+                        </div>
+                        <div id="apiKeyStatus" class="api-key-status">
+                            <span id="apiKeyStatusText"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <!-- Search Bar Section -->
         <section class="search-section">
             <div class="container">
@@ -86,6 +124,22 @@
                     <div id="searchResults" class="search-results-count hidden">
                         <span id="searchResultsText"></span>
                     </div>
+                </div>
+
+                <!-- AI Web Search Button -->
+                <div class="ai-search-button-container" style="text-align: center; margin-top: 2rem;">
+                    <button
+                        id="aiWebSearchBtn"
+                        class="btn-primary"
+                        style="padding: 1rem 2rem; font-size: 1.1rem; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border: none; border-radius: 8px; color: white; cursor: pointer; box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4); transition: all 0.3s ease;"
+                        onmouseover="this.style.transform='translateY(-2px)'; this.style.boxShadow='0 6px 20px rgba(102, 126, 234, 0.6)'"
+                        onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(102, 126, 234, 0.4)'"
+                    >
+                        🌐 🤖 Neue Themen mit Gemini suchen
+                    </button>
+                    <p style="margin-top: 1rem; font-size: 0.9rem; color: var(--text-muted);">
+                        Nutze KI-gestützte Web-Suche, um aktuelle TV-Themen zu finden
+                    </p>
                 </div>
             </div>
         </section>
@@ -136,6 +190,15 @@
                 </div>
             </div>
         </section>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loadingOverlay" class="loading-overlay hidden">
+        <div class="loading-content">
+            <div class="loading-spinner"></div>
+            <div class="loading-text">Suche nach Themen...</div>
+            <div class="loading-subtext">Die Gemini KI analysiert Ihre Anfrage</div>
+        </div>
     </div>
 
     <!-- Topic Detail Modal -->

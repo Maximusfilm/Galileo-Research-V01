@@ -114,17 +114,26 @@ async function initApp() {
         await loadTopics();
         console.log('✅ Topics geladen:', allTopics.length);
 
-        console.log('2️⃣ Rendere Filter...');
+        console.log('2️⃣ Prüfe tägliche Themen-Generierung...');
+        await checkAndGenerateDailyTopics();
+
+        console.log('3️⃣ Rendere Filter...');
         renderFilters();
 
-        console.log('3️⃣ Rendere Topics...');
+        console.log('4️⃣ Rendere Topics...');
         renderTopics();
 
-        console.log('4️⃣ Update Last Update...');
+        console.log('5️⃣ Update Last Update...');
         updateLastUpdate();
 
-        console.log('5️⃣ Setup Search Listener...');
+        console.log('6️⃣ Setup Search Listener...');
         setupSearchListener();
+
+        console.log('7️⃣ Setup AI Search Button...');
+        setupAiSearchButton();
+
+        console.log('8️⃣ Update API Key Status...');
+        updateApiKeyStatus();
 
         console.log('✅ initApp() erfolgreich abgeschlossen!');
     } catch (error) {
@@ -1001,4 +1010,279 @@ function showError(message) {
             <p style="color: var(--danger-red);">❌ ${message}</p>
         </div>
     `;
+}
+
+
+// ========================================
+// GEMINI API INTEGRATION
+// ========================================
+function toggleApiConfig() {
+    const panel = document.getElementById('apiConfigPanel');
+    const toggle = document.getElementById('apiConfigToggle');
+
+    if (panel.classList.contains('hidden')) {
+        panel.classList.remove('hidden');
+        toggle.textContent = 'Ausblenden';
+    } else {
+        panel.classList.add('hidden');
+        toggle.textContent = 'Einstellungen';
+    }
+}
+
+function saveApiKey() {
+    const input = document.getElementById('apiKeyInput');
+    const apiKey = input.value.trim();
+
+    if (!apiKey) {
+        showApiKeyStatus('Bitte geben Sie einen API-Key ein.', 'error');
+        return;
+    }
+
+    try {
+        // Save to localStorage
+        localStorage.setItem('galileo_gemini_api_key', apiKey);
+        showApiKeyStatus('✅ API-Key erfolgreich gespeichert!', 'success');
+        updateApiKeyStatus();
+
+        // Clear input for security
+        setTimeout(() => {
+            input.value = '';
+        }, 1000);
+    } catch (error) {
+        console.error('Error saving API key:', error);
+        showApiKeyStatus('Fehler beim Speichern des API-Keys.', 'error');
+    }
+}
+
+function removeApiKey() {
+    const confirmed = confirm('Möchten Sie den gespeicherten API-Key wirklich löschen?');
+
+    if (confirmed) {
+        localStorage.removeItem('galileo_gemini_api_key');
+        showApiKeyStatus('🗑️ API-Key wurde gelöscht.', 'info');
+        updateApiKeyStatus();
+
+        // Clear input
+        document.getElementById('apiKeyInput').value = '';
+    }
+}
+
+function updateApiKeyStatus() {
+    const apiKey = localStorage.getItem('galileo_gemini_api_key');
+    const statusElement = document.getElementById('apiKeyStatus');
+    const statusText = document.getElementById('apiKeyStatusText');
+
+    if (apiKey && statusElement && statusText) {
+        const maskedKey = '•'.repeat(20) + apiKey.slice(-4);
+        statusText.textContent = `✅ API-Key gespeichert: ${maskedKey}`;
+        statusElement.className = 'api-key-status success';
+    } else if (statusElement && statusText) {
+        statusText.textContent = 'ℹ️ Kein API-Key gespeichert. KI-Suche nicht verfügbar.';
+        statusElement.className = 'api-key-status info';
+    }
+}
+
+function showApiKeyStatus(message, type) {
+    const statusElement = document.getElementById('apiKeyStatus');
+    const statusText = document.getElementById('apiKeyStatusText');
+
+    statusText.textContent = message;
+    statusElement.className = `api-key-status ${type}`;
+
+    // Auto-hide after 5 seconds for success/error messages
+    if (type === 'success' || type === 'error') {
+        setTimeout(() => {
+            updateApiKeyStatus();
+        }, 5000);
+    }
+}
+
+function showApiKeyError(message) {
+    const topicsListContainer = document.getElementById('topicsList');
+    topicsListContainer.innerHTML = `
+        <div class="loading">
+            <p style="color: var(--source-yellow);">⚠️ ${message}</p>
+            <button class="btn-primary" onclick="toggleApiConfig()" style="margin-top: 1rem; max-width: 300px;">
+                API-Key konfigurieren
+            </button>
+        </div>
+    `;
+}
+
+// ========================================
+// LOADING OVERLAY FUNCTIONS
+// ========================================
+function showLoadingOverlay() {
+    const overlay = document.getElementById('loadingOverlay');
+    if (overlay) {
+        overlay.classList.remove('hidden');
+    }
+}
+
+function hideLoadingOverlay() {
+    const overlay = document.getElementById('loadingOverlay');
+    if (overlay) {
+        overlay.classList.add('hidden');
+    }
+}
+
+// ==========================================
+// GEMINI WEB SEARCH FOR NEW TOPICS
+// ==========================================
+
+async function searchNewTopicsWithGemini(query) {
+    const apiKey = localStorage.getItem('galileo_gemini_api_key');
+    
+    if (!apiKey) {
+        showApiKeyError('Kein API-Key gespeichert. Bitte konfigurieren Sie Ihren Google Gemini API-Key in den Einstellungen.');
+        return [];
+    }
+
+    showLoadingOverlay();
+
+    try {
+        const prompt = `Du bist ein Recherche-Assistent für die TV-Sendung Galileo. 
+        
+Aufgabe: Finde 10 aktuelle, visually strong und noch nicht behandelte TV-Themen zum Suchbegriff: "${query}"
+        
+Kriterien:
+        - Aktuelle Ereignisse (2024-2025)
+        - Visuell stark und fernsehtauglich
+        - Noch nicht mainstream
+        - Für ein deutsches Publikum interessant
+        - Mischung aus Technologie, Gesellschaft, Natur & Umwelt
+        
+Format: JSON-Array mit genau diesem Schema:
+        [
+            {
+                "title": "Spannender Titel",
+                "description": "2-3 Sätze Beschreibung",
+                "tags": ["Bildstark", "Technologie", "Gerade aktuell"],
+                "visualRating": 5,
+                "isNew": true
+            }
+        ]
+        
+Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
+
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                contents: [{
+                    parts: [{
+                        text: prompt
+                    }]
+                }]
+            })
+        });
+
+        if (!response.ok) {
+            throw new Error(`Gemini API Error: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const text = data.candidates[0].content.parts[0].text;
+        
+        // Extract JSON from response
+        const jsonMatch = text.match(/\[\s*{[\s\S]*}\s*\]/);
+        if (!jsonMatch) {
+            throw new Error('Keine gültigen Themen gefunden');
+        }
+
+        const topics = JSON.parse(jsonMatch[0]);
+        hideLoadingOverlay();
+        return topics;
+
+    } catch (error) {
+        console.error('Gemini search error:', error);
+        hideLoadingOverlay();
+        showApiKeyError(`Fehler bei der Themensuche: ${error.message}`);
+        return [];
+    }
+}
+
+window.searchNewTopicsWithGemini = searchNewTopicsWithGemini;
+
+// ==========================================
+// AI WEB SEARCH BUTTON SETUP
+// ==========================================
+
+function setupAiSearchButton() {
+    const button = document.getElementById('aiWebSearchBtn');
+    
+    if (!button) {
+        console.warn('AI Web Search button not found');
+        return;
+    }
+
+    button.addEventListener('click', async () => {
+        const query = prompt('🌐 Geben Sie ein Thema für die KI-Web-Suche ein:\n\n(z.B. "Innovative Nachhaltigkeit", "Neue Rekorde", "Futuristische Technologie")');
+        
+        if (!query || query.trim() === '') {
+            return;
+        }
+
+        console.log('Starting AI web search for:', query);
+        
+        const newTopics = await searchNewTopicsWithGemini(query.trim());
+        
+        if (newTopics && newTopics.length > 0) {
+            // Replace mock data with AI-generated topics
+            allTopics = newTopics;
+            filteredTopics = [...allTopics];
+            
+            // Re-render topics
+            renderTopics();
+            updateLastUpdate();
+            
+            // Show success message
+            alert(`✅ Erfolgreich! ${newTopics.length} neue Themen zu "${query}" gefunden!`);
+        } else {
+            alert('❌ Keine Themen gefunden. Bitte versuchen Sie es erneut oder prüfen Sie Ihren API-Key.');
+        }
+    });
+
+    // ==========================================
+// AUTOMATIC DAILY TOPIC GENERATION
+// ==========================================
+
+async function checkAndGenerateDailyTopics() {
+    const today = new Date().toDateString();
+    const lastGenDate = localStorage.getItem('last_auto_generation_date');
+    
+    // Check if we need to generate new topics
+    if (lastGenDate !== today) {
+        console.log('New day detected! Generating fresh topics...');
+        
+        const apiKey = localStorage.getItem('galileo_gemini_api_key');
+        
+        if (apiKey) {
+            showLoadingOverlay();
+            
+            // Generate new topics with a default query
+            const newTopics = await searchNewTopicsWithGemini('Aktuelle TV-Themen für Galileo');
+            
+            if (newTopics && newTopics.length > 0) {
+                allTopics = newTopics;
+                filteredTopics = [...allTopics];
+                renderTopics();
+                updateLastUpdate();
+                
+                // Store the generation date
+                localStorage.setItem('last_auto_generation_date', today);
+                
+                console.log(`\u2705 Successfully generated ${newTopics.length} new topics for today!`);
+            }
+            
+            hideLoadingOverlay();
+        } else {
+            console.warn('⚠️ No API key found. Skipping automatic generation.');
+        }
+    } else {
+        console.log('✅ Topics are up-to-date for today.');
+    }
+}
 }
