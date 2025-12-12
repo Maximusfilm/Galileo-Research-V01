@@ -87,15 +87,15 @@ async function initApp() {
         updateLastUpdate();
         setupSearchListener();
         updateApiKeyStatus();
+        setupAiSearchButton();
+        await checkAndGenerateDailyTopics();
     } catch (error) {
         console.error('Fehler beim Laden der Daten:', error);
         showError('Daten konnten nicht geladen werden. Bitte später erneut versuchen.');
-            setupAiSearchButton();
     }
 }
 
 // ========================================
-        await checkAndGenerateDailyTopics();
 // DATA LOADING
 // ========================================
 async function loadTopics() {
