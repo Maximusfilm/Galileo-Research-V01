@@ -764,29 +764,41 @@ function renderTopics() {
         return;
     }
 
-    topicsListContainer.innerHTML = filteredTopics.map(topic => `
-        <div class="topic-card" data-credibility="${topic.credibility}" onclick="showTopicDetail(${topic.id})">
-            <div class="topic-thumbnail">
-                <div class="topic-category-badge">${topic.tags[0] || 'Thema'}</div>
-            </div>
-            <div class="topic-content">
-                <h3 class="topic-title">${topic.title}</h3>
-                <p class="topic-summary">${topic.summary}</p>
-                <div class="topic-footer">
-                    <div class="topic-meta">
-                        <span class="visual-indicator">${'⭐'.repeat(topic.visualRating)} ${topic.visualRating}/5</span>
-                        <span>•</span>
-                        <span>${topic.date || new Date().toLocaleDateString('de-DE')}</span>
+    topicsListContainer.innerHTML = filteredTopics.map(topic => {
+        const primarySource = topic.sources && topic.sources.length > 0 ? topic.sources[0] : null;
+        const sourceUrl = primarySource ? primarySource.url : '#';
+        const imageKeyword = encodeURIComponent(topic.tags[0] || 'science');
+        const imageUrl = `https://source.unsplash.com/400x300/?${imageKeyword},documentary`;
+
+        return `
+            <a href="${sourceUrl}" target="_blank" class="topic-card-link" rel="noopener noreferrer">
+                <div class="topic-card" data-credibility="${topic.credibility}">
+                    <div class="topic-thumbnail" style="background-image: url('${imageUrl}');">
+                        <div class="topic-category-badge">${topic.tags[0] || 'Thema'}</div>
                     </div>
-                    ${topic.sources && topic.sources.length > 0 ? `
-                    <a href="${topic.sources[0].url}" target="_blank" class="source-link" onclick="event.stopPropagation()">
-                        📰 ${topic.sources[0].name}
-                    </a>
-                    ` : ''}
+                    <div class="topic-content">
+                        <h3 class="topic-title">${topic.title}</h3>
+                        <p class="topic-summary">${topic.summary}</p>
+                        <div class="topic-footer">
+                            <div class="topic-meta">
+                                <span class="visual-indicator">${'⭐'.repeat(topic.visualRating)} ${topic.visualRating}/5</span>
+                                <span>•</span>
+                                <span>${topic.date || new Date().toLocaleDateString('de-DE')}</span>
+                            </div>
+                            ${primarySource ? `
+                            <span class="source-badge">
+                                📰 ${primarySource.name}
+                            </span>
+                            ` : ''}
+                        </div>
+                    </div>
+                    <button class="details-btn" onclick="event.preventDefault(); event.stopPropagation(); showTopicDetail(${topic.id})">
+                        ℹ️ Details
+                    </button>
                 </div>
-            </div>
-        </div>
-    `).join('');
+            </a>
+        `;
+    }).join('');
 }
 
 function showTopicDetail(topicId) {

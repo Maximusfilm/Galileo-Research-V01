@@ -549,12 +549,23 @@ body {
     opacity: 0.8;
 }
 
+/* Card Link Wrapper */
+.topic-card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
 /* Thumbnail Area */
 .topic-thumbnail {
     position: relative;
     width: 100%;
     height: 120px;
     background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -681,6 +692,41 @@ body {
 .visual-indicator {
     color: var(--galileo-gold);
     font-weight: 600;
+}
+
+.source-badge {
+    color: var(--galileo-blue);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.4rem 0.8rem;
+    background: rgba(0, 217, 255, 0.1);
+    border-radius: 6px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
+    display: inline-block;
+}
+
+.details-btn {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background: rgba(0, 217, 255, 0.2);
+    border: 1px solid var(--galileo-blue);
+    color: var(--galileo-blue);
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 10;
+}
+
+.details-btn:hover {
+    background: rgba(0, 217, 255, 0.3);
+    transform: scale(1.05);
 }
 
 .source-link {
