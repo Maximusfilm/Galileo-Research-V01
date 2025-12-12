@@ -490,6 +490,9 @@ body {
     position: relative;
     opacity: 0;
     animation: cardFadeIn 0.6s ease forwards;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 @keyframes cardFadeIn {
@@ -515,14 +518,14 @@ body {
 .topic-card:nth-child(9) { animation-delay: 0.9s; }
 .topic-card:nth-child(10) { animation-delay: 1s; }
 
-/* Video Thumbnail mit Gradient Overlay */
+/* Thumbnail Gradient Overlay */
 .topic-card::before {
     content: '';
     position: absolute;
     left: 0;
     top: 0;
     right: 0;
-    height: 220px;
+    height: 120px;
     background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 217, 255, 0.2) 100%);
     transition: all 0.3s ease;
     z-index: 1;
@@ -550,7 +553,7 @@ body {
 .topic-thumbnail {
     position: relative;
     width: 100%;
-    height: 180px;
+    height: 120px;
     background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
     display: flex;
     align-items: center;
@@ -576,9 +579,12 @@ body {
 }
 
 .topic-content {
-    padding: 1rem;
+    padding: 1.25rem;
     position: relative;
     z-index: 2;
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
 }
 
 .topic-header {
@@ -590,14 +596,17 @@ body {
 }
 
 .topic-title {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
     font-weight: 600;
     color: var(--text-primary);
-    flex: 1;
     line-height: 1.4;
     word-wrap: break-word;
     overflow-wrap: break-word;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.75rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .topic-badges {
@@ -640,20 +649,22 @@ body {
 
 .topic-summary {
     color: var(--text-secondary);
-    font-size: 0.95rem;
-    line-height: 1.6;
-    margin: 0.75rem 0;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+    flex: 1;
     display: -webkit-box;
-    -webkit-line-clamp: 3;
+    -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
+    text-overflow: ellipsis;
 }
 
 .topic-footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
+    margin-top: auto;
     padding-top: 1rem;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     gap: 1rem;
@@ -675,13 +686,16 @@ body {
 .source-link {
     color: var(--galileo-blue);
     text-decoration: none;
-    font-size: 0.85rem;
+    font-size: 0.8rem;
     font-weight: 600;
-    padding: 0.5rem 1rem;
+    padding: 0.4rem 0.8rem;
     background: rgba(0, 217, 255, 0.1);
     border-radius: 6px;
     transition: all 0.3s ease;
     white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 150px;
 }
 
 .source-link:hover {
