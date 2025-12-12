@@ -1244,8 +1244,9 @@ function setupAiSearchButton() {
             alert('❌ Keine Themen gefunden. Bitte versuchen Sie es erneut oder prüfen Sie Ihren API-Key.');
         }
     });
+}
 
-    // ==========================================
+// ==========================================
 // AUTOMATIC DAILY TOPIC GENERATION
 // ==========================================
 
@@ -1284,5 +1285,4 @@ async function checkAndGenerateDailyTopics() {
     } else {
         console.log('✅ Topics are up-to-date for today.');
     }
-}
 }
