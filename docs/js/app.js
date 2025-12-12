@@ -108,14 +108,28 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 async function initApp() {
+    console.log('🚀 initApp() gestartet');
     try {
+        console.log('1️⃣ Lade Topics...');
         await loadTopics();
+        console.log('✅ Topics geladen:', allTopics.length);
+
+        console.log('2️⃣ Rendere Filter...');
         renderFilters();
+
+        console.log('3️⃣ Rendere Topics...');
         renderTopics();
+
+        console.log('4️⃣ Update Last Update...');
         updateLastUpdate();
+
+        console.log('5️⃣ Setup Search Listener...');
         setupSearchListener();
+
+        console.log('✅ initApp() erfolgreich abgeschlossen!');
     } catch (error) {
-        console.error('Fehler beim Laden der Daten:', error);
+        console.error('❌ Fehler in initApp():', error);
+        console.error('   Stack:', error.stack);
         showError('Daten konnten nicht geladen werden. Bitte später erneut versuchen.');
     }
 }
@@ -124,18 +138,33 @@ async function initApp() {
 // DATA LOADING
 // ========================================
 async function loadTopics() {
+    console.log('📂 loadTopics() gestartet');
+    console.log('📍 Lade von:', CONFIG.DATA_URL);
+
     try {
         const response = await fetch(CONFIG.DATA_URL);
+        console.log('📡 Fetch Response:', response);
+        console.log('   Status:', response.status);
+        console.log('   OK:', response.ok);
+
         if (!response.ok) {
+            console.warn('⚠️ Response nicht OK, lade Fallback Mock-Daten');
             // Fallback: Mock-Daten wenn keine echten Daten vorhanden
             allTopics = generateMockData();
         } else {
+            console.log('✅ Response OK, parse JSON...');
             const data = await response.json();
+            console.log('📋 Geladene Daten:', data);
+            console.log('📊 Topics Array:', data.topics);
+            console.log('🔢 Anzahl Topics:', data.topics?.length);
+
             allTopics = data.topics || [];
         }
         filteredTopics = [...allTopics];
+        console.log('✅ loadTopics() erfolgreich, Topics:', allTopics.length);
     } catch (error) {
-        console.warn('Lade Mock-Daten:', error);
+        console.error('❌ Fehler beim Laden:', error);
+        console.warn('🔄 Lade Mock-Daten als Fallback');
         allTopics = generateMockData();
         filteredTopics = [...allTopics];
     }
