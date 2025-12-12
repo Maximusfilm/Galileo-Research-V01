@@ -37,15 +37,23 @@ function checkAuth() {
 }
 
 function login(password) {
+    console.log('🔐 login() aufgerufen');
+    console.log('   Eingabe:', password);
+    console.log('   Erwartet:', CONFIG.PASSWORD);
+    console.log('   Match:', password === CONFIG.PASSWORD);
+
     if (password === CONFIG.PASSWORD) {
+        console.log('✅ Passwort korrekt - erstelle Session');
         const authData = {
             authenticated: true,
             timestamp: new Date().getTime()
         };
         localStorage.setItem(CONFIG.SESSION_KEY, JSON.stringify(authData));
+        console.log('💾 Session gespeichert:', authData);
         showMainApp();
         return true;
     }
+    console.log('❌ Passwort falsch');
     return false;
 }
 
@@ -64,17 +72,38 @@ function showMainApp() {
 // INITIALIZATION
 // ========================================
 document.addEventListener('DOMContentLoaded', () => {
+    console.log('🚀 App geladen');
+    console.log('📋 Passwort:', CONFIG.PASSWORD);
+
     if (!checkAuth()) {
+        console.log('🔒 Keine gültige Session - zeige Login');
         // Setup login form
-        document.getElementById('loginForm').addEventListener('submit', (e) => {
+        const loginForm = document.getElementById('loginForm');
+        if (!loginForm) {
+            console.error('❌ Login-Form nicht gefunden!');
+            return;
+        }
+
+        loginForm.addEventListener('submit', (e) => {
             e.preventDefault();
-            const password = document.getElementById('password').value;
+            console.log('📝 Login-Formular abgeschickt');
+
+            const passwordInput = document.getElementById('password');
+            const password = passwordInput.value;
+            console.log('🔑 Eingegebenes Passwort:', password);
+            console.log('✅ Korrektes Passwort:', CONFIG.PASSWORD);
+            console.log('🔍 Passwörter gleich?', password === CONFIG.PASSWORD);
+
             if (login(password)) {
+                console.log('✅ Login erfolgreich!');
                 document.getElementById('loginError').textContent = '';
             } else {
+                console.log('❌ Login fehlgeschlagen!');
                 document.getElementById('loginError').textContent = 'Falsches Passwort. Bitte versuchen Sie es erneut.';
             }
         });
+    } else {
+        console.log('✅ Gültige Session vorhanden');
     }
 });
 
