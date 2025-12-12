@@ -767,13 +767,16 @@ function renderTopics() {
     topicsListContainer.innerHTML = filteredTopics.map(topic => {
         const primarySource = topic.sources && topic.sources.length > 0 ? topic.sources[0] : null;
         const sourceUrl = primarySource ? primarySource.url : '#';
-        const imageKeyword = encodeURIComponent(topic.tags[0] || 'science');
-        const imageUrl = `https://source.unsplash.com/400x300/?${imageKeyword},documentary`;
+
+        // Generiere Gradient basierend auf Tag
+        const gradient = getTagGradient(topic.tags[0] || 'Thema');
+        const icon = getTagIcon(topic.tags[0] || 'Thema');
 
         return `
             <a href="${sourceUrl}" target="_blank" class="topic-card-link" rel="noopener noreferrer">
                 <div class="topic-card" data-credibility="${topic.credibility}">
-                    <div class="topic-thumbnail" style="background-image: url('${imageUrl}');">
+                    <div class="topic-thumbnail" style="background: ${gradient};">
+                        <div class="thumbnail-icon">${icon}</div>
                         <div class="topic-category-badge">${topic.tags[0] || 'Thema'}</div>
                     </div>
                     <div class="topic-content">
@@ -799,6 +802,34 @@ function renderTopics() {
             </a>
         `;
     }).join('');
+}
+
+// Gradient für Tags
+function getTagGradient(tag) {
+    const gradients = {
+        'Bildstark': 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)',
+        'Wissenschaft': 'linear-gradient(135deg, #0066CC 0%, #0099FF 100%)',
+        'Technologie': 'linear-gradient(135deg, #434343 0%, #000000 100%)',
+        'Gerade aktuell': 'linear-gradient(135deg, #FF512F 0%, #DD2476 100%)',
+        'Entertainment': 'linear-gradient(135deg, #FF8008 0%, #FFC837 100%)',
+        'Gesellschaftlich Relevant': 'linear-gradient(135deg, #11998e 0%, #38ef7d 100%)',
+        'Natur & Umwelt': 'linear-gradient(135deg, #56ab2f 0%, #a8e063 100%)'
+    };
+    return gradients[tag] || 'linear-gradient(135deg, #1a2332 0%, #0f1419 100%)';
+}
+
+// Icon für Tags
+function getTagIcon(tag) {
+    const icons = {
+        'Bildstark': '📸',
+        'Wissenschaft': '🔬',
+        'Technologie': '🤖',
+        'Gerade aktuell': '⚡',
+        'Entertainment': '🎬',
+        'Gesellschaftlich Relevant': '🌍',
+        'Natur & Umwelt': '🌿'
+    };
+    return icons[tag] || '📰';
 }
 
 function showTopicDetail(topicId) {

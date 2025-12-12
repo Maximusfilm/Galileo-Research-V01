@@ -573,6 +573,14 @@ body {
     border-radius: 8px 8px 0 0;
 }
 
+.thumbnail-icon {
+    font-size: 3rem;
+    opacity: 0.3;
+    filter: blur(1px);
+    position: absolute;
+    z-index: 1;
+}
+
 /* Category Badge */
 .topic-category-badge {
     position: absolute;
