@@ -17,6 +17,7 @@ let activeFilters = new Set();
 let currentSort = 'relevance';
 let searchQuery = '';
 let searchDebounceTimer = null;
+let lastAutoGenerationDate = null;
 
 // ========================================
 // AUTHENTICATION
@@ -94,6 +95,7 @@ async function initApp() {
 }
 
 // ========================================
+        await checkAndGenerateDailyTopics();
 // DATA LOADING
 // ========================================
 async function loadTopics() {
@@ -812,7 +814,7 @@ function hideLoadingOverlay() {
 // ==========================================
 
 async function searchNewTopicsWithGemini(query) {
-    const apiKey = localStorage.getItem('gemini_api_key');
+    const apiKey = localStorage.getItem('galileo_gemini_api_key');
     
     if (!apiKey) {
         showApiKeyError('Kein API-Key gespeichert. Bitte konfigurieren Sie Ihren Google Gemini API-Key in den Einstellungen.');
@@ -925,4 +927,45 @@ function setupAiSearchButton() {
             alert('❌ Keine Themen gefunden. Bitte versuchen Sie es erneut oder prüfen Sie Ihren API-Key.');
         }
     });
+
+    // ==========================================
+// AUTOMATIC DAILY TOPIC GENERATION
+// ==========================================
+
+async function checkAndGenerateDailyTopics() {
+    const today = new Date().toDateString();
+    const lastGenDate = localStorage.getItem('last_auto_generation_date');
+    
+    // Check if we need to generate new topics
+    if (lastGenDate !== today) {
+        console.log('New day detected! Generating fresh topics...');
+        
+        const apiKey = localStorage.getItem('galileo_gemini_api_key');
+        
+        if (apiKey) {
+            showLoadingOverlay();
+            
+            // Generate new topics with a default query
+            const newTopics = await searchNewTopicsWithGemini('Aktuelle TV-Themen für Galileo');
+            
+            if (newTopics && newTopics.length > 0) {
+                allTopics = newTopics;
+                filteredTopics = [...allTopics];
+                renderTopics();
+                updateLastUpdate();
+                
+                // Store the generation date
+                localStorage.setItem('last_auto_generation_date', today);
+                
+                console.log(`\u2705 Successfully generated ${newTopics.length} new topics for today!`);
+            }
+            
+            hideLoadingOverlay();
+        } else {
+            console.warn('⚠️ No API key found. Skipping automatic generation.');
+        }
+    } else {
+        console.log('✅ Topics are up-to-date for today.');
+    }
+}
 }
