@@ -767,14 +767,22 @@ function renderTopics() {
     topicsListContainer.innerHTML = filteredTopics.map(topic => `
         <div class="topic-card" data-credibility="${topic.credibility}" onclick="showTopicDetail(${topic.id})">
             <div class="topic-thumbnail">
-                <div class="topic-age-badge">12</div>
+                <div class="topic-category-badge">${topic.tags[0] || 'Thema'}</div>
             </div>
             <div class="topic-content">
                 <h3 class="topic-title">${topic.title}</h3>
-                <div class="topic-meta">
-                    <span>${topic.storyline?.duration || '12-15 Min'}</span>
-                    <span>•</span>
-                    <span>Folge vom ${topic.date || new Date().toLocaleDateString('de-DE')}</span>
+                <p class="topic-summary">${topic.summary}</p>
+                <div class="topic-footer">
+                    <div class="topic-meta">
+                        <span class="visual-indicator">${'⭐'.repeat(topic.visualRating)} ${topic.visualRating}/5</span>
+                        <span>•</span>
+                        <span>${topic.date || new Date().toLocaleDateString('de-DE')}</span>
+                    </div>
+                    ${topic.sources && topic.sources.length > 0 ? `
+                    <a href="${topic.sources[0].url}" target="_blank" class="source-link" onclick="event.stopPropagation()">
+                        📰 ${topic.sources[0].name}
+                    </a>
+                    ` : ''}
                 </div>
             </div>
         </div>

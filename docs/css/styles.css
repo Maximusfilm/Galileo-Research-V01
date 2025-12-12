@@ -479,13 +479,13 @@ body {
 }
 
 .topic-card {
-    background: transparent;
+    background: var(--card-bg);
     border-radius: 8px;
     padding: 0;
-    box-shadow: none;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
-    border: none;
+    border: 1px solid rgba(255, 255, 255, 0.08);
     overflow: hidden;
     position: relative;
     opacity: 0;
@@ -537,7 +537,9 @@ body {
 }
 
 .topic-card:hover {
-    transform: translateY(-4px);
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 128, 255, 0.2);
+    border-color: rgba(0, 217, 255, 0.3);
 }
 
 .topic-card:hover::before {
@@ -548,49 +550,33 @@ body {
 .topic-thumbnail {
     position: relative;
     width: 100%;
-    height: 220px;
+    height: 180px;
     background: linear-gradient(135deg, #1a2332 0%, #0f1419 100%);
     display: flex;
     align-items: center;
     justify-content: center;
     overflow: hidden;
-    margin-bottom: 0.75rem;
-    border-radius: 8px;
+    border-radius: 8px 8px 0 0;
 }
 
-.topic-thumbnail::after {
-    content: '▶';
-    position: absolute;
-    font-size: 3rem;
-    color: white;
-    opacity: 0.9;
-    z-index: 2;
-    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
-    transition: all 0.3s ease;
-}
-
-.topic-card:hover .topic-thumbnail::after {
-    transform: scale(1.2);
-    opacity: 1;
-}
-
-/* Age Badge (Altersfreigabe) */
-.topic-age-badge {
+/* Category Badge */
+.topic-category-badge {
     position: absolute;
     top: 10px;
-    right: 10px;
-    background: rgba(0, 0, 0, 0.7);
-    border: 2px solid rgba(255, 255, 255, 0.3);
+    left: 10px;
+    background: rgba(0, 128, 255, 0.9);
     color: white;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 0.85rem;
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 0.75rem;
     font-weight: 700;
     z-index: 3;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
 .topic-content {
-    padding: 0;
+    padding: 1rem;
     position: relative;
     z-index: 2;
 }
@@ -653,16 +639,55 @@ body {
 }
 
 .topic-summary {
-    display: none;
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
+    margin: 0.75rem 0;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.topic-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+    gap: 1rem;
 }
 
 .topic-meta {
     display: flex;
     align-items: center;
-    gap: 0.75rem;
+    gap: 0.5rem;
     font-size: 0.85rem;
     color: var(--text-muted);
-    margin-top: 0.5rem;
+}
+
+.visual-indicator {
+    color: var(--galileo-gold);
+    font-weight: 600;
+}
+
+.source-link {
+    color: var(--galileo-blue);
+    text-decoration: none;
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    background: rgba(0, 217, 255, 0.1);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.source-link:hover {
+    background: rgba(0, 217, 255, 0.2);
+    color: #00D9FF;
+    transform: translateX(4px);
 }
 
 .visual-rating {
