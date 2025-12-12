@@ -114,8 +114,33 @@ async function initApp() {
         await loadTopics();
         console.log('✅ Topics geladen:', allTopics.length);
 
-        console.log('2️⃣ Prüfe tägliche Themen-Generierung...');
-        await checkAndGenerateDailyTopics();
+        const apiKey = localStorage.getItem('galileo_gemini_api_key');
+
+        // Prüfe ob wir API-Themen laden sollten
+        if (apiKey && allTopics.length <= 3) {
+            console.log('2️⃣ API-Key vorhanden, lade echte Themen...');
+            showLoadingOverlay();
+
+            const newTopics = await searchNewTopicsWithGemini('Aktuelle TV-Themen für Galileo');
+
+            if (newTopics && newTopics.length > 0) {
+                allTopics = newTopics;
+                filteredTopics = [...allTopics];
+
+                // Speichere Datum der Generierung
+                const today = new Date().toDateString();
+                localStorage.setItem('last_auto_generation_date', today);
+
+                console.log(`✅ ${newTopics.length} echte Themen von Gemini API geladen!`);
+            }
+
+            hideLoadingOverlay();
+        } else if (apiKey) {
+            console.log('2️⃣ Prüfe tägliche Themen-Generierung...');
+            await checkAndGenerateDailyTopics();
+        } else {
+            console.log('2️⃣ Kein API-Key vorhanden, nutze Mock-Daten');
+        }
 
         console.log('3️⃣ Rendere Filter...');
         renderFilters();
@@ -310,8 +335,8 @@ function setupSearchListener() {
 
 async function handleSearch(searchTerm) {
     if (!searchTerm || searchTerm === '') {
-        // Zeige Standard Mock-Daten
-        console.log('📋 Lade Mock-Daten');
+        // Zurück zu ursprünglichen Themen
+        console.log('🔄 Zeige ursprüngliche Themen');
         searchQuery = '';
         await loadTopics();
         filteredTopics = [...allTopics];
@@ -321,23 +346,40 @@ async function handleSearch(searchTerm) {
     }
 
     searchQuery = searchTerm;
-    console.log('🎯 Generiere Themen für:', searchTerm);
+    console.log('🎯 Suche nach Themen für:', searchTerm);
 
-    // Zeige Loading
-    showLoadingState(`Suche nach Themen zu: "${searchTerm}"...`);
+    const apiKey = localStorage.getItem('galileo_gemini_api_key');
 
-    // Simuliere API-Delay (300ms für Realismus)
-    await new Promise(resolve => setTimeout(resolve, 300));
+    if (apiKey) {
+        // Nutze Gemini API für echte Themen
+        console.log('🤖 Nutze Gemini API für Suche');
+        showLoadingState(`Suche nach Themen zu: "${searchTerm}"...`);
 
-    // Generiere Themen
-    const generatedTopics = generateTopicsForKeyword(searchTerm);
+        const generatedTopics = await searchNewTopicsWithGemini(searchTerm);
 
-    // Update State
-    allTopics = generatedTopics;
-    filteredTopics = generatedTopics;
+        if (generatedTopics && generatedTopics.length > 0) {
+            allTopics = generatedTopics;
+            filteredTopics = generatedTopics;
+            displaySearchResults(generatedTopics, searchTerm);
+        } else {
+            console.warn('⚠️ Keine Themen von API erhalten, nutze Mock-Daten');
+            const mockTopics = generateTopicsForKeyword(searchTerm);
+            allTopics = mockTopics;
+            filteredTopics = mockTopics;
+            displaySearchResults(mockTopics, searchTerm);
+        }
+    } else {
+        // Fallback: Mock-Daten generieren
+        console.log('📋 Kein API-Key, nutze Mock-Daten');
+        showLoadingState(`Suche nach Themen zu: "${searchTerm}"...`);
 
-    // Zeige Ergebnisse
-    displaySearchResults(generatedTopics, searchTerm);
+        await new Promise(resolve => setTimeout(resolve, 300));
+
+        const generatedTopics = generateTopicsForKeyword(searchTerm);
+        allTopics = generatedTopics;
+        filteredTopics = generatedTopics;
+        displaySearchResults(generatedTopics, searchTerm);
+    }
 }
 
 function showLoadingState(message) {
@@ -1041,13 +1083,22 @@ function saveApiKey() {
     try {
         // Save to localStorage
         localStorage.setItem('galileo_gemini_api_key', apiKey);
-        showApiKeyStatus('✅ API-Key erfolgreich gespeichert!', 'success');
+
+        // Reset generation date to force new topic generation on next load
+        localStorage.removeItem('last_auto_generation_date');
+
+        showApiKeyStatus('✅ API-Key erfolgreich gespeichert! Seite wird neu geladen...', 'success');
         updateApiKeyStatus();
 
         // Clear input for security
         setTimeout(() => {
             input.value = '';
         }, 1000);
+
+        // Reload page to load fresh topics
+        setTimeout(() => {
+            location.reload();
+        }, 2000);
     } catch (error) {
         console.error('Error saving API key:', error);
         showApiKeyStatus('Fehler beim Speichern des API-Keys.', 'error');
