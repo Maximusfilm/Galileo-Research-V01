@@ -1132,7 +1132,7 @@ function hideLoadingOverlay() {
 
 async function searchNewTopicsWithGemini(query) {
     const apiKey = localStorage.getItem('galileo_gemini_api_key');
-    
+
     if (!apiKey) {
         showApiKeyError('Kein API-Key gespeichert. Bitte konfigurieren Sie Ihren Google Gemini API-Key in den Einstellungen.');
         return [];
@@ -1141,28 +1141,35 @@ async function searchNewTopicsWithGemini(query) {
     showLoadingOverlay();
 
     try {
-        const prompt = `Du bist ein Recherche-Assistent für die TV-Sendung Galileo. 
-        
+        const prompt = `Du bist ein Recherche-Assistent für die TV-Sendung Galileo.
+
 Aufgabe: Finde 10 aktuelle, visually strong und noch nicht behandelte TV-Themen zum Suchbegriff: "${query}"
-        
+
 Kriterien:
         - Aktuelle Ereignisse (2024-2025)
         - Visuell stark und fernsehtauglich
         - Noch nicht mainstream
         - Für ein deutsches Publikum interessant
         - Mischung aus Technologie, Gesellschaft, Natur & Umwelt
-        
+
 Format: JSON-Array mit genau diesem Schema:
         [
             {
-                "title": "Spannender Titel",
-                "description": "2-3 Sätze Beschreibung",
+                "title": "Spannender Titel (max 80 Zeichen)",
+                "summary": "2-3 Sätze Beschreibung des Themas",
                 "tags": ["Bildstark", "Technologie", "Gerade aktuell"],
                 "visualRating": 5,
-                "isNew": true
+                "visualReason": "Warum ist das Thema visuell stark? Was kann man filmen?",
+                "sourceName": "Tagesschau",
+                "sourceUrl": "https://www.tagesschau.de"
             }
         ]
-        
+
+WICHTIG:
+- Gib ECHTE, recherchierbare Quellen-URLs an (z.B. tagesschau.de, spiegel.de, sueddeutsche.de)
+- Tags müssen aus folgender Liste sein: Bildstark, Wissenschaft, Technologie, Gerade aktuell, Entertainment, Gesellschaftlich Relevant, Natur & Umwelt
+- visualRating: 1-5 (wie filmtauglich ist das Thema?)
+
 Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
 
         const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`, {
@@ -1185,14 +1192,49 @@ Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
 
         const data = await response.json();
         const text = data.candidates[0].content.parts[0].text;
-        
+
         // Extract JSON from response
         const jsonMatch = text.match(/\[\s*{[\s\S]*}\s*\]/);
         if (!jsonMatch) {
             throw new Error('Keine gültigen Themen gefunden');
         }
 
-        const topics = JSON.parse(jsonMatch[0]);
+        const rawTopics = JSON.parse(jsonMatch[0]);
+
+        // Transform topics to match app's expected format
+        const topics = rawTopics.map((topic, index) => ({
+            id: Date.now() + index,
+            title: topic.title,
+            summary: topic.summary || topic.description || 'Keine Beschreibung verfügbar',
+            tags: topic.tags || ['Gerade aktuell'],
+            visualRating: topic.visualRating || 3,
+            visualReason: topic.visualReason || 'Visuell interessantes Thema',
+            credibility: 'green',
+            sources: [
+                {
+                    name: topic.sourceName || 'Web',
+                    url: topic.sourceUrl || 'https://www.google.com/search?q=' + encodeURIComponent(topic.title),
+                    credibility: 'green'
+                }
+            ],
+            isDuplicate: false,
+            duplicateInfo: 'Noch nicht bei Galileo behandelt',
+            storyline: {
+                duration: '12-15 Min',
+                structure: [
+                    'Intro: Vorstellung des Themas',
+                    'Hauptteil: Recherche vor Ort',
+                    'Experteninterviews',
+                    'Finale: Fazit und Ausblick'
+                ],
+                locations: ['Deutschland'],
+                protagonists: ['Experten', 'Betroffene'],
+                dramaticArc: 'Von der Fragestellung zur Antwort'
+            },
+            date: new Date().toISOString().split('T')[0]
+        }));
+
+        console.log(`✅ ${topics.length} Themen von Gemini API erfolgreich geladen`);
         hideLoadingOverlay();
         return topics;
 
