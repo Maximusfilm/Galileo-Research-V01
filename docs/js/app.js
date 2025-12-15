@@ -110,15 +110,20 @@ document.addEventListener('DOMContentLoaded', () => {
 async function initApp() {
     console.log('🚀 initApp() gestartet');
     try {
-        console.log('1️⃣ Lade Topics...');
-        await loadTopics();
-        console.log('✅ Topics geladen:', allTopics.length);
-
         const apiKey = localStorage.getItem('galileo_gemini_api_key');
+        const today = new Date().toDateString();
+        const lastGenDate = localStorage.getItem('last_auto_generation_date');
 
-        // Prüfe ob wir API-Themen laden sollten
-        if (apiKey && allTopics.length <= 3) {
-            console.log('2️⃣ API-Key vorhanden, lade echte Themen...');
+        console.log('📊 Status Check:', {
+            hasApiKey: !!apiKey,
+            lastGenDate: lastGenDate,
+            today: today,
+            needsNewTopics: lastGenDate !== today
+        });
+
+        // Wenn API-Key vorhanden und noch keine Themen für heute generiert wurden
+        if (apiKey && lastGenDate !== today) {
+            console.log('1️⃣ API-Key vorhanden, generiere NEUE Themen für heute...');
             showLoadingOverlay();
 
             const newTopics = await searchNewTopicsWithGemini('Aktuelle TV-Themen für Galileo');
@@ -128,36 +133,39 @@ async function initApp() {
                 filteredTopics = [...allTopics];
 
                 // Speichere Datum der Generierung
-                const today = new Date().toDateString();
                 localStorage.setItem('last_auto_generation_date', today);
 
                 console.log(`✅ ${newTopics.length} echte Themen von Gemini API geladen!`);
+            } else {
+                console.warn('⚠️ API-Themen konnten nicht geladen werden, lade Mock-Daten');
+                await loadTopics();
             }
 
             hideLoadingOverlay();
-        } else if (apiKey) {
-            console.log('2️⃣ Prüfe tägliche Themen-Generierung...');
-            await checkAndGenerateDailyTopics();
+        } else if (!apiKey) {
+            console.log('1️⃣ Kein API-Key vorhanden, lade Mock-Daten');
+            await loadTopics();
         } else {
-            console.log('2️⃣ Kein API-Key vorhanden, nutze Mock-Daten');
+            console.log('1️⃣ Themen für heute bereits generiert');
+            await loadTopics();
         }
 
-        console.log('3️⃣ Rendere Filter...');
+        console.log('2️⃣ Rendere Filter...');
         renderFilters();
 
-        console.log('4️⃣ Rendere Topics...');
+        console.log('3️⃣ Rendere Topics...');
         renderTopics();
 
-        console.log('5️⃣ Update Last Update...');
+        console.log('4️⃣ Update Last Update...');
         updateLastUpdate();
 
-        console.log('6️⃣ Setup Search Listener...');
+        console.log('5️⃣ Setup Search Listener...');
         setupSearchListener();
 
-        console.log('7️⃣ Setup AI Search Button...');
+        console.log('6️⃣ Setup AI Search Button...');
         setupAiSearchButton();
 
-        console.log('8️⃣ Update API Key Status...');
+        console.log('7️⃣ Update API Key Status...');
         updateApiKeyStatus();
 
         console.log('✅ initApp() erfolgreich abgeschlossen!');
@@ -1094,21 +1102,23 @@ function saveApiKey() {
         // Save to localStorage
         localStorage.setItem('galileo_gemini_api_key', apiKey);
 
-        // Reset generation date to force new topic generation on next load
+        // WICHTIG: Force neue Themen-Generierung beim nächsten Login
         localStorage.removeItem('last_auto_generation_date');
 
-        showApiKeyStatus('✅ API-Key erfolgreich gespeichert! Seite wird neu geladen...', 'success');
+        console.log('💾 API-Key gespeichert, Cache geleert, Seite wird neu geladen');
+
+        showApiKeyStatus('✅ API-Key erfolgreich gespeichert! Lade echte Themen...', 'success');
         updateApiKeyStatus();
 
         // Clear input for security
         setTimeout(() => {
             input.value = '';
-        }, 1000);
+        }, 500);
 
         // Reload page to load fresh topics
         setTimeout(() => {
-            location.reload();
-        }, 2000);
+            window.location.reload(true); // Hard reload
+        }, 1500);
     } catch (error) {
         console.error('Error saving API key:', error);
         showApiKeyStatus('Fehler beim Speichern des API-Keys.', 'error');
