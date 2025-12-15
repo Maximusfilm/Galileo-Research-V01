@@ -132,21 +132,37 @@ async function initApp() {
                 allTopics = newTopics;
                 filteredTopics = [...allTopics];
 
-                // Speichere Datum der Generierung
+                // Speichere Themen UND Datum in localStorage
                 localStorage.setItem('last_auto_generation_date', today);
+                localStorage.setItem('cached_api_topics', JSON.stringify(newTopics));
 
-                console.log(`✅ ${newTopics.length} echte Themen von Gemini API geladen!`);
+                console.log(`✅ ${newTopics.length} echte Themen von Gemini API geladen und gespeichert!`);
             } else {
                 console.warn('⚠️ API-Themen konnten nicht geladen werden, lade Mock-Daten');
                 await loadTopics();
             }
 
             hideLoadingOverlay();
-        } else if (!apiKey) {
-            console.log('1️⃣ Kein API-Key vorhanden, lade Mock-Daten');
-            await loadTopics();
+        } else if (apiKey && lastGenDate === today) {
+            // Lade gespeicherte API-Themen von heute
+            console.log('1️⃣ Lade gespeicherte API-Themen von heute...');
+            const cachedTopics = localStorage.getItem('cached_api_topics');
+
+            if (cachedTopics) {
+                try {
+                    allTopics = JSON.parse(cachedTopics);
+                    filteredTopics = [...allTopics];
+                    console.log(`✅ ${allTopics.length} gecachte Themen geladen!`);
+                } catch (error) {
+                    console.error('❌ Fehler beim Laden gecachter Themen:', error);
+                    await loadTopics();
+                }
+            } else {
+                console.warn('⚠️ Keine gecachten Themen gefunden, lade Mock-Daten');
+                await loadTopics();
+            }
         } else {
-            console.log('1️⃣ Themen für heute bereits generiert');
+            console.log('1️⃣ Kein API-Key vorhanden, lade Mock-Daten');
             await loadTopics();
         }
 
@@ -368,6 +384,12 @@ async function handleSearch(searchTerm) {
         if (generatedTopics && generatedTopics.length > 0) {
             allTopics = generatedTopics;
             filteredTopics = generatedTopics;
+
+            // Speichere die neuen Themen in localStorage
+            localStorage.setItem('cached_api_topics', JSON.stringify(generatedTopics));
+            const today = new Date().toDateString();
+            localStorage.setItem('last_auto_generation_date', today);
+
             displaySearchResults(generatedTopics, searchTerm);
         } else {
             console.warn('⚠️ Keine Themen von API erhalten, nutze Mock-Daten');
@@ -1362,11 +1384,16 @@ function setupAiSearchButton() {
             // Replace mock data with AI-generated topics
             allTopics = newTopics;
             filteredTopics = [...allTopics];
-            
+
+            // Speichere die neuen Themen in localStorage
+            localStorage.setItem('cached_api_topics', JSON.stringify(newTopics));
+            const today = new Date().toDateString();
+            localStorage.setItem('last_auto_generation_date', today);
+
             // Re-render topics
             renderTopics();
             updateLastUpdate();
-            
+
             // Show success message
             alert(`✅ Erfolgreich! ${newTopics.length} neue Themen zu "${query}" gefunden!`);
         } else {
