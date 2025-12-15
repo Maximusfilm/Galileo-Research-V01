@@ -1233,7 +1233,7 @@ WICHTIG:
 
 Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
 
-        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-pro:generateContent?key=${apiKey}`, {
+        const response = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/gemini-1.5-flash:generateContent?key=${apiKey}`, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -1246,6 +1246,8 @@ Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
                 }]
             })
         });
+
+        console.log('🌐 API Response Status:', response.status, response.statusText);
 
         if (!response.ok) {
             throw new Error(`Gemini API Error: ${response.status}`);
