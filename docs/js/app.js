@@ -1254,12 +1254,13 @@ Format: JSON-Array mit genau diesem Schema:
                 "visualRating": 5,
                 "visualReason": "Warum ist das Thema visuell stark? Was kann man filmen?",
                 "sourceName": "Tagesschau",
-                "sourceUrl": "https://www.tagesschau.de"
+                "searchKeywords": "Bodensee zugefroren 2025"
             }
         ]
 
 WICHTIG:
-- Gib ECHTE, recherchierbare Quellen-URLs an (z.B. tagesschau.de, spiegel.de, sueddeutsche.de)
+- Gib KEINE URLs an, sondern nur "searchKeywords" mit 2-4 Suchbegriffen für Google
+- sourceName: Name einer seriösen deutschen Nachrichtenquelle (Tagesschau, Spiegel, SZ, etc.)
 - Tags müssen aus folgender Liste sein: Bildstark, Wissenschaft, Technologie, Gerade aktuell, Entertainment, Gesellschaftlich Relevant, Natur & Umwelt
 - visualRating: 1-5 (wie filmtauglich ist das Thema?)
 
@@ -1301,6 +1302,10 @@ Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
 
         // Transform topics to match app's expected format
         const topics = rawTopics.map((topic, index) => {
+            // Erstelle Google-Suche URL aus searchKeywords oder title
+            const searchQuery = topic.searchKeywords || topic.title;
+            const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(searchQuery)}`;
+
             const transformedTopic = {
                 id: Date.now() + index,
                 title: topic.title,
@@ -1311,8 +1316,8 @@ Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
                 credibility: 'green',
                 sources: [
                     {
-                        name: topic.sourceName || 'Quelle',
-                        url: topic.sourceUrl || `https://www.google.com/search?q=${encodeURIComponent(topic.title)}`,
+                        name: topic.sourceName || 'Google Suche',
+                        url: googleSearchUrl,
                         credibility: 'green'
                     }
                 ],
@@ -1336,6 +1341,7 @@ Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
             console.log(`🔄 Transformiert Topic ${index + 1}:`, {
                 title: transformedTopic.title,
                 tags: transformedTopic.tags,
+                searchKeywords: searchQuery,
                 sourceUrl: transformedTopic.sources[0].url
             });
 
