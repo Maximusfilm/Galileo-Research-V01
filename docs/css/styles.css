@@ -518,35 +518,10 @@ body {
 .topic-card:nth-child(9) { animation-delay: 0.9s; }
 .topic-card:nth-child(10) { animation-delay: 1s; }
 
-/* Thumbnail Gradient Overlay */
-.topic-card::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    top: 0;
-    right: 0;
-    height: 120px;
-    background: linear-gradient(135deg, rgba(0, 102, 204, 0.4) 0%, rgba(0, 217, 255, 0.2) 100%);
-    transition: all 0.3s ease;
-    z-index: 1;
-}
-
-.topic-card[data-credibility="yellow"]::before {
-    background: linear-gradient(135deg, rgba(255, 179, 0, 0.4) 0%, rgba(255, 136, 0, 0.2) 100%);
-}
-
-.topic-card[data-credibility="red"]::before {
-    background: linear-gradient(135deg, rgba(255, 61, 0, 0.4) 0%, rgba(255, 0, 0, 0.2) 100%);
-}
-
 .topic-card:hover {
     transform: translateY(-6px);
     box-shadow: 0 8px 24px rgba(0, 128, 255, 0.2);
     border-color: rgba(0, 217, 255, 0.3);
-}
-
-.topic-card:hover::before {
-    opacity: 0.8;
 }
 
 /* Card Link Wrapper */
@@ -575,10 +550,11 @@ body {
 
 .thumbnail-icon {
     font-size: 3rem;
-    opacity: 0.3;
-    filter: blur(1px);
+    opacity: 0.5;
+    filter: blur(0.5px);
     position: absolute;
     z-index: 1;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
 }
 
 /* Category Badge */

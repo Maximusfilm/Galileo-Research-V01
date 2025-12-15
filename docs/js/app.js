@@ -815,6 +815,8 @@ function renderTopics() {
         return;
     }
 
+    console.log('🎨 Rendering', filteredTopics.length, 'topics');
+
     topicsListContainer.innerHTML = filteredTopics.map(topic => {
         const primarySource = topic.sources && topic.sources.length > 0 ? topic.sources[0] : null;
         const sourceUrl = primarySource ? primarySource.url : '#';
@@ -822,6 +824,14 @@ function renderTopics() {
         // Generiere Gradient basierend auf Tag
         const gradient = getTagGradient(topic.tags[0] || 'Thema');
         const icon = getTagIcon(topic.tags[0] || 'Thema');
+
+        console.log(`🎨 Rendering "${topic.title}":`, {
+            tag: topic.tags[0],
+            gradient: gradient,
+            icon: icon,
+            sourceUrl: sourceUrl,
+            sourceName: primarySource?.name
+        });
 
         return `
             <a href="${sourceUrl}" target="_blank" class="topic-card-link" rel="noopener noreferrer">
@@ -1244,6 +1254,8 @@ Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
         const data = await response.json();
         const text = data.candidates[0].content.parts[0].text;
 
+        console.log('📥 Rohe API-Response:', text);
+
         // Extract JSON from response
         const jsonMatch = text.match(/\[\s*{[\s\S]*}\s*\]/);
         if (!jsonMatch) {
@@ -1251,41 +1263,53 @@ Antworte NUR mit dem JSON-Array, keine zusätzlichen Erklärungen.`;
         }
 
         const rawTopics = JSON.parse(jsonMatch[0]);
+        console.log('📋 Rohe Topics von API:', rawTopics);
 
         // Transform topics to match app's expected format
-        const topics = rawTopics.map((topic, index) => ({
-            id: Date.now() + index,
-            title: topic.title,
-            summary: topic.summary || topic.description || 'Keine Beschreibung verfügbar',
-            tags: topic.tags || ['Gerade aktuell'],
-            visualRating: topic.visualRating || 3,
-            visualReason: topic.visualReason || 'Visuell interessantes Thema',
-            credibility: 'green',
-            sources: [
-                {
-                    name: topic.sourceName || 'Web',
-                    url: topic.sourceUrl || 'https://www.google.com/search?q=' + encodeURIComponent(topic.title),
-                    credibility: 'green'
-                }
-            ],
-            isDuplicate: false,
-            duplicateInfo: 'Noch nicht bei Galileo behandelt',
-            storyline: {
-                duration: '12-15 Min',
-                structure: [
-                    'Intro: Vorstellung des Themas',
-                    'Hauptteil: Recherche vor Ort',
-                    'Experteninterviews',
-                    'Finale: Fazit und Ausblick'
+        const topics = rawTopics.map((topic, index) => {
+            const transformedTopic = {
+                id: Date.now() + index,
+                title: topic.title,
+                summary: topic.summary || topic.description || 'Keine Beschreibung verfügbar',
+                tags: Array.isArray(topic.tags) ? topic.tags : ['Gerade aktuell'],
+                visualRating: topic.visualRating || 3,
+                visualReason: topic.visualReason || 'Visuell interessantes Thema',
+                credibility: 'green',
+                sources: [
+                    {
+                        name: topic.sourceName || 'Quelle',
+                        url: topic.sourceUrl || `https://www.google.com/search?q=${encodeURIComponent(topic.title)}`,
+                        credibility: 'green'
+                    }
                 ],
-                locations: ['Deutschland'],
-                protagonists: ['Experten', 'Betroffene'],
-                dramaticArc: 'Von der Fragestellung zur Antwort'
-            },
-            date: new Date().toISOString().split('T')[0]
-        }));
+                isDuplicate: false,
+                duplicateInfo: 'Noch nicht bei Galileo behandelt',
+                storyline: {
+                    duration: '12-15 Min',
+                    structure: [
+                        'Intro: Vorstellung des Themas',
+                        'Hauptteil: Recherche vor Ort',
+                        'Experteninterviews',
+                        'Finale: Fazit und Ausblick'
+                    ],
+                    locations: ['Deutschland'],
+                    protagonists: ['Experten', 'Betroffene'],
+                    dramaticArc: 'Von der Fragestellung zur Antwort'
+                },
+                date: new Date().toISOString().split('T')[0]
+            };
+
+            console.log(`🔄 Transformiert Topic ${index + 1}:`, {
+                title: transformedTopic.title,
+                tags: transformedTopic.tags,
+                sourceUrl: transformedTopic.sources[0].url
+            });
+
+            return transformedTopic;
+        });
 
         console.log(`✅ ${topics.length} Themen von Gemini API erfolgreich geladen`);
+        console.log('📊 Finale Topics:', topics);
         hideLoadingOverlay();
         return topics;
 
