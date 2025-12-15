@@ -5,8 +5,7 @@ const CONFIG = {
     PASSWORD: 'Sig1MpxP226KIT',
     SESSION_KEY: 'galileo_auth',
     SESSION_DURATION: 24 * 60 * 60 * 1000, // 24 hours
-    DATA_URL: './data/topics-mock.json'
-};
+    DATA_URL: './data/topics.json'};
 
 // ========================================
 // GLOBAL STATE
@@ -498,6 +497,9 @@ function renderTopics() {
     topicsListContainer.innerHTML = filteredTopics.map(topic => `
         <div class="topic-card" data-credibility="${topic.credibility}" onclick="showTopicDetail(${topic.id})">
             <div class="topic-content">
+                            <div class="topic-image">
+                    <img src="${topic.imageUrl || `https://source.unsplash.com/400x300/?${topic.tags[0] || 'science'}`}" alt="${topic.title}" onerror="this.src='https://via.placeholder.com/400x300/4A90E2/ffffff?text=Galileo+Research'" />
+                </div>
                 <div class="topic-header">
                     <h3 class="topic-title">${topic.title}</h3>
                     <div class="topic-badges">
