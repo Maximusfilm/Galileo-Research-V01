@@ -1,69 +1,24 @@
 {
-  "lastUpdate": "2026-01-27T06:46:20.009920",
+  "lastUpdate": "2026-01-28T06:46:44.923133",
   "topics": [
     {
-      "id": 7843,
-      "title": "USA: Shaun White zeigt Tricks im verschneiten Central Park",
+      "id": 2251,
+      "title": "Nationalversammlung beschließt Social-Media-Verbot für unter 15-Jährige",
       "tags": [
-        "Natur & Umwelt",
-        "Gerade aktuell",
-        "Entertainment",
-        "Experiment",
-        "Trend"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Snowboardlegende Shaun White nutzt die Schneemassen in New York, um im Central Park Tricks vorzuführen. An vielen anderen Orten im Land ist die Lage bitterernst.",
-      "visualRating": 5,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/ausland/usa-shaun-white-zeigt-tricks-im-verschneiten-central-park-a-32f00642-09f3-40a4-8922-3c30fd265062#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "10-15 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T19:54:00",
-      "galileo_relevance": 7
-    },
-    {
-      "id": 4996,
-      "title": "The magnetic secret inside steel finally explained",
-      "tags": [
-        "Entertainment",
         "Wissenschaft",
-        "Gesundheit",
         "Technologie",
-        "Natur & Umwelt"
+        "Gerade aktuell",
+        "Experiment",
+        "Innovation"
       ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. For years, scientists noticed that magnetic fields could improve steel, but no one knew exactly why. New simulations reveal that magnetism changes how iron atoms behave, making it harder for carbon at",
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Kein Social Media für unter 15-Jährige: Frankreich könnte nach Australien bald das zweite Land sein, in dem es eine Altersbeschränkung für Social Media gibt. Die Nationalversammlung stimmte für ein en",
       "visualRating": 5,
       "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
       "credibility": "green",
       "sources": [
         {
-          "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260125083427.htm",
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/europa/socialmedia-verbot-frankreich-jugendliche-100.html",
           "credibility": "green"
         }
       ],
@@ -88,22 +43,646 @@
         ],
         "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
       },
-      "date": "2026-01-26T16:57:18",
+      "date": "2026-01-27T09:27:02",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 9376,
+      "title": "New DNA analysis rewrites the story of the Beachy Head Woman",
+      "tags": [
+        "Spektakulär",
+        "Gesellschaftlich Relevant",
+        "Technologie",
+        "Gerade aktuell",
+        "Entertainment"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. A Roman-era skeleton discovered in southern England has finally given up her secrets after more than a decade of debate. Known as the Beachy Head Woman, she was once thought to have roots in sub-Sahar",
+      "visualRating": 5,
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260125083421.htm",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-25T15:04:57",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 8602,
+      "title": "A century-old Stonehenge mystery may finally be solved",
+      "tags": [
+        "Innovation",
+        "Ungewöhnlich",
+        "Psychologie",
+        "Spektakulär",
+        "Natur & Umwelt"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Scientists have found compelling new evidence that humans, not glaciers, brought Stonehenge’s bluestones to the site. Using advanced mineral analysis, researchers searched nearby river sediments for s",
+      "visualRating": 4,
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260127010208.htm",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T08:32:55",
+      "galileo_relevance": 8
+    },
+    {
+      "id": 7710,
+      "title": "Imposter-Phänomen: Hochstapler-Gefühle als nützliche Ressource erkennen",
+      "tags": [
+        "Psychologie",
+        "Experiment",
+        "Ungewöhnlich",
+        "Innovation",
+        "Gerade aktuell"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Unter dem Schlagwort »Imposter« werden Selbstzweifel zu einem weiteren Problem, das wir wegoptimieren sollen. Dabei gibt es Untersuchungen, dass Hochstapler-Gefühle sogar hilfreich sein können.",
+      "visualRating": 3,
+      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/start/imposter-phaenomen-hochstapler-gefuehle-als-nuetzliche-ressource-erkennen-a-0a91ab25-47f6-4aca-8ede-72207c234491#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-28T05:15:00",
+      "galileo_relevance": 8
+    },
+    {
+      "id": 2920,
+      "title": "Arizona: Schüsse in Pima County – offenbar wieder Grenzschutzeinheit beteiligt",
+      "tags": [
+        "Natur & Umwelt",
+        "Experiment",
+        "Entertainment",
+        "Gesellschaftlich Relevant",
+        "Technologie"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. US-Medien berichten von einem Vorfall in Arizona, bei dem wohl eine Person angeschossen wurde. Die Grenzschutzeinheit Customs and Border Patrol war involviert – es sollen zuvor Schüsse auf einen Helik",
+      "visualRating": 3,
+      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/ausland/arizona-schuesse-in-pima-county-offenbar-wieder-grenzschutzeinheit-beteiligt-a-e0a73a09-aff7-48ff-8af1-e9860e7e0caa#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T19:33:00",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 8483,
+      "title": "DGHS: Staatsanwaltschaft ermittelt gegen Mitarbeiterin von Sterbehilfeorganisation",
+      "tags": [
+        "Innovation",
+        "Psychologie",
+        "Ungewöhnlich",
+        "Experiment",
+        "Mysterium"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Der Aktivist Florian Willet beging 2025 Suizid – mithilfe der Deutschen Gesellschaft für Humanes Sterben. Nun hat der Fall für zwei Beteiligte Konsequenzen. Es geht um den Verdacht auf Totschlag.",
+      "visualRating": 3,
+      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/panorama/justiz/dghs-staatsanwaltschaft-ermittelt-gegen-mitarbeiterin-von-sterbehilfeorganisation-a-0f458b89-3a32-438a-8326-5ff4a2a63ab3#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T17:32:00",
       "galileo_relevance": 10
     },
     {
-      "id": 5952,
-      "title": "A hidden genetic war is unfolding inside your DNA",
+      "id": 6785,
+      "title": "US-Überblick am Morgen: Stephen Miller ändert Rhetorik, demokratische Abgeordnete angegriffen",
       "tags": [
-        "Gesellschaftlich Relevant",
-        "Mysterium",
-        "Gerade aktuell",
+        "Experiment",
+        "Wissenschaft",
+        "Psychologie",
+        "Bildstark",
+        "Technologie"
+      ],
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Trump-Berater Miller deutet mögliches Fehlverhalten von Bundesbeamten in Minneapolis an. Ilhan Omar wird bei einer Bürgerversammlung mit Flüssigkeit bespritzt. Die Nacht",
+      "visualRating": 3,
+      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Zeit Online",
+          "url": "https://www.zeit.de/politik/ausland/2026-01/usa-ueberblick-minneapolis-miller-trump-noem-ice-karibik",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-28T05:32:40",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 8865,
+      "title": "Scientists found a survival switch inside brain cells",
+      "tags": [
+        "Technologie",
+        "Entertainment",
         "Ungewöhnlich",
+        "Trend",
+        "Natur & Umwelt"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Findings could create new opportunities to treat and study neurodegenerative diseasesScientists discovered that sugar metabolism plays a surprising role in whether injured neurons collapse or cling to",
+      "visualRating": 3,
+      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260127010138.htm",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T13:09:25",
+      "galileo_relevance": 9
+    },
+    {
+      "id": 6068,
+      "title": "This small soil upgrade cut locust damage and doubled yields",
+      "tags": [
+        "Spektakulär",
+        "Wissenschaft",
+        "Technologie",
+        "Gesellschaftlich Relevant",
+        "Innovation"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Locust swarms can wipe out crops across entire regions, threatening food supplies and livelihoods. Now, scientists working with farmers in Senegal have shown that improving soil health can dramaticall",
+      "visualRating": 3,
+      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260124073929.htm",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-24T13:08:59",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 5268,
+      "title": "Scientists call for urgent action as dangerous amoebas spread globally",
+      "tags": [
+        "Ungewöhnlich",
+        "Mysterium",
+        "Experiment",
+        "Wissenschaft",
+        "Bildstark"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Scientists are warning that a little-known group of microbes called free-living amoebae may pose a growing global health threat. Found in soil and water, some species can survive extreme heat, chlorin",
+      "visualRating": 3,
+      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260124003856.htm",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "8-12 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-25T08:07:24",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 6226,
+      "title": "Der Sozialstaat muss umgebaut werden",
+      "tags": [
+        "Experiment",
+        "Gesundheit",
+        "Bildstark",
+        "Trend"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Der Sozialstaat steckt im \"Behördendschungel\" fest - es ist an der Zeit, dass dieser gestutzt wird, findet Dagmar Pepping. Das Reformpaket enthält viele richtige Schritte. Es ist eine Kraftanstrengung",
+      "visualRating": 5,
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/sozialstaat-kommission-reform-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "8-12 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T17:10:13",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 3857,
+      "title": "Venezuela: USA geben laut Übergangspräsidentin eingefrorene Vermögenswerte frei",
+      "tags": [
+        "Experiment",
+        "Bildstark",
+        "Entertainment",
+        "Technologie"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Nach dem Sturz von Machthaber Maduro hofft die venezolanische Übergangsregierung auf eine Lockerung der US-Sanktionen. Nach Angaben der amtierenden Präsidenten Rodríguez soll ihr Land nun eingefrorene",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/wirtschaft/venezuela-usa-geben-laut-uebergangspraesidentin-eingefrorene-vermoegenswerte-frei-a-e1519e2f-f87d-4e0a-9bf9-323585d05beb#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-28T06:26:00",
+      "galileo_relevance": 9
+    },
+    {
+      "id": 5873,
+      "title": "Fußball-Bundesliga: Werder Bremen und der FC St. Pauli weiter sieglos",
+      "tags": [
+        "Gesundheit",
+        "Mysterium",
+        "Ungewöhnlich",
+        "Natur & Umwelt"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Die Lage für Werder Bremen und den FC St. Pauli im Abstiegskampf der Bundesliga wird immer bedrohlicher: Beide Nordklubs setzten in Nachholspielen ihre Sieglos-Serien fort.",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/sport/fussball/fussball-bundesliga-werder-bremen-und-der-fc-st-pauli-weiter-sieglos-a-e9d8a7a3-5984-48e0-9126-ea408bdc0782#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "8-12 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T21:39:00",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 1511,
+      "title": "Winterwetter: Vorsicht im Verkehr – Glätte und neuer Schnee im Nordwesten",
+      "tags": [
+        "Spektakulär",
+        "Bildstark",
+        "Trend",
         "Entertainment"
       ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Our genome isn’t as peaceful as it looks—some DNA elements are constantly trying to disrupt it. Scientists studying fruit flies discovered that key proteins protecting chromosome ends must evolve rapi",
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. ",
       "visualRating": 5,
-      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
+      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Zeit Online",
+          "url": "https://www.zeit.de/news/2026-01/28/vorsicht-im-verkehr-glaette-und-neuer-schnee-im-nordwesten",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-28T06:06:14",
+      "galileo_relevance": 8
+    },
+    {
+      "id": 1517,
+      "title": "Elbvertiefung: Der tägliche Newsletter aus Hamburg: Die Reeperbahn wird 400 Jahre alt – oder?",
+      "tags": [
+        "Gesundheit",
+        "Psychologie",
+        "Spektakulär",
+        "Bildstark"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Die Elbvertiefung am Mittwoch – mit weniger gefördertem Wohnungsbau, einem Warnstreik-Aufruf an den Hamburger Hochschulen und Verdacht auf Drogendelikte bei der Bundewehr",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Zeit Online",
+          "url": "https://www.zeit.de/hamburg/2026-01/elbvertiefung-28-01-2026",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-28T05:00:11",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 9296,
+      "title": "A hidden genetic war is unfolding inside your DNA",
+      "tags": [
+        "Wissenschaft",
+        "Gerade aktuell",
+        "Entertainment",
+        "Innovation"
+      ],
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Our genome isn’t as peaceful as it looks—some DNA elements are constantly trying to disrupt it. Scientists studying fruit flies discovered that key proteins protecting chromosome ends must evolve rapi",
+      "visualRating": 5,
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
       "credibility": "green",
       "sources": [
         {
@@ -115,7 +694,7 @@
       "isDuplicate": false,
       "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
       "storyline": {
-        "duration": "8-12 Minuten",
+        "duration": "10-15 Minuten",
         "structure": [
           "Intro: Thema vorstellen (2 Min)",
           "Hauptteil: Vor Ort Reportage (6-10 Min)",
@@ -137,18 +716,969 @@
       "galileo_relevance": 10
     },
     {
-      "id": 1583,
-      "title": "New catalyst makes plastic upcycling 10x more efficient than platinum",
+      "id": 1564,
+      "title": "Slowakei klagt gegen EU-Importverbot für russisches Gas",
+      "tags": [
+        "Mysterium",
+        "Innovation",
+        "Trend",
+        "Natur & Umwelt"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Die EU will die Einfuhr von Gas aus Russland bis Ende 2027 stoppen. Die Slowakei ist dagegen - und stellt sich so wie Ungarn quer. Beide Länder wollen Klage vor dem Europäischen Gerichtshof einreichen",
+      "visualRating": 4,
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/europa/slowakei-klage-importverbot-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T14:44:40",
+      "galileo_relevance": 9
+    },
+    {
+      "id": 8987,
+      "title": "Über 500 Milliarden Euro werden in der Schattenwirtschaft bewegt",
+      "tags": [
+        "Technologie",
+        "Experiment",
+        "Psychologie",
+        "Ungewöhnlich"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Laut einer Studie hat die sogenannte Schattenwirtschaft in Deutschland inzwischen einen Umfang von mehr als 500 Milliarden Euro. Grund dafür ist unter anderem die schlechte Wirtschaftslage.",
+      "visualRating": 4,
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/wirtschaft/konjunktur/bip-schattenwirtschaft-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T12:44:46",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 2095,
+      "title": "Sizilien: Erdrutsch in Niscemi zwingt Anwohner zur Umsiedlung",
       "tags": [
         "Spektakulär",
+        "Gesundheit",
+        "Entertainment",
+        "Technologie"
+      ],
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Etliche Häuser sind bereits abgestürzt, weitere Teile der Kleinstadt drohen wegzubrechen: Im italienischen Niscemi müssen Einwohner in Sicherheit gebracht werden. Ihre Wut richtet sich gegen die Regie",
+      "visualRating": 4,
+      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/panorama/sizilien-erdrutsch-in-niscemi-zwingt-anwohner-zur-umsiedlung-a-bac6b7e7-3e5b-4b51-8a3e-753996361c91#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "8-12 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T18:45:00",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 6970,
+      "title": "Kriminalität: Eisblock von Brücke geworfen – Polizei sucht Jugendliche",
+      "tags": [
         "Gerade aktuell",
-        "Mysterium",
+        "Gesundheit",
+        "Natur & Umwelt",
+        "Technologie"
+      ],
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. ",
+      "visualRating": 4,
+      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Zeit Online",
+          "url": "https://www.zeit.de/news/2026-01/28/eisblock-von-bruecke-geworfen-polizei-sucht-jugendliche",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-28T06:23:14",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 8291,
+      "title": "This discovery could let bones benefit from exercise without moving",
+      "tags": [
+        "Spektakulär",
+        "Wissenschaft",
+        "Entertainment",
+        "Innovation"
+      ],
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Researchers have discovered a biological switch that explains why movement keeps bones strong. The protein senses physical activity and pushes bone marrow stem cells to build bone instead of storing f",
+      "visualRating": 4,
+      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260127010149.htm",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T14:48:33",
+      "galileo_relevance": 8
+    },
+    {
+      "id": 5996,
+      "title": "Antrag: CDU will Mindestlohn-Ausnahmen für Saisonarbeiter",
+      "tags": [
+        "Bildstark",
+        "Gerade aktuell",
         "Gesellschaftlich Relevant",
+        "Technologie"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Saisonarbeitskräfte in der Landwirtschaft sollen nach Willen der CDU künftig vom Mindestlohn ausgenommen werden. Sie übten keine Vollerwerbstätigkeit aus. Ähnliche Vorschläge scheiterten bislang am Wi",
+      "visualRating": 3,
+      "visualReason": "Abstrakte Thematik, schwer zu visualisieren",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/inland/innenpolitik/cdu-mindestlohn-saisonarbeiter-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-28T06:15:19",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 5167,
+      "title": "ACEA: Weniger Verbrenner in Europa zugelassen",
+      "tags": [
+        "Mysterium",
+        "Gesundheit",
+        "Spektakulär",
+        "Natur & Umwelt"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. In Europa werden immer weniger Autos mit Benzin- oder Dieselantrieben verkauft. Das geht aus den Jahreszahlen des Branchenverbandes ACEA hervor. Am beliebtesten waren Hybridautos.",
+      "visualRating": 3,
+      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/wirtschaft/verbraucher/acea-zahlen-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T09:30:10",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 5295,
+      "title": "Was ist ICE - und welche Befugnisse hat sie?",
+      "tags": [
+        "Trend",
+        "Wissenschaft",
+        "Ungewöhnlich",
+        "Gesundheit"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Die brachialen Einsätze der Einwanderungsbehörde ICE wühlen die USA weiterhin auf. Doch was dürfen ihre Einsatzkräfte wirklich tun, wie viele Migranten hat sie deportiert - und warum ist sie gerade in",
+      "visualRating": 3,
+      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/ausland/amerika/usa-ice-auftrag-befugnisse-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T09:21:53",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 2953,
+      "title": "Ukraine: Wolodymyr Selenskyj verurteilt russischen Angriff auf Passagierzug als Terrorismus",
+      "tags": [
+        "Innovation",
+        "Gesundheit",
+        "Psychologie",
+        "Entertainment"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Bei einem Drohnenangriff auf einen Zug im Gebiet Charkiw sind nach Angaben des ukrainischen Präsidenten Wolodymyr Selenskyj vier Menschen getötet worden. Attacken dieser Art seien als reiner Terrorakt",
+      "visualRating": 3,
+      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/ausland/ukraine-wolodymyr-selenskyj-verurteilt-russischen-angriff-auf-passagierzug-als-terrorismus-a-84c0ca12-a862-4188-9a92-61f5775643aa#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T20:43:00",
+      "galileo_relevance": 8
+    },
+    {
+      "id": 8353,
+      "title": "Mette Frederiksen: Dänemark will für Einigung mit den USA im Grönland-Konflikt »alles tun«",
+      "tags": [
+        "Ungewöhnlich",
+        "Trend",
+        "Innovation",
+        "Bildstark"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Verstärkte Kooperation, ja. Gebietsabtretungen, nein: Das hat die dänische Regierungschefin Mette Frederiksen im Konflikt um Grönland deutlich gemacht. Da die »alte Welt« weg sei, plädiert sie für Auf",
+      "visualRating": 3,
+      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/ausland/mette-frederiksen-daenemark-will-fuer-einigung-mit-den-usa-im-groenland-konflikt-alles-tun-a-a4181c61-f3e1-4d4b-b059-d78eb09bdee4#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T19:49:00",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 4500,
+      "title": "Wetter: Bewölkter Himmel, Niederschläge und Glätte im Südwesten",
+      "tags": [
+        "Ungewöhnlich",
+        "Mysterium",
+        "Entertainment",
         "Trend"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. ",
+      "visualRating": 3,
+      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Zeit Online",
+          "url": "https://www.zeit.de/news/2026-01/28/bewoelkter-himmel-niederschlaege-und-glaette-im-suedwesten",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-28T06:37:11",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 1565,
+      "title": "EU-Abkommen mit Indien: Eine neue Welthandelsordnung entsteht",
+      "tags": [
+        "Gesundheit",
+        "Mysterium",
+        "Natur & Umwelt"
+      ],
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Die EU und Indien einigen sich auf ein Handelsabkommen - und sogar Gegner des Mercosur-Vertrags mit Südamerika zeigen sich angetan. Was ist diesmal anders? Und wer profitiert vor allem? Von Jean-Marie",
+      "visualRating": 5,
+      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/indien-eu-freihandel-abkommen-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T19:23:11",
+      "galileo_relevance": 9
+    },
+    {
+      "id": 5970,
+      "title": "Offizielle Zahlen: Deutschland recycelt gut - aber es geht besser",
+      "tags": [
+        "Spektakulär",
+        "Mysterium",
+        "Experiment"
+      ],
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Pappe, Konservendose, Plastikflasche: Bei vielen Verpackungen funktioniert Recycling immer besser, wie neue Zahlen zeigen. Doch Glas, Getränkekartons und Verbundverpackungen bleiben ein Problem. Von J",
+      "visualRating": 5,
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/wissen/klima/recycling-muell-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "8-12 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T15:56:30",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 6325,
+      "title": "Nachwuchspreis 2026: Neurologe will Hirntumoren den Stecker ziehen",
+      "tags": [
+        "Mysterium",
+        "Natur & Umwelt",
+        "Trend"
+      ],
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Der Neurologe Varun Venkataramani wird für seine Forschung zu Glioblastomen ausgezeichnet: Er zeigte, dass diese Hirntumore Verbindungen zu gesunden Nervenzellen nutzen, um ihr Wachstum zu fördern. Vo",
+      "visualRating": 5,
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/wissen/gesundheit/krebs-forschung-preis-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T10:02:38",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 3529,
+      "title": "Strange white rocks on Mars hint at millions of years of rain",
+      "tags": [
+        "Gesundheit",
+        "Gesellschaftlich Relevant",
+        "Mysterium"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Bright white rocks spotted by NASA’s Perseverance rover are rewriting what we thought we knew about ancient Mars. These aluminum-rich clays, called kaolinite, usually form on Earth only after millions",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260127010142.htm",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T09:34:56",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 4187,
+      "title": "Donald Trump stellt sich hinter Kristi Noem und kündigt »ehrliche Untersuchung« an",
+      "tags": [
+        "Gesellschaftlich Relevant",
+        "Technologie",
+        "Natur & Umwelt"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Die US-Demokraten drohen mit einem Amtsenthebungsverfahren, sollte Präsident Trump seine Heimatschutzministerin nicht entlassen. Der attestiert Kristi Noem »gute Arbeit«. Und verlangt Aufklärung im Fa",
+      "visualRating": 4,
+      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/ausland/donald-trump-stellt-sich-hinter-kristi-noem-und-kuendigt-ehrliche-untersuchung-an-a-f057c7b5-4094-4b19-8e63-236e2f87e18a#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T22:32:00",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 2846,
+      "title": "Brooklyn Beckham erschüttert die Inszenierung von David und Victoria: Der verlorene Sohn – Podcast",
+      "tags": [
+        "Spektakulär",
+        "Ungewöhnlich",
+        "Mysterium"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Die Beckhams inszenierten jahrelang eine heile Welt. Der kommerzielle Erfolg und das Image stimmten, bis Sohn Brooklyn den Bruch verkündete. Ein Lehrstück über die Instrumentalisierung des Familienleb",
+      "visualRating": 4,
+      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/kultur/brooklyn-beckham-erschuettert-die-inszenierung-von-david-und-victoria-der-verlorene-sohn-podcast-a-c1b14121-1b33-480c-9d85-6d8c0571228e#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "8-12 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T18:31:00",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 4276,
+      "title": "Nordrhein-Westfalens Fluchtministerin Paul ist zurückgetreten",
+      "tags": [
+        "Trend",
+        "Ungewöhnlich",
+        "Innovation"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Nach monatelangem politischen Druck ist Nordrhein-Westfalens Integrations- und Fluchtministerin Paul zurückgetreten. In einer Erklärung gesteht sie Fehler bei der Aufarbeitung des Terroranschlags von ",
+      "visualRating": 3,
+      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/inland/regional/nordrheinwestfalen/nrw-fluchtministerin-paul-ruecktritt-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T13:15:00",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 4086,
+      "title": "Wetter: Anhaltend winterliches Wetter in Nordrhein-Westfalen",
+      "tags": [
+        "Spektakulär",
+        "Innovation",
+        "Natur & Umwelt"
+      ],
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. ",
+      "visualRating": 3,
+      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Zeit Online",
+          "url": "https://www.zeit.de/news/2026-01/28/anhaltend-winterliches-wetter-in-nordrhein-westfalen",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-28T06:08:46",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 5958,
+      "title": "Bas zur Sozialstaatsreform: \"Keine Leistungskürzung\"",
+      "tags": [
+        "Gerade aktuell",
+        "Psychologie"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. \"Das Schutzniveau bleibt erhalten\": Arbeitsministerin Bas hat angekündigt, beim geplanten Umbau des Sozialstaats keine Sozialleistungen zu kürzen. Was sich konkret ändern soll, wird heute vorgestellt.",
+      "visualRating": 5,
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Tagesschau",
+          "url": "https://www.tagesschau.de/inland/sozialstaat-reform-bas-100.html",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T09:54:49",
+      "galileo_relevance": 7
+    },
+    {
+      "id": 9613,
+      "title": "Tova Friedman: Warum die Holocaust-Überlebende mit ihrem Enkel TikTok-Videos dreht",
+      "tags": [
+        "Mysterium",
+        "Spektakulär"
+      ],
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Tova Friedman hat als Kind Auschwitz überlebt. Heute erzählt die 87-Jährige mit ihrem Enkel Aron Goodman ihre Geschichte auf TikTok. Was treibt sie an?",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/politik/deutschland/tova-friedman-warum-die-holocaust-ueberlebende-mit-ihrem-enkel-tiktok-videos-dreht-a-09e743ef-5033-49c8-ba02-bd0fc2680fa5#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-28T05:10:00",
+      "galileo_relevance": 10
+    },
+    {
+      "id": 5081,
+      "title": "Popsong-Lyrik mit James McNicholas: Das Tiefe im Flachen",
+      "tags": [
+        "Spektakulär",
+        "Gerade aktuell"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Der britische Schauspieler trägt die Lyrics von Popsongs so tief emotional vor, als wären sie Verse von Shakespeare. Auf Instagram wurde der 39-Jährige mit solchen »Songologues« zum Star.",
+      "visualRating": 5,
+      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/kultur/popsong-lyrik-mit-james-mcnicholas-das-tiefe-im-flachen-a-4d227408-2b52-4843-ba29-d886e47c2e5f#ref=rss",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "8-12 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-27T18:13:00",
+      "galileo_relevance": 9
+    },
+    {
+      "id": 4095,
+      "title": "New catalyst makes plastic upcycling 10x more efficient than platinum",
+      "tags": [
+        "Trend",
+        "Bildstark"
       ],
       "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Scientists are finding new ways to replace expensive, scarce platinum catalysts with something far more abundant: tungsten carbide. By carefully controlling how tungsten carbide’s atoms are arranged a",
       "visualRating": 5,
-      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
       "credibility": "green",
       "sources": [
         {
@@ -160,7 +1690,7 @@
       "isDuplicate": false,
       "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
       "storyline": {
-        "duration": "10-15 Minuten",
+        "duration": "8-12 Minuten",
         "structure": [
           "Intro: Thema vorstellen (2 Min)",
           "Hauptteil: Vor Ort Reportage (6-10 Min)",
@@ -179,251 +1709,23 @@
         "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
       },
       "date": "2026-01-24T09:15:29",
-      "galileo_relevance": 8
+      "galileo_relevance": 10
     },
     {
-      "id": 8330,
-      "title": "Holocaust-Überlebende Friedman spricht über Antisemitismus",
+      "id": 5944,
+      "title": "How type 2 diabetes quietly damages blood vessels",
       "tags": [
-        "Technologie",
         "Gesellschaftlich Relevant",
-        "Psychologie",
-        "Wissenschaft",
-        "Entertainment"
+        "Innovation"
       ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Tova Friedman ist morgen Gastrednerin beim Holocaust-Gedenken im Bundestag. Mit ihrem Enkel betreibt die Auschwitz-Überlebende einen TikTok-Kanal zum Antisemitismus. In den tagesthemen erklären sie, w",
-      "visualRating": 4,
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Type 2 diabetes becomes more dangerous to the heart the longer a person has it. Researchers found that after several years, red blood cells can begin interfering with healthy blood vessel function. Th",
+      "visualRating": 5,
       "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
       "credibility": "green",
       "sources": [
         {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/inland/gesellschaft/holocaust-gedenktag-interview-ueberlebende-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T05:00:42",
-      "galileo_relevance": 8
-    },
-    {
-      "id": 4480,
-      "title": "Christina Block vor Gericht: Wie ein Kinderpsychologe in dem Fall mitmischte",
-      "tags": [
-        "Bildstark",
-        "Gesundheit",
-        "Natur & Umwelt",
-        "Innovation",
-        "Gesellschaftlich Relevant"
-      ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Stefan Rücker ist ein renommierter Trennungsexperte. Im Fall Block entwarf er ein »Rückführungskonzept« und war bei einem mutmaßlichen Entführungsversuch dabei. SPIEGEL-Recherchen werfen die Frage auf",
-      "visualRating": 4,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/panorama/justiz/christina-block-vor-gericht-wie-ein-kinderpsychologe-in-dem-fall-mitmischte-a-0c33e74e-cfad-4b15-aed0-566083a8f1e0#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "10-15 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T18:32:00",
-      "galileo_relevance": 10
-    },
-    {
-      "id": 1844,
-      "title": "Schwarzarbeit: Schattenwirtschaft in Deutschland erreicht neuen Höchststand",
-      "tags": [
-        "Mysterium",
-        "Trend",
-        "Innovation",
-        "Ungewöhnlich",
-        "Psychologie"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Schwarzarbeit und illegale Arbeiten haben 2025 zugenommen: 510 Milliarden Euro wurden laut einer Studie so erwirtschaftet. Das hat auch mit der Wirtschaftskrise zu tun.",
-      "visualRating": 4,
-      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Zeit Online",
-          "url": "https://www.zeit.de/wirtschaft/2026-01/schattenwirtschaft-deutschland-schwarzarbeit-rekord-wirtschaftskrise",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T06:05:19",
-      "galileo_relevance": 7
-    },
-    {
-      "id": 2957,
-      "title": "Forty years of forest data reveal a changing Amazon",
-      "tags": [
-        "Gesundheit",
-        "Psychologie",
-        "Bildstark",
-        "Gerade aktuell",
-        "Ungewöhnlich"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. After analyzing 40 years of tree records across the Andes and Amazon, researchers found that climate change is reshaping tropical forests in uneven ways. Some regions are steadily losing tree species,",
-      "visualRating": 4,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
           "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260125081133.htm",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-25T13:27:34",
-      "galileo_relevance": 8
-    },
-    {
-      "id": 1383,
-      "title": "Scientists just overturned a 100-year-old rule of chemistry, and the results are “impossible”",
-      "tags": [
-        "Entertainment",
-        "Innovation",
-        "Spektakulär",
-        "Psychologie",
-        "Gerade aktuell"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Chemists at UCLA are showing that some of organic chemistry’s most famous “rules” aren’t as unbreakable as once thought. By creating bizarre, cage-shaped molecules with warped double bonds—structures ",
-      "visualRating": 4,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260122073618.htm",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-23T08:33:33",
-      "galileo_relevance": 8
-    },
-    {
-      "id": 1990,
-      "title": "Russland gibt offenbar Militärstützpunkt in Syrien auf",
-      "tags": [
-        "Psychologie",
-        "Mysterium",
-        "Trend",
-        "Technologie",
-        "Innovation"
-      ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Videos sollen zeigen, wie Russland ein Flugzeug belädt, eine Journalistin filmt sich offenbar in den verlassenen Hallen: Moskaus Truppen verlassen Berichten zufolge eine Basis in Syrien, zwei andere s",
-      "visualRating": 3,
-      "visualReason": "Abstrakte Thematik, schwer zu visualisieren",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/ausland/russland-gibt-offenbar-militaerstuetzpunkt-in-syrien-auf-a-87353e28-5c97-422f-933d-30efd9b72080#ref=rss",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260122093439.htm",
           "credibility": "green"
         }
       ],
@@ -448,292 +1750,24 @@
         ],
         "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
       },
-      "date": "2026-01-26T20:54:00",
-      "galileo_relevance": 8
+      "date": "2026-01-22T16:06:02",
+      "galileo_relevance": 7
     },
     {
-      "id": 4466,
-      "title": "Wasserbankrott: Der Welt geht das Süßwasser aus",
+      "id": 8745,
+      "title": "Indien: Warum es im Kamasutra um viel mehr als um Sex geht",
       "tags": [
-        "Wissenschaft",
-        "Psychologie",
         "Mysterium",
-        "Natur & Umwelt",
-        "Bildstark"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. An vielen Orten der Welt wird das Wasser knapp, die UN sprechen von einem Bankrott. Was hilft dagegen? Und: Was bringt das Freihandelsabkommen zwischen der EU und Indien?",
-      "visualRating": 3,
-      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Zeit Online",
-          "url": "https://www.zeit.de/politik/2026-01/wasserbankrott-un-studie-wassermangel-trinkwasser-nachrichtenpodcast",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T05:01:50",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 3114,
-      "title": "Chemotherapy rewires gut bacteria to block metastasis",
-      "tags": [
-        "Bildstark",
-        "Experiment",
-        "Gerade aktuell",
-        "Ungewöhnlich",
-        "Wissenschaft"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Chemotherapy’s gut damage turns out to have a surprising upside. By changing nutrient availability in the intestine, it alters gut bacteria and increases levels of a microbial molecule that travels to",
-      "visualRating": 3,
-      "visualReason": "Abstrakte Thematik, schwer zu visualisieren",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260123225920.htm",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "10-15 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-24T04:12:49",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 5169,
-      "title": "Handball-EM: Spanien gewinnt gegen Frankreich und hilft Deutschland",
-      "tags": [
-        "Technologie",
-        "Gesundheit",
-        "Bildstark",
         "Psychologie"
       ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Die deutschen Handballer stehen bei der EM sicher im Spiel um Platz fünf. Doch nach der Niederlage des direkten Konkurrenten Frankreich gegen Spanien rückt sogar das Halbfinale näher.",
-      "visualRating": 5,
-      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/sport/handball/handball-em-spanien-gewinnt-gegen-frankreich-und-hilft-deutschland-a-a911ac3f-577f-403b-8ee2-4c0dc0388483#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T18:43:00",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 8866,
-      "title": "Researchers tested AI against 100,000 humans on creativity",
-      "tags": [
-        "Trend",
-        "Mysterium",
-        "Ungewöhnlich",
-        "Gerade aktuell"
-      ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. A massive new study comparing more than 100,000 people with today’s most advanced AI systems delivers a surprising result: generative AI can now beat the average human on certain creativity tests. Mod",
-      "visualRating": 5,
-      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260125083356.htm",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-25T14:50:27",
-      "galileo_relevance": 8
-    },
-    {
-      "id": 6024,
-      "title": "Pistorius zu Grönland: \"Wir haben nicht zur Eskalation beigetragen\"",
-      "tags": [
-        "Entertainment",
-        "Psychologie",
-        "Technologie",
-        "Gesundheit"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Hinter der kurzzeitigen US-Zollandrohung im Streit um Grönland sieht Verteidigungsminister Pistorius ein mögliches Missverständnis. Bei Caren Miosga wies er Vorwürfe zurück, Deutschland habe zur Eskal",
-      "visualRating": 4,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/inland/pistorius-groenland-miosga-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "12-18 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-25T19:59:59",
-      "galileo_relevance": 10
-    },
-    {
-      "id": 2133,
-      "title": "Donald Trump (USA): Grenzschützer Gregory Bovino wird offenbar aus Minneapolis abgezogen",
-      "tags": [
-        "Bildstark",
-        "Experiment",
-        "Mysterium",
-        "Innovation"
-      ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Der Border-Patrol-Kommandeur Gregory Bovino gilt als zentrale Figur bei den Unruhen in Minneapolis. Jetzt sollen er und einige seiner Leute wohl die Stadt verlassen. Stattdessen schickt der US-Präside",
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Der indische Ratgeber Kamasutra sei in Teilen falsch übersetzt worden, sagen Forscher. Aussagen zur weiblichen Lust wurden demnach gestrichen. Eigentlich soll es um etwas anderes gehen: Erlösung.",
       "visualRating": 4,
       "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
       "credibility": "green",
       "sources": [
         {
           "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/ausland/donald-trump-usa-grenzschuetzer-gregory-bovino-wird-offenbar-aus-minneapolis-abgezogen-a-8506c67c-7735-41c0-b006-9d3f71a616bb#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T00:19:00",
-      "galileo_relevance": 7
-    },
-    {
-      "id": 9220,
-      "title": "Nordseestaaten planen \"größten Energiehub der Welt\"",
-      "tags": [
-        "Gerade aktuell",
-        "Natur & Umwelt",
-        "Psychologie",
-        "Gesundheit"
-      ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Deutschland und die anderen Staaten des Nordseegipfels wollen beim Ausbau der Offshore-Windenergie künftig enger zusammenarbeiten und die Nordsee besser absichern. Umweltverbände mahnen jedoch vor unü",
-      "visualRating": 3,
-      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/inland/nordseegipfel-energieversorgung-fazit-100.html",
+          "url": "https://www.spiegel.de/geschichte/indischer-liebesratgeber-warum-es-im-altindischen-kamasutra-um-viel-mehr-als-um-sex-geht-a-cdeecc50-efe0-4e8c-87fa-4d0a17046e3a#ref=rss",
           "credibility": "green"
         }
       ],
@@ -758,70 +1792,24 @@
         ],
         "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
       },
-      "date": "2026-01-26T20:37:03",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 8065,
-      "title": "Kommission empfiehlt umfassenden Umbau des Sozialstaats",
-      "tags": [
-        "Ungewöhnlich",
-        "Entertainment",
-        "Experiment",
-        "Gesundheit"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Von einem \"gesamtgesellschaftlichen Kraftakt\" ist die Rede: Eine Fachkommission der Bundesregierung schlägt weitreichende Reformen staatlicher Sozialleistungen vor. Das geht aus dem Bericht vor, der d",
-      "visualRating": 3,
-      "visualReason": "Abstrakte Thematik, schwer zu visualisieren",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/inland/innenpolitik/sozialstaat-reform-kommission-empfehlung-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "10-15 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T19:25:22",
+      "date": "2026-01-28T05:14:00",
       "galileo_relevance": 8
     },
     {
-      "id": 5885,
-      "title": "Tote und Vermisste nach Schiffsunglück vor den Philippinen",
+      "id": 4816,
+      "title": "Marco Rubio versteckt sich vor Donald Trump, wenn er in der »Air Force One« schläft",
       "tags": [
-        "Innovation",
-        "Natur & Umwelt",
-        "Entertainment",
+        "Gerade aktuell",
         "Mysterium"
       ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Vor den Philippinen ist eine Fähre mit mehr als 350 Menschen an Bord gekentert. Mindestens 18 Menschen starben, Hunderte konnten gerettet werden - doch noch gibt es mehrere Vermisste.",
-      "visualRating": 3,
-      "visualReason": "Abstrakte Thematik, schwer zu visualisieren",
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Wenn er weite Strecken fliegt, braucht der US-Außenminister eine Ruhepause, wie er nun sagt. Kompliziert wird das, wenn sein Chef Donald Trump mit an Bord ist. Dann verwandelt sich Marco Rubio offenba",
+      "visualRating": 4,
+      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
       "credibility": "green",
       "sources": [
         {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/ausland/asien/philippinen-faehrungluenck-100.html",
+          "name": "Der Spiegel",
+          "url": "https://www.spiegel.de/panorama/marco-rubio-versteckt-sich-vor-donald-trump-wenn-er-in-der-air-force-one-schlaeft-a-b10d8b70-1cba-445c-a9dd-15a3c2164a8a#ref=rss",
           "credibility": "green"
         }
       ],
@@ -846,158 +1834,24 @@
         ],
         "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
       },
-      "date": "2026-01-26T11:10:47",
-      "galileo_relevance": 7
-    },
-    {
-      "id": 6000,
-      "title": "Handball-EM: Deutschland verliert gegen Dänemark, Halbfinale weiter möglich",
-      "tags": [
-        "Spektakulär",
-        "Psychologie",
-        "Trend",
-        "Entertainment"
-      ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Die deutsche Handball-Nationalmannschaft kann nur bis zur Pause von der Sensation gegen Dänemark träumen. Nun muss ein Punktgewinn gegen Frankreich her.",
-      "visualRating": 3,
-      "visualReason": "Abstrakte Thematik, schwer zu visualisieren",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/sport/handball/handball-em-deutschland-verliert-gegen-daenemark-halbfinale-weiter-moeglich-a-8cf27a1d-183f-405e-91b7-d817d9630b6b#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T21:35:00",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 1059,
-      "title": "Dunkle Materie: Astronomen erstellen neue Karte der mysteriösen Masse",
-      "tags": [
-        "Natur & Umwelt",
-        "Experiment",
-        "Bildstark",
-        "Gesundheit"
-      ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Mit dem »James Webb«-Teleskop haben Forschende unsichtbare Strukturen in einer Himmelsregion so präzise erfasst wie nie zuvor. Ein großes Rätsel bleibt jedoch ungelöst.",
-      "visualRating": 3,
-      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/wissenschaft/weltall/dunkle-materie-astronomen-erstellen-neue-karte-der-mysterioesen-masse-a-4a86760e-9d0c-4c52-b101-4dff95d5cd11#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T18:26:00",
+      "date": "2026-01-28T02:11:00",
       "galileo_relevance": 8
     },
     {
-      "id": 4521,
-      "title": "Arbeitskultur in Japan: Überstunden sind auch keine Lösung",
+      "id": 3440,
+      "title": "Distant entangled atoms acting as one sensor deliver stunning precision",
       "tags": [
-        "Gesellschaftlich Relevant",
-        "Innovation",
-        "Spektakulär",
-        "Gesundheit"
-      ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Weniger arbeiten, mehr erreichen. Ausgerechnet im auf Leistung fixierten Japan bringt ein Autor seinen Landsleuten bei, was sie von den Deutschen lernen können.",
-      "visualRating": 3,
-      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Zeit Online",
-          "url": "https://www.zeit.de/2026/04/arbeitskultur-japan-ueberstunden-shigeki-nishimura-buch-deutschland",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "12-18 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T05:00:26",
-      "galileo_relevance": 8
-    },
-    {
-      "id": 8799,
-      "title": "A natural aging molecule may help restore memory in Alzheimer’s",
-      "tags": [
-        "Ungewöhnlich",
-        "Mysterium",
         "Trend",
-        "Natur & Umwelt"
+        "Experiment"
       ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Researchers have found that a natural aging-related molecule can repair key memory processes affected by Alzheimer’s disease. The compound improves communication between brain cells and restores early",
-      "visualRating": 3,
-      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Researchers have demonstrated that quantum entanglement can link atoms across space to improve measurement accuracy. By splitting an entangled group of atoms into separate clouds, they were able to me",
+      "visualRating": 4,
+      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
       "credibility": "green",
       "sources": [
         {
           "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260124003829.htm",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260126075842.htm",
           "credibility": "green"
         }
       ],
@@ -1022,278 +1876,19 @@
         ],
         "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
       },
-      "date": "2026-01-25T07:17:02",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 4871,
-      "title": "Hebammen: Bundesregierung sieht Probleme bei Geburtshilfe – Grüne kritisieren Untätigkeit",
-      "tags": [
-        "Mysterium",
-        "Innovation",
-        "Wissenschaft"
-      ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Fast jede zweite Hebamme denkt laut einer Studie darüber nach, den Beruf aufzugeben. Nach SPIEGEL-Informationen kennt die Bundesregierung die Lage. Doch sie tue nichts dagegen, sagen die Grünen.",
-      "visualRating": 5,
-      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/politik/deutschland/hebammen-bundesregierung-sieht-probleme-bei-geburtshilfe-gruene-kritisieren-untaetigkeit-a-753ce891-41ce-4be3-86c6-cd6d65f68469#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "10-15 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T04:33:00",
+      "date": "2026-01-26T13:26:09",
       "galileo_relevance": 10
     },
     {
-      "id": 5315,
-      "title": "Donald Trump erhöht Zölle für Südkorea von 15 auf 25 Prozent",
-      "tags": [
-        "Mysterium",
-        "Ungewöhnlich",
-        "Gesundheit"
-      ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Das südkoreanische Parlament hat einen vereinbarten Handelspakt mit den USA bisher nicht ratifiziert. Präsident Trump schraubt deshalb die Zölle auf einige Importe Südkoreas hoch – zur Überraschung Se",
-      "visualRating": 5,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/wirtschaft/donald-trump-erhoeht-zoelle-fuer-suedkorea-von-15-auf-25-prozent-a-a0bb322e-6de8-4a9f-9d18-2e6455f1ffe7#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "10-15 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T03:01:00",
-      "galileo_relevance": 7
-    },
-    {
-      "id": 3388,
-      "title": "Österreich: Teenager stirbt bei Skiunfall",
-      "tags": [
-        "Gesundheit",
-        "Trend",
-        "Ungewöhnlich"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Ein Teenager ist beim Skifahren im Wintersportgebiet Feuerkogel tödlich verletzt worden. Wie der junge Tscheche von der Piste abkam, ist noch unklar.",
-      "visualRating": 5,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/panorama/oesterreich-teenager-stirbt-bei-skiunfall-a-aef20dbc-8c5a-48f2-8c0d-aeff9f19189b#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T20:48:00",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 9926,
-      "title": "Frankreich arbeitet an Social-Media-Verbot für unter 15-Jährige",
-      "tags": [
-        "Mysterium",
-        "Experiment",
-        "Trend"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. In Frankreich könnte Kindern und Jugendlichen unter 15 Jahren bald die Nutzung einiger sozialer Medien verboten werden - auch das beliebte TikTok. Die Nationalversammlung stimmte für den Gesetzentwurf",
-      "visualRating": 4,
-      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/ausland/europa/frankreich-social-media-jugendliche-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T22:33:51",
-      "galileo_relevance": 10
-    },
-    {
-      "id": 8836,
-      "title": "Winterwetter in Deutschland: Schnee, Glätte und Unfälle",
-      "tags": [
-        "Gesundheit",
-        "Experiment",
-        "Technologie"
-      ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Zum Start der Woche wurden Teile Deutschlands von Wintertief \"Leonie\" lahmgelegt. Zwar beruhigte sich die Wetterlage bereits, trotzdem ist die Glättegefahr laut Deutschem Wetterdienst noch nicht überw",
-      "visualRating": 4,
-      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/wetter/deutschland/wintereinbruch-deutschland-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T15:03:39",
-      "galileo_relevance": 10
-    },
-    {
-      "id": 6140,
-      "title": "Minnesota: Friedrich Merz kritisiert Gewaltanwendung in den USA als besorgniserregend",
-      "tags": [
-        "Mysterium",
-        "Wissenschaft",
-        "Trend"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Nach dem Tod eines Demonstranten in Minneapolis äußert Bundeskanzler Friedrich Merz Kritik. Er gehe davon aus, dass die US-Behörden nun aufklären, ob es wirklich eine Bedrohung der Beamten gegeben hab",
-      "visualRating": 4,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/politik/minnesota-friedrich-merz-kritisiert-gewaltanwendung-in-den-usa-als-besorgniserregend-a-a691c8a0-a230-4c15-8016-cd6daaa27db8#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "10-15 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T18:22:00",
-      "galileo_relevance": 8
-    },
-    {
-      "id": 1011,
+      "id": 9897,
       "title": "A stiffening colon may be fueling cancer in younger adults",
       "tags": [
         "Gesellschaftlich Relevant",
-        "Entertainment",
         "Natur & Umwelt"
       ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Chronic inflammation may be quietly reshaping the colon and making it more vulnerable to early-onset colorectal cancer. Scientists found that colon tissue in younger patients was stiffer, even in area",
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Chronic inflammation may be quietly reshaping the colon and making it more vulnerable to early-onset colorectal cancer. Scientists found that colon tissue in younger patients was stiffer, even in area",
       "visualRating": 4,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
+      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
       "credibility": "green",
       "sources": [
         {
@@ -1305,7 +1900,7 @@
       "isDuplicate": false,
       "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
       "storyline": {
-        "duration": "12-18 Minuten",
+        "duration": "8-12 Minuten",
         "structure": [
           "Intro: Thema vorstellen (2 Min)",
           "Hauptteil: Vor Ort Reportage (6-10 Min)",
@@ -1327,64 +1922,20 @@
       "galileo_relevance": 10
     },
     {
-      "id": 4534,
-      "title": "EU will den Kurznachrichtendienst WhatsApp strenger kontrollieren",
+      "id": 7579,
+      "title": "Minneapolis: Untersuchungsbericht im Fall Alex Pretti setzt Regierung unter Druck",
       "tags": [
-        "Wissenschaft",
-        "Mysterium",
+        "Innovation",
         "Natur & Umwelt"
       ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Die EU-Kommission will öffentliche Kanäle auf WhatsApp künftig strenger kontrollieren - es geht um das Aufspüren verbotener Inhalte auf dem Kurznachrichtendienst. Private Chat-Nachrichten bleiben weit",
-      "visualRating": 3,
-      "visualReason": "Abstrakte Thematik, schwer zu visualisieren",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/ausland/europa/eu-kommission-whatsapp-kontrolle-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "12-18 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T17:10:02",
-      "galileo_relevance": 7
-    },
-    {
-      "id": 6942,
-      "title": "The type of carbs you eat may affect dementia risk",
-      "tags": [
-        "Bildstark",
-        "Gerade aktuell",
-        "Experiment"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Carbohydrates don’t just fuel the body—they may also influence how the brain ages. A large long-term study found that diets high in fast-acting carbs that rapidly raise blood sugar were linked to a hi",
+      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Nach den tödlichen Schüssen auf Alex Pretti sprach Heimatschutzministerin Kristi Noem von Notwehr. Ein vorläufiger Untersuchungsbericht stützt diese Darstellung nicht.",
       "visualRating": 3,
       "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
       "credibility": "green",
       "sources": [
         {
-          "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260127010156.htm",
+          "name": "Zeit Online",
+          "url": "https://www.zeit.de/politik/ausland/2026-01/minneapolis-schuesse-alex-pretti-untersuchungsbericht-waffe-notwehr",
           "credibility": "green"
         }
       ],
@@ -1409,529 +1960,24 @@
         ],
         "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
       },
-      "date": "2026-01-27T06:41:18",
+      "date": "2026-01-28T06:03:49",
       "galileo_relevance": 7
     },
     {
-      "id": 5482,
-      "title": "Europa’s ice may be feeding a hidden ocean that could support life",
+      "id": 4925,
+      "title": "A lost disease emerges from 5,500-year-old human remains",
       "tags": [
-        "Entertainment",
-        "Ungewöhnlich",
+        "Bildstark",
         "Psychologie"
       ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Europa’s subsurface ocean might be getting fed after all. Scientists found that salty, nutrient-rich surface ice can become heavy enough to break free and sink through Europa’s icy shell, delivering e",
-      "visualRating": 3,
-      "visualReason": "Abstrakte Thematik, schwer zu visualisieren",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260122073620.htm",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-23T11:14:45",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 1169,
-      "title": "ICE und Grenzschutz: Erste Einsatzkräfte sollen Minneapolis verlassen",
-      "tags": [
-        "Entertainment",
-        "Bildstark"
-      ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Nach einem Telefonat mit US-Präsident Trump hat der Bürgermeister von Minneapolis den Abzug erster ICE- und Grenzschutzkräfte angekündigt. Unter ihnen soll auch der umstrittene Einsatzleiter Bovino se",
-      "visualRating": 5,
-      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/ausland/amerika/minneapolis-bundesbeamte-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "12-18 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T02:17:22",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 9910,
-      "title": "Proteste gegen ICE in Minneapolis: Trump zu Aufklärung aufgefordert",
-      "tags": [
-        "Wissenschaft",
-        "Technologie"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Nach dem gewaltsamen Tod von Alex Pretti wächst die Kritik am Vorgehen der US-Einwanderungsbehörde ICE. Inzwischen fordern auch zahlreiche Republikaner unparteiische Ermittlungen. Zwei Ex-Präsidenten ",
-      "visualRating": 5,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/ausland/amerika/proteste-ice-minneapolis-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T09:31:24",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 2794,
-      "title": "Wintersturm: Massive Stromausfälle im Süden der USA",
-      "tags": [
-        "Technologie",
-        "Bildstark"
-      ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Der heftige Wintersturm in den USA betrifft mittlerweile rund 200 Millionen Menschen. In mindestens 20 Bundesstaaten gilt der Notstand. Hunderttausende Haushalte haben keinen Strom. US-Medien berichte",
-      "visualRating": 5,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/ausland/amerika/wintersturm-usa-120.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "12-18 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T15:07:27",
-      "galileo_relevance": 7
-    },
-    {
-      "id": 3882,
-      "title": "News: Freihandel, Grüne, Indien, Holocaust-Gedenken, Reiner Haseloff",
-      "tags": [
-        "Gerade aktuell",
-        "Mysterium"
-      ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Ursula von der Leyen hofft auf das nächste Freihandelsabkommen. Die Welt gedenkt der Holocaustopfer. Und: Reiner Haseloff ist den letzten Tag Ministerpräsident. Das ist die Lage am Dienstagmorgen.",
-      "visualRating": 5,
-      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/politik/deutschland/news-freihandel-gruene-indien-holocaust-gedenken-reiner-haseloff-a-e9caab79-2c87-47c4-9049-2c5367aea0f8#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T04:33:00",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 9427,
-      "title": "Frankreich: Parlament stimmt für Social-Media-Verbot für Kinder und Jugendliche unter 15 Jahren",
-      "tags": [
-        "Gesundheit",
-        "Spektakulär"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Emmanuel Macron will ein Social-Media-Verbot für Kinder und Jugendliche, Frankreichs Nationalversammlung ist jetzt der Linie des Präsidenten gefolgt. Votiert auch noch der Senat dafür, könnte das Gese",
-      "visualRating": 5,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/ausland/frankreich-parlament-stimmt-fuer-social-media-verbot-fuer-kinder-und-jugendliche-unter-15-jahren-a-19b5800a-fe11-4233-a89a-99f51c7b4974#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "10-15 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T23:48:00",
-      "galileo_relevance": 10
-    },
-    {
-      "id": 1703,
-      "title": "The early universe supercharged black hole growth",
-      "tags": [
-        "Psychologie",
-        "Ungewöhnlich"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Astronomers may have finally cracked one of the universe’s biggest mysteries: how black holes grew so enormous so fast after the Big Bang. New simulations show that early, chaotic galaxies created per",
-      "visualRating": 5,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260125083354.htm",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T14:40:24",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 6404,
-      "title": "Brain waves could help paralyzed patients move again",
-      "tags": [
-        "Wissenschaft",
-        "Gerade aktuell"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. People with spinal cord injuries often lose movement even though their brains still send the right signals. Researchers tested whether EEG brain scans could capture those signals and reroute them to s",
-      "visualRating": 5,
-      "visualReason": "Hervorragende Dreh-Möglichkeiten, spektakuläre Settings, visuell einprägsam",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260124073926.htm",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "12-18 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-24T14:35:20",
-      "galileo_relevance": 10
-    },
-    {
-      "id": 7738,
-      "title": "Verhandlungen über EU-Handelsabkommen mit Indien kurz vor Abschluss",
-      "tags": [
-        "Spektakulär",
-        "Gerade aktuell"
-      ],
-      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Vor fast 20 Jahren begannen die Verhandlungen, nun stehen EU und Indien vor der Unterzeichnung eines \"historischen\" Handelsabkommens. Die Wirtschaft verspricht sich neue Absatzmärkte, die Politik eine",
-      "visualRating": 4,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/ausland/asien/indien-abkommen-eu-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "12-18 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T00:51:52",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 3226,
-      "title": "Dänisches Projekt: Ein CO2-Speicher unter der Nordsee",
-      "tags": [
-        "Gesellschaftlich Relevant",
-        "Ungewöhnlich"
-      ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Vor der dänischen Küste entsteht etwas, das viele für eines der spannendsten Projekte im europäischen Klimaschutz halten. Tief unter dem Meeresboden soll hier CO2 eingelagert werden. Doch es gibt auch",
-      "visualRating": 4,
-      "visualReason": "Physisch beobachtbare Prozesse, Action-reich, visuell faszinierend",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/ausland/europa/daenemark-klimaspeicher-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T10:05:26",
-      "galileo_relevance": 10
-    },
-    {
-      "id": 1434,
-      "title": "Holocaust-Überlebender Leon Weintraub: »Man darf nie zulassen, dass die AfD die Macht ergreift«",
-      "tags": [
-        "Bildstark",
-        "Gerade aktuell"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Leon Weintraub überlebte vier Konzentrationslager. Als er befreit wurde, wog er nur noch 35 Kilo. Heute ist Weintraub 100 Jahre alt und kämpft weltweit gegen Extremismus. Ein Gesprächsauszug zum Holoc",
-      "visualRating": 4,
-      "visualReason": "Spektakuläre visuelle Elemente, gut filmbare Experimente, beeindruckende Locations",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Der Spiegel",
-          "url": "https://www.spiegel.de/geschichte/holocaust-ueberlebender-leon-weintraub-man-darf-nie-zulassen-dass-die-afd-die-macht-ergreift-a-82dda7ab-e5bc-4fcd-86fc-8fcd73fc6fec#ref=rss",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T05:49:00",
-      "galileo_relevance": 7
-    },
-    {
-      "id": 8353,
-      "title": "Ermittlungen in der Slowakei: EU-Subvenstionsgelder für Privatvillen?",
-      "tags": [
-        "Gesellschaftlich Relevant",
-        "Natur & Umwelt"
-      ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Dutzende Privatvillen überall in der Slowakei, gefördert mit EU-Geldern für nachhaltigen Tourismus auf dem Land: Die sogenannte Hacienda-Affäre setzt Bratislava unter Druck. Heute soll sie Thema im EU",
-      "visualRating": 3,
-      "visualReason": "Abstrakte Thematik, schwer zu visualisieren",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/ausland/eu-gelder-ermittlungen-slowakei-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "12-18 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-27T01:55:03",
-      "galileo_relevance": 10
-    },
-    {
-      "id": 1826,
-      "title": "Ukraine und Russland loben Gespräche in Abu Dhabi",
-      "tags": [
-        "Ungewöhnlich",
-        "Innovation"
-      ],
-      "summary": "Perfekt für Galileo: Wissenschaft trifft Entertainment. Nach den Verhandlungen in Abu Dhabi sprechen sowohl die Ukraine als auch Russland von \"konstruktiven\" Gesprächen - und bald könnte es ein neues Treffen geben. Klar ist aber auch: Ein schneller Durchbr",
+      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. A 5,500-year-old skeleton from Colombia has revealed the oldest known genome of the bacterium linked to syphilis and related diseases. The ancient strain doesn’t fit neatly into modern categories, hin",
       "visualRating": 3,
       "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
       "credibility": "green",
       "sources": [
         {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/ausland/ukraine-gespraeche-reaktionen-106.html",
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260125083349.htm",
           "credibility": "green"
         }
       ],
@@ -1956,108 +2002,24 @@
         ],
         "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
       },
-      "date": "2026-01-26T13:55:19",
-      "galileo_relevance": 9
-    },
-    {
-      "id": 2911,
-      "title": "Wie kann Europa unabhängiger von den USA werden?",
-      "tags": [
-        "Natur & Umwelt",
-        "Spektakulär"
-      ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Der immer wieder aufflammende Zollstreit mit den USA macht Europas Abhängigkeit schmerzhaft deutlich. Der Ökonom Lars Feld erklärt, warum Europa auf eigenen Beinen stehen muss. Von Christine Bergmann.",
-      "visualRating": 3,
-      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "Tagesschau",
-          "url": "https://www.tagesschau.de/wirtschaft/weltwirtschaft/deutsche-abhaengigkeit-usa-100.html",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "12-18 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-25T18:25:58",
+      "date": "2026-01-26T11:04:05",
       "galileo_relevance": 10
     },
     {
-      "id": 2460,
-      "title": "A strange in-between state of matter is finally observed",
+      "id": 9200,
+      "title": "Scientists twist tiny crystals to control electricity",
       "tags": [
-        "Mysterium",
-        "Innovation"
+        "Gesellschaftlich Relevant",
+        "Experiment"
       ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. When materials become just one atom thick, melting no longer follows the familiar rules. Instead of jumping straight from solid to liquid, an unusual in-between state emerges, where atomic positions l",
-      "visualRating": 3,
-      "visualReason": "Abstrakte Thematik, schwer zu visualisieren",
-      "credibility": "green",
-      "sources": [
-        {
-          "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260125083404.htm",
-          "credibility": "green"
-        }
-      ],
-      "isDuplicate": false,
-      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
-      "storyline": {
-        "duration": "8-12 Minuten",
-        "structure": [
-          "Intro: Thema vorstellen (2 Min)",
-          "Hauptteil: Vor Ort Reportage (6-10 Min)",
-          "Experteneinschätzung (2-3 Min)",
-          "Finale: Fazit und Ausblick (2 Min)"
-        ],
-        "locations": [
-          "Hauptdrehort",
-          "Experteninterview-Location"
-        ],
-        "protagonists": [
-          "Protagonist/Betroffener",
-          "Experte zum Thema",
-          "Galileo Reporter"
-        ],
-        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
-      },
-      "date": "2026-01-26T15:11:17",
-      "galileo_relevance": 7
-    },
-    {
-      "id": 4495,
-      "title": "Scientists exposed how cancer hides in plain sight",
-      "tags": [
-        "Wissenschaft",
-        "Mysterium"
-      ],
-      "summary": "Dieses Thema ist hochaktuell und visuell stark umsetzbar. Pancreatic cancer may evade the immune system using a clever molecular trick. Researchers found that the cancer-driving protein MYC also suppresses immune alarm signals, allowing tumors to grow unnoti",
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Researchers have developed a technique that allows them to carve complex three dimensional nanodevices directly from single crystals. To demonstrate its power, they sculpted microscopic helices from a",
       "visualRating": 3,
       "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
       "credibility": "green",
       "sources": [
         {
           "name": "ScienceDaily",
-          "url": "https://www.sciencedaily.com/releases/2026/01/260124003811.htm",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260125081138.htm",
           "credibility": "green"
         }
       ],
@@ -2082,7 +2044,91 @@
         ],
         "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
       },
-      "date": "2026-01-24T05:38:11",
+      "date": "2026-01-25T13:48:10",
+      "galileo_relevance": 8
+    },
+    {
+      "id": 5219,
+      "title": "“Stars like the Sun don’t just stop shining,” but this one did",
+      "tags": [
+        "Ungewöhnlich",
+        "Entertainment"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. A distant Sun-like star suddenly went dark for months, stunning astronomers who quickly realized something massive was passing in front of it. Observations revealed a gigantic disk of gas and dust fil",
+      "visualRating": 3,
+      "visualReason": "Begrenzte visuelle Möglichkeiten, hauptsächlich Interviews",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260124003813.htm",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "10-15 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-25T03:45:03",
+      "galileo_relevance": 9
+    },
+    {
+      "id": 6449,
+      "title": "Ancient giant kangaroos could hop after all",
+      "tags": [
+        "Entertainment",
+        "Trend"
+      ],
+      "summary": "Gesellschaftlich relevantes Thema mit großem visuellen Potenzial. Giant kangaroos that lived during the Ice Age may not have been as slow and grounded as once believed. A new study finds their leg bones and tendons were likely strong enough to support hopping, despi",
+      "visualRating": 3,
+      "visualReason": "Visuell eher schwach, benötigt kreative Umsetzung",
+      "credibility": "green",
+      "sources": [
+        {
+          "name": "ScienceDaily",
+          "url": "https://www.sciencedaily.com/releases/2026/01/260123225925.htm",
+          "credibility": "green"
+        }
+      ],
+      "isDuplicate": false,
+      "duplicateInfo": "✅ Noch nicht bei Galileo behandelt",
+      "storyline": {
+        "duration": "12-18 Minuten",
+        "structure": [
+          "Intro: Thema vorstellen (2 Min)",
+          "Hauptteil: Vor Ort Reportage (6-10 Min)",
+          "Experteneinschätzung (2-3 Min)",
+          "Finale: Fazit und Ausblick (2 Min)"
+        ],
+        "locations": [
+          "Hauptdrehort",
+          "Experteninterview-Location"
+        ],
+        "protagonists": [
+          "Protagonist/Betroffener",
+          "Experte zum Thema",
+          "Galileo Reporter"
+        ],
+        "dramaticArc": "Von der Neugier zur Erkenntnis - eine spannende Entdeckungsreise"
+      },
+      "date": "2026-01-24T04:21:29",
       "galileo_relevance": 10
     }
   ]
